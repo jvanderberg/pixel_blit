@@ -5391,17 +5391,6 @@
 		)
 		(uuid "a106bb30-ced0-460f-97b1-6e1257b95740")
 	)
-	(text "This is an input jumper to disable 12V\nsupply."
-		(exclude_from_sim no)
-		(at 17.272 54.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ccc72afe-c135-4ae3-ba04-2a159e584966")
-	)
 	(text "12V Board Connectors\n"
 		(exclude_from_sim no)
 		(at 182.372 98.044 0)
@@ -5435,12 +5424,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "062636f8-45cc-457e-bb51-52bd9f66e6ff")
-	)
-	(junction
-		(at 34.29 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0829432c-4dfc-4dbe-8e48-906c89e34e7c")
 	)
 	(junction
 		(at 57.15 71.12)
@@ -5485,12 +5468,6 @@
 		(uuid "2a843c6e-30df-4809-b4ab-0312f6072f60")
 	)
 	(junction
-		(at 129.54 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2d60b741-6e9c-4d8f-b111-12ec70cfd203")
-	)
-	(junction
 		(at 88.9 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5515,10 +5492,10 @@
 		(uuid "4a45964f-3f6d-46c7-9089-c2ba0f943971")
 	)
 	(junction
-		(at 45.72 60.96)
+		(at 113.03 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5d368383-fd82-45aa-84d3-8aaaa72c983d")
+		(uuid "59ee30b1-4070-429c-9ec7-350e377ff54b")
 	)
 	(junction
 		(at 218.44 132.08)
@@ -5599,6 +5576,12 @@
 		(uuid "a6041846-0612-4fbb-a531-8b10cd3c5215")
 	)
 	(junction
+		(at 113.03 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa65b818-dc4a-4fa7-a199-1475d40c0a63")
+	)
+	(junction
 		(at 63.5 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5615,6 +5598,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aff8fdc7-8211-4679-85ac-5e5ba6d66171")
+	)
+	(junction
+		(at 34.29 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be2656c4-948f-4cc8-9df4-95ca6a1fd1ac")
 	)
 	(junction
 		(at 71.12 152.4)
@@ -5683,6 +5672,18 @@
 		(uuid "f8be874f-113e-4c34-b46f-5f59256e0401")
 	)
 	(junction
+		(at 218.44 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc4ad925-94a5-4c8a-8807-a857506fa390")
+	)
+	(junction
+		(at 113.03 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcdec8a8-904c-43a2-9f69-e08db3fe158c")
+	)
+	(junction
 		(at 34.29 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5694,7 +5695,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 60.96) (xy 45.72 60.96)
+			(xy 40.64 60.96) (xy 50.8 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5944,16 +5945,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 118.11) (xy 113.03 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b438264-b5bf-4346-8033-cc6c14b1790a")
-	)
-	(wire
-		(pts
 			(xy 101.6 60.96) (xy 101.6 63.5)
 		)
 		(stroke
@@ -5984,7 +5975,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 119.38) (xy 218.44 132.08)
+			(xy 218.44 119.38) (xy 218.44 123.19)
 		)
 		(stroke
 			(width 0)
@@ -6064,7 +6055,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 60.96) (xy 132.08 60.96)
+			(xy 123.19 60.96) (xy 132.08 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6121,6 +6112,16 @@
 			(type default)
 		)
 		(uuid "477859b8-88d0-45d1-a040-7a4f9437e05b")
+	)
+	(wire
+		(pts
+			(xy 113.03 124.46) (xy 113.03 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50ad2af7-88f3-4353-bb7b-ef6a14b3bc84")
 	)
 	(wire
 		(pts
@@ -6364,6 +6365,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 118.11) (xy 113.03 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "875b6e51-3ae6-4e97-b2ca-1b76ee143e65")
+	)
+	(wire
+		(pts
 			(xy 97.79 87.63) (xy 102.87 87.63)
 		)
 		(stroke
@@ -6371,16 +6382,6 @@
 			(type default)
 		)
 		(uuid "8767026e-fbef-443e-8b93-d7c3350306d7")
-	)
-	(wire
-		(pts
-			(xy 113.03 128.27) (xy 113.03 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a2ceecd-c255-48ed-83fa-5047bf636123")
 	)
 	(wire
 		(pts
@@ -6401,6 +6402,26 @@
 			(type default)
 		)
 		(uuid "8bc6f009-cd56-4e6e-9820-271525c7a518")
+	)
+	(wire
+		(pts
+			(xy 218.44 123.19) (xy 218.44 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bfa698c-cc41-469f-8477-1a055b2d9d23")
+	)
+	(wire
+		(pts
+			(xy 113.03 121.92) (xy 113.03 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e268a50-1e43-458d-827a-10e0c3744026")
 	)
 	(wire
 		(pts
@@ -6534,6 +6555,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 121.92) (xy 113.03 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5d31869-fc26-4533-9f58-e8e311d8499c")
+	)
+	(wire
+		(pts
 			(xy 102.87 83.82) (xy 102.87 87.63)
 		)
 		(stroke
@@ -6624,7 +6655,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 50.8) (xy 34.29 53.34)
+			(xy 34.29 50.8) (xy 34.29 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6834,6 +6865,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 132.08) (xy 113.03 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec5d4a9e-d00c-46dd-9c39-78aedc120c4b")
+	)
+	(wire
+		(pts
 			(xy 218.44 105.41) (xy 218.44 106.68)
 		)
 		(stroke
@@ -6844,13 +6885,13 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 60.96) (xy 40.64 60.96)
+			(xy 209.55 123.19) (xy 218.44 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "edfaab41-a76d-45c9-94bc-3e09b516cc7a")
+		(uuid "ef200e5d-7434-4ff0-b2ab-248453550898")
 	)
 	(wire
 		(pts
@@ -6921,16 +6962,6 @@
 			(type default)
 		)
 		(uuid "fbf98aa7-b37c-4229-adc8-5c0db0d35a24")
-	)
-	(wire
-		(pts
-			(xy 123.19 60.96) (xy 129.54 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcfdc78f-2204-40f3-a7cd-69e41e62392d")
 	)
 	(wire
 		(pts
@@ -7051,6 +7082,28 @@
 		(uuid "f1f7e3bd-8bb9-4d99-8e5b-d81e251bdb71")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 111.9028 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5V_REG"
+		(shape input)
+		(at 135.89 60.96 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f99534b0-fdbf-4511-b6f8-928313f4bb66")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 135.89 51.0201 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8044,6 +8097,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 113.03 128.27 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3006eb9d-fb4f-4fb8-b530-65ded4cba60d")
+		(property "Reference" "JP1"
+			(at 115.57 126.9999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SolderJumper_2_Bridged"
+			(at 115.57 129.5399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 113.03 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4df7e0b4-2b81-48f8-875c-8cc742e6dd77")
+		)
+		(pin "1"
+			(uuid "5388001c-65e7-471d-ae8f-1d126ccbb8ad")
+		)
+		(instances
+			(project ""
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "EasyEDA:MLI2012F-1R5KT")
 		(at 85.09 41.91 0)
 		(unit 1)
@@ -8320,72 +8443,6 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 113.03 118.11 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3675e93c-8904-4339-b170-47348a7b9ba7")
-		(property "Reference" "#PWR024"
-			(at 113.03 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 113.03 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 113.03 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 113.03 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 113.03 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4390c475-1c1e-431b-874c-e67c54aaf8bc")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -9185,71 +9242,6 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 45.72 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "49eb4c8d-9ae3-455c-9bf2-a22b0ffb68b3")
-		(property "Reference" "#FLG03"
-			(at 45.72 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 46.736 56.642 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 45.72 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 45.72 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "82cd065c-5165-4617-af3a-a53793c97d53")
-		)
-		(instances
-			(project ""
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -10460,6 +10452,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 113.03 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b4dae9f-e3b9-4fa3-9afe-5c94ad3511e6")
+		(property "Reference" "#PWR013"
+			(at 113.03 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 113.03 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 113.03 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ffc69852-2900-444b-856e-fe404b9df8eb")
+		)
+		(instances
+			(project ""
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 116.84 60.96 0)
 		(unit 1)
@@ -10594,7 +10652,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 129.54 60.96 0)
+		(at 209.55 123.19 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10603,7 +10661,7 @@
 		(fields_autoplaced yes)
 		(uuid "848782f1-d850-4eeb-b48e-7734776e1daa")
 		(property "Reference" "#FLG04"
-			(at 129.54 59.055 0)
+			(at 207.645 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10612,7 +10670,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 129.54 55.88 0)
+			(at 208.28 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10620,7 +10678,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 60.96 0)
+			(at 209.55 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10629,7 +10687,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 129.54 60.96 0)
+			(at 209.55 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10638,7 +10696,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 129.54 60.96 0)
+			(at 209.55 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10650,7 +10708,7 @@
 			(uuid "82cd065c-5165-4617-af3a-a53793c97d54")
 		)
 		(instances
-			(project ""
+			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "#FLG04")
 					(unit 1)
@@ -10719,77 +10777,6 @@
 			(project ""
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "#PWR0109")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Bridged")
-		(at 34.29 57.15 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "91263b5c-c94f-4835-a763-eb99faf5402a")
-		(property "Reference" "JP2"
-			(at 36.83 55.8799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SolderJumper_2_Bridged"
-			(at 36.83 58.4199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
-			(at 34.29 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 34.29 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
-			(at 34.29 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fc059b94-dd6d-4fd3-ad90-ccca4a05df45")
-		)
-		(pin "2"
-			(uuid "ec1993bb-0922-44c4-8fa9-6a2de9fdc4dc")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -11014,76 +11001,6 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Bridged")
-		(at 113.03 124.46 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "98cad452-8d20-4787-8b69-8b63acecd014")
-		(property "Reference" "JP1"
-			(at 115.57 123.1899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SolderJumper_2_Bridged"
-			(at 115.57 125.7299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
-			(at 113.03 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
-			(at 113.03 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6974f893-a72f-46b5-9d1e-6d6405b829bb")
-		)
-		(pin "2"
-			(uuid "59c233d3-1082-41bb-b9c6-b8cceb658b9a")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -13179,6 +13096,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 111.76 121.92 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e297245a-bad6-4960-85a5-c128f06bf080")
+		(property "Reference" "#FLG02"
+			(at 109.855 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 107.95 121.9199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 111.76 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72572e68-51bd-4341-9254-083148cbf2b8")
+		)
+		(instances
+			(project "pixel_blit"
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,1kΩ")
 		(at 147.32 137.16 90)
 		(unit 1)
@@ -13725,6 +13709,73 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 149.86 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fff5a9a0-7b9c-4f73-af22-905188e0d3df")
+		(property "Reference" "#FLG07"
+			(at 147.955 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 146.05 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 149.86 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a834b154-acc6-4f24-ac70-796a042be3ed")
+		)
+		(instances
+			(project "pixel_blit"
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
+					(reference "#FLG07")
 					(unit 1)
 				)
 			)
