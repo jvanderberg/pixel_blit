@@ -87,5 +87,4 @@ fp-lib-table-bak
 # KiCad lock files
 *.lck
 
-# User settings (don’t commit personal editor prefs)
-*.kicad_pro
+
