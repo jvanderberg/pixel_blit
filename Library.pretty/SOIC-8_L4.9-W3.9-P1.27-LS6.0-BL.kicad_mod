@@ -1,0 +1,221 @@
+(footprint "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -3.86 1.57 270)
+		(layer "F.SilkS")
+		(uuid "d0d52dcd-1c18-4692-947b-186e0f553e2d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LMV358IDR"
+		(at 0 6.77 180)
+		(layer "F.Fab")
+		(uuid "c64a2ac5-8c35-41f8-9009-2b9d0c6e4cf3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/General-Purpose-Amplifiers_TI_LMV358IDR_LMV358IDR_C63813.html"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a5fb5828-0883-4d22-bb50-5062256d1581")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "098967cf-17f1-471a-838a-b5e0f8445d6a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part" "C63813"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d9d3f242-7a53-4249-9941-aea86185ba4c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.53 -1.52)
+		(end 2.53 -1.52)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "238c4c55-bc6c-44d9-9e8b-40b83901cb3a")
+	)
+	(fp_line
+		(start -2.53 1.52)
+		(end -2.53 -1.52)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "62d7228c-188e-47de-94c0-9433a9800fac")
+	)
+	(fp_line
+		(start 2.53 -1.52)
+		(end 2.53 1.52)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3d2edc6a-2733-4e1f-aed2-605f8c5499c3")
+	)
+	(fp_line
+		(start 2.53 1.52)
+		(end -2.53 1.52)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3b0c27c3-1886-4589-91f0-284a10b25d90")
+	)
+	(fp_circle
+		(center -2.65 2.77)
+		(end -2.5 2.77)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "7cd76236-407c-4859-bcd6-3ccca3ddf656")
+	)
+	(fp_circle
+		(center -1.91 0.77)
+		(end -1.76 0.77)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "05a7067e-be72-4ac1-97d3-ba3c21b4eda8")
+	)
+	(fp_circle
+		(center -1.91 3.4)
+		(end -1.76 3.4)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "b278a863-7b41-46ed-8185-52737e253e7b")
+	)
+	(fp_circle
+		(center -2.45 3)
+		(end -2.42 3)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0cea5bcc-25fc-4319-9514-b19aa962715f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "650dc6ea-16dd-4047-9f06-d49a4bdd6cbb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd oval
+		(at -1.91 2.77)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a164ae7e-163c-420f-a777-f38dd9a4101b")
+	)
+	(pad "2" smd oval
+		(at -0.63 2.77)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "765dd200-141f-4354-a16a-71b8ced1a8a1")
+	)
+	(pad "3" smd oval
+		(at 0.63 2.77)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "02350db0-d1b6-4e42-b0e9-dc9817b8041b")
+	)
+	(pad "4" smd oval
+		(at 1.9 2.77)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5baaf7ee-3679-4626-91da-de0339f3ac3c")
+	)
+	(pad "5" smd oval
+		(at 1.9 -2.77)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "91c867a7-2b04-45cb-8581-7c49f27553a5")
+	)
+	(pad "6" smd oval
+		(at 0.63 -2.77)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7889dc15-1153-4aab-9f86-cd9c44134931")
+	)
+	(pad "7" smd oval
+		(at -0.63 -2.77)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e9e94aba-90f3-4c38-99da-ee1ef58f51ba")
+	)
+	(pad "8" smd oval
+		(at -1.91 -2.77)
+		(size 0.59 2.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "be7c25d3-bdbc-454b-bdbb-135c184e472e")
+	)
+	(embedded_fonts no)
+	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/SOIC-8_L4.9-W3.9-H1.7-LS6.0-P1.27.wrl"
+		(offset
+			(xyz 0 0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

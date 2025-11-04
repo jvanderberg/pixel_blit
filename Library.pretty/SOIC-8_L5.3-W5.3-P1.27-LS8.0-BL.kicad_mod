@@ -1,0 +1,221 @@
+(footprint "SOIC-8_L5.3-W5.3-P1.27-LS8.0-BL"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -4.09 -0.41 0)
+		(layer "F.SilkS")
+		(uuid "aa50b6d0-6c2d-4e9f-b436-80dc2ce88f52")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "W25Q128JVSIQTR"
+		(at 0 7.53 0)
+		(layer "F.Fab")
+		(uuid "ae1ee7f1-87ce-4719-b471-41a04d8d1d72")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/FLASH_W25Q128JVSIQTR_C97521.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5d7f200e-49b2-4096-9749-8072a2921de8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "31b28f17-208b-4db6-8c24-9de6832024fd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part" "C97521"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6af2cfd3-0a68-42a5-8ae3-b747b32cc86c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.64 -2.18)
+		(end 2.64 -2.18)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5e64833d-c8ac-44ef-a74d-62ef3109283c")
+	)
+	(fp_line
+		(start -2.64 2.18)
+		(end -2.64 -2.18)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "eb2d2aa1-597b-4bb3-b9ad-ce369b51d187")
+	)
+	(fp_line
+		(start 2.64 -2.18)
+		(end 2.64 2.18)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b82ae164-3d06-45b8-b755-3025a5c50ee9")
+	)
+	(fp_line
+		(start 2.64 2.18)
+		(end -2.64 2.18)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bf83aa35-5259-4f7d-a895-0f1cb15cd733")
+	)
+	(fp_circle
+		(center -2.67 3.53)
+		(end -2.52 3.53)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "2796956a-eb8e-442f-a75e-cb9aa6fde986")
+	)
+	(fp_circle
+		(center -1.91 1.42)
+		(end -1.76 1.42)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "3ffe4b0e-7b9f-475c-bebc-06aafb89b0f9")
+	)
+	(fp_circle
+		(center -1.91 4.35)
+		(end -1.76 4.35)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "9a72421b-857f-4235-bdb3-6eb88c77a450")
+	)
+	(fp_circle
+		(center -2.59 3.92)
+		(end -2.56 3.92)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e55e8e98-1eb9-4a08-a241-f8c6124b8793")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "c3a88b76-06ba-4179-a45e-8aa4c889e37d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd oval
+		(at -1.91 3.53)
+		(size 0.63 2.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "859b0ca5-09ee-4f8e-8b8c-257b1bddfc41")
+	)
+	(pad "2" smd oval
+		(at -0.63 3.53)
+		(size 0.63 2.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fe27cb7b-beb4-49da-9b42-6b2084ed4f99")
+	)
+	(pad "3" smd oval
+		(at 0.63 3.53)
+		(size 0.63 2.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7ff53232-d942-423f-810f-a03a08e943f4")
+	)
+	(pad "4" smd oval
+		(at 1.9 3.53)
+		(size 0.63 2.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a7294a44-d7f7-4387-bb01-01fe17c27f89")
+	)
+	(pad "5" smd oval
+		(at 1.9 -3.53)
+		(size 0.63 2.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b48de201-85b9-42d9-93ba-9a98695ef38d")
+	)
+	(pad "6" smd oval
+		(at 0.63 -3.53)
+		(size 0.63 2.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1e332a0b-b436-4c91-8049-fe5cbf13d11a")
+	)
+	(pad "7" smd oval
+		(at -0.63 -3.53)
+		(size 0.63 2.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ab60fd29-80a1-4d94-92cd-2024fe632b56")
+	)
+	(pad "8" smd oval
+		(at -1.91 -3.53)
+		(size 0.63 2.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "502f6277-5651-4e5e-8565-32221edb7513")
+	)
+	(embedded_fonts no)
+	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/SOIC-8_L5.3-W5.3-H1.9-LS7.9-P1.27.wrl"
+		(offset
+			(xyz 0 0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

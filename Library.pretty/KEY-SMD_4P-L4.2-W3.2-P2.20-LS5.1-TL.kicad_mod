@@ -1,0 +1,207 @@
+(footprint "KEY-SMD_4P-L4.2-W3.2-P2.20-LS5.1-TL"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -4.99 -0.01 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "81bdaebe-135a-4993-a8bb-b0f325d49253")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "K2-1808SN-A4SW"
+		(at 0 5.1 0)
+		(layer "F.Fab")
+		(uuid "222f2b04-bb41-42ed-9aff-80647b1906a1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_4-2mm-3-25mm_C92589.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c867671a-9916-4487-bd84-30efc832e08f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "adef7a4e-9b04-42cf-8b13-5a02800cf082")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part" "C92589"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c1c1d624-7670-4851-8c0d-a2da9aaa8046")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.2 -0.54)
+		(end -2.2 0.54)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ec96d098-bf6c-4841-a5c0-2c9d60a23ba1")
+	)
+	(fp_line
+		(start -1.38 1.55)
+		(end 1.38 1.55)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2c887b98-5519-41a3-9467-a6c8c2e8f684")
+	)
+	(fp_line
+		(start -0.51 -1.02)
+		(end 0.51 -1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e7d0a5b1-3971-4550-809e-025e67b27545")
+	)
+	(fp_line
+		(start -0.51 1.02)
+		(end 0.51 1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9e3380fd-6432-4922-94a2-5ed797b4ffb9")
+	)
+	(fp_line
+		(start 1.37 -1.52)
+		(end -1.37 -1.52)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f778d931-94c9-4c1d-8096-6140ec158f98")
+	)
+	(fp_line
+		(start 2.2 -0.54)
+		(end 2.2 0.54)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "50ab489c-7e87-48aa-b7e3-e7edac58a10e")
+	)
+	(fp_arc
+		(start -0.51 1.02)
+		(mid -1.53 0)
+		(end -0.51 -1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "492af1ef-0316-4870-a9ea-bfc9c520f863")
+	)
+	(fp_arc
+		(start 0.51 -1.02)
+		(mid 1.53 0)
+		(end 0.51 1.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6ebe522f-91f3-4ff5-a73f-7b3913c3037d")
+	)
+	(fp_circle
+		(center -2.55 -1.6)
+		(end -2.52 -1.6)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "295a6b42-33d3-430e-91c1-66ad187d6fdb")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "3511edf1-2a3c-4087-87c0-d1ebbe7613f9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.2 -1.1)
+		(size 1.2 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ec508bd6-7122-48db-8d0d-7ebff164da11")
+	)
+	(pad "2" smd rect
+		(at 2.2 -1.1)
+		(size 1.2 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c73d9b82-1335-4d66-a4bd-fc2df89db34f")
+	)
+	(pad "3" smd rect
+		(at -2.2 1.1)
+		(size 1.2 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f996f6c9-8282-48ae-b208-a751124d2fc0")
+	)
+	(pad "4" smd rect
+		(at 2.2 1.1)
+		(size 1.2 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "aa5c4dc4-5ce0-44ba-9f52-dbe596f70f65")
+	)
+	(embedded_fonts no)
+	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/KEY-SMD_4P-L4.2-W3.2-H2.5-LS5.1-P2.2.wrl"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

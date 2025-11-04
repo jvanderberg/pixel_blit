@@ -1,0 +1,288 @@
+(footprint "CONN-TH_DB301V-3.5-3P-GN"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d9a55e86-959d-4ffe-9e04-ab8a3be1b2f3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "DB301V-3.5-3P-GN"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "048dd15e-b5fb-4a1b-8af5-344520162667")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_DIBO-DB301V-3-5-3P-GN_C695630.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "11132ebc-cf36-4bc9-8557-e0a47d42cc1d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "13f88dbf-61dc-4f86-b1c1-5e7d4b1cc010")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part" "C695630"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1c28e842-d9cd-4995-a3e4-2000e0641595")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -5.75 2.02)
+		(end -5.25 2.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "da1650f9-2ed6-4c8e-9548-ebf61a974fdb")
+	)
+	(fp_line
+		(start -5.75 2.59)
+		(end -5.75 2.02)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "05e35897-9acb-42da-a8bf-b84614b56db8")
+	)
+	(fp_line
+		(start -5.25 -3.4)
+		(end -5.25 3.1)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c4925e7f-9d4b-4135-81fe-3fc2b040141d")
+	)
+	(fp_line
+		(start -5.25 -3.4)
+		(end 5.25 -3.4)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "55cff329-4d41-4e07-bdd7-39a5c705e3a4")
+	)
+	(fp_line
+		(start -5.25 -1.75)
+		(end 5.25 -1.75)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c7115904-7da6-47bd-8e31-69adc181547e")
+	)
+	(fp_line
+		(start -5.25 1.69)
+		(end 5.19 1.69)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7aa5d151-06aa-46b9-9de9-23c5988580fe")
+	)
+	(fp_line
+		(start -5.25 2.59)
+		(end -5.75 2.59)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4412a611-ddb0-4a0d-a347-f87c14c7ad18")
+	)
+	(fp_line
+		(start -5.25 3.1)
+		(end 5.25 3.1)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "92465c73-2f8d-4adc-8dc5-bc71563a7f03")
+	)
+	(fp_line
+		(start 5.19 1.69)
+		(end 5.25 1.75)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "51001e19-a89c-48f8-a67e-8580955bd0c2")
+	)
+	(fp_line
+		(start 5.25 -3.4)
+		(end 5.25 3.1)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ef0c3c5c-8793-42c9-b880-863a023828d1")
+	)
+	(fp_line
+		(start 5.25 -2.52)
+		(end 5.75 -2.52)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0d3f4129-e647-4107-9fff-22ed191ebcd5")
+	)
+	(fp_line
+		(start 5.75 -2.52)
+		(end 5.75 -1.94)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6aed68f1-fb4f-4d0d-8bcc-bf7f0aefa491")
+	)
+	(fp_line
+		(start 5.75 -1.94)
+		(end 5.25 -1.94)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "70a1e7e6-71ef-4402-b2fa-b10b34c02866")
+	)
+	(fp_circle
+		(center -5.88 3.23)
+		(end -5.85 3.23)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "2138bb62-d70d-478f-bfba-a0918d97049c")
+	)
+	(fp_circle
+		(center -3.5 0)
+		(end -3.28 0)
+		(stroke
+			(width 0.45)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "55d09798-2c7a-4f54-bfe3-a4b6800911c5")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.22 0)
+		(stroke
+			(width 0.45)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0169248a-eb10-45ff-995c-c49745526434")
+	)
+	(fp_circle
+		(center 3.5 0)
+		(end 3.72 0)
+		(stroke
+			(width 0.45)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1002b330-d2d5-4f8d-a9e3-c62087931d02")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "765f5d47-56c3-4c30-8e54-f44030ba9e9e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -3.5 0)
+		(size 1.8 1.8)
+		(drill 1.100023)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "39fa9118-4b10-4cc9-a394-ba3a281bf80d")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1.100023)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ae4d9fb5-695d-4f8a-887e-3dbdea1f8910")
+	)
+	(pad "3" thru_hole circle
+		(at 3.5 0)
+		(size 1.8 1.8)
+		(drill 1.100023)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b3c33eee-c9f5-47e8-bd24-a68cc33c0235")
+	)
+	(embedded_fonts no)
+	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/CONN-TH_DB301V-3.5-3P-GN.wrl"
+		(offset
+			(xyz -0 0.15 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
