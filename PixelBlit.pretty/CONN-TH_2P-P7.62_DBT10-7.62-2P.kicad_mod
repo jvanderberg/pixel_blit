@@ -1,0 +1,219 @@
+(footprint "CONN-TH_2P-P7.62_DBT10-7.62-2P"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "eb9239d7-e88b-4b3d-90ce-efcaa1235a2f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "DBT10-7.62-2P"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "4e85c41b-f9e2-4d6c-908c-01201f40acd2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://lcsc.com/product-detail/Barrier-Terminal-Blocks_DIBO-DBT10-7-62-2P_C395930.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b27f6261-d4ac-441b-b500-9c356eaa2ddd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8d94e118-47ec-4dca-a511-13014d5cf901")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC Part" "C395930"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4414d6d7-2dd7-4a89-908a-9cb2723ad151")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -8 -1.85)
+		(end -8 11)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "782fae20-a679-4748-bde0-a7d7cd4cc655")
+	)
+	(fp_line
+		(start -8 -1.85)
+		(end 8 -1.85)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a9266ce5-362d-4e5c-a1c4-8de2e539fe9b")
+	)
+	(fp_line
+		(start -8 11)
+		(end 8 11)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "61bea5b8-b8f8-40dd-abac-03e556d1bb73")
+	)
+	(fp_line
+		(start -7.43 -1.85)
+		(end -7.43 11)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "09df9f75-b780-4d3c-8252-26dcb70cc366")
+	)
+	(fp_line
+		(start -0.21 -1.85)
+		(end -0.21 11)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5914751f-4fad-4c80-959d-d93a958fedbc")
+	)
+	(fp_line
+		(start 0.39 -1.85)
+		(end 0.39 11)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3f1b77e3-9382-458b-98d8-cd98bace7af1")
+	)
+	(fp_line
+		(start 7.41 -1.85)
+		(end 7.41 11)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a2ec1b06-cbc6-479e-af2e-b46611da2849")
+	)
+	(fp_line
+		(start 8 -1.85)
+		(end 8 11)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f8aea4a4-6e27-472e-bf49-dcf5b0855911")
+	)
+	(fp_circle
+		(center -8.13 11.13)
+		(end -8.1 11.13)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b7065e32-c3e9-4317-a592-99d7023bfbae")
+	)
+	(fp_circle
+		(center -3.81 0)
+		(end -3.41 0)
+		(stroke
+			(width 0.8)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "c9c44d7e-11a1-4b69-aa97-2d6b8d6a49e7")
+	)
+	(fp_circle
+		(center 3.81 0)
+		(end 4.21 0)
+		(stroke
+			(width 0.8)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "51384624-c6f8-4702-94fb-95fb8054b52c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "126a2347-0776-4e72-bda9-72c281f8a112")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -3.81 0)
+		(size 3 3)
+		(drill 1.799996)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0e5e987b-f9d9-45f8-a32c-20cd66950fdb")
+	)
+	(pad "2" thru_hole circle
+		(at 3.81 0)
+		(size 3 3)
+		(drill 1.799996)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8ac75af5-d774-4b2c-b24f-80eccede82e8")
+	)
+	(embedded_fonts no)
+	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/CONN-TH_DB7.62-LI-2P.wrl"
+		(offset
+			(xyz 3.65 -3.2 0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

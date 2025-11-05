@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "PixelBlit")(type "KiCad")(uri "${KIPRJMOD}/PixelBlit.pretty")(options "")(descr ""))
+)
