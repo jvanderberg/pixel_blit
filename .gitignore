@@ -8,6 +8,7 @@ Icon?
 .Trashes
 ehthumbs.db
 Thumbs.db
+*backups/*
 
 # macOS user folders
 *.swp
@@ -36,17 +37,15 @@ fp-lib-table-bak
 # KiCad generated outputs
 *.net
 *.xml
-*.csv
 *.dcm
 *.lst
 *.gbr
 *.gbrjob
 *.gtp
 *.tsv
-*.pos
 *.rpt
 *.map
-*.zip
+
 
 # KiCad 3D cache
 *.3dshapes/__pycache__/
@@ -76,7 +75,7 @@ fp-lib-table-bak
 *.gbs
 *.drl
 *.xln
-*.zip
+
 
 # Simulation data
 *.raw
