@@ -5,232 +5,6 @@
 	(uuid "4b0728ba-d25e-49bb-982f-6412e33f7baf")
 	(paper "A4")
 	(lib_symbols
-		(symbol "EasyEDA:3557-2"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "F"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "3557-2"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:FUSE-TH_4P-L19.8-W6.7_3557-2"
-				(at 0 -8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part" "C352820"
-				(at 0 -11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "3557-2_0_1"
-				(polyline
-					(pts
-						(xy -7.62 1.27) (xy -7.62 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 0) (xy -5.08 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -6.35 2.03)
-					(end 6.35 -2.29)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.57 -2.29) (xy -4.57 -1.52) (xy -2.54 -1.52) (xy -2.54 -2.29)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.79 1.02)
-					(end 2.79 -1.02)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.29) (xy 2.54 -1.52) (xy 4.57 -1.52) (xy 4.57 -2.29) (xy 4.57 -2.29)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 7.62 0) (xy 7.62 1.27) (xy 7.62 0) (xy 7.62 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at -12.7 1.27 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -12.7 -1.27 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 12.7 1.27 180)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 12.7 -1.27 180)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "EasyEDA:BZT52C15V"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -627,6 +401,182 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "JLCImport:XF-507P"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 0 -1.238 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "XF-507P"
+				(at 0 1.238 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "JLCImport:XF-507P"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210825/7557D7920E5607B38A356D661AFA8BB4.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C668119"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "XFCN(兴飞)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer Part" "XF-507P"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "XF-507P_0_1"
+				(rectangle
+					(start -3.302 0.762)
+					(end 3.302 -0.762)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6589,18 +6539,6 @@
 		(uuid "f4fba60b-79ba-4d89-a289-62a4dc9fc3b1")
 	)
 	(junction
-		(at 184.15 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "017d17f7-2d2f-4a0f-94bc-687af7f97b51")
-	)
-	(junction
-		(at 209.55 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0474815b-d1ab-4e95-bd96-fe6b0b2aaaad")
-	)
-	(junction
 		(at 105.41 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6637,12 +6575,6 @@
 		(uuid "163d99ad-3493-4877-851f-f8703b3099fe")
 	)
 	(junction
-		(at 248.92 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "188d6ba8-95ef-4a63-ab9a-e6aeeb072f9e")
-	)
-	(junction
 		(at 123.19 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6671,12 +6603,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c5b7318-33f6-4c8e-b4a6-3ae5dfdc3e44")
-	)
-	(junction
-		(at 209.55 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2fb5291a-7ada-4010-8af9-c8af911bee17")
 	)
 	(junction
 		(at 88.9 152.4)
@@ -6709,28 +6635,10 @@
 		(uuid "46991ed9-b7bf-4200-9a73-9d69989b8c21")
 	)
 	(junction
-		(at 274.32 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "470014e9-5983-4d9f-9cc3-e185af9eb38d")
-	)
-	(junction
-		(at 209.55 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "49b45b26-0139-40cf-900f-09c927d481d3")
-	)
-	(junction
 		(at 43.18 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4a45964f-3f6d-46c7-9089-c2ba0f943971")
-	)
-	(junction
-		(at 274.32 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5080ef83-2f8e-46a8-9986-5da10db2733c")
 	)
 	(junction
 		(at 113.03 121.92)
@@ -6739,22 +6647,10 @@
 		(uuid "59ee30b1-4070-429c-9ec7-350e377ff54b")
 	)
 	(junction
-		(at 184.15 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "60930e9f-04a2-4792-a11d-11ed9bf6c379")
-	)
-	(junction
 		(at 116.84 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6902b76e-714f-4193-b893-3597166d1f4f")
-	)
-	(junction
-		(at 248.92 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6eca7175-c971-433c-ba6c-6b8ee1a7f42b")
 	)
 	(junction
 		(at 63.5 99.06)
@@ -6779,12 +6675,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "851309bc-d12f-4ab0-8a24-c26b3869565b")
-	)
-	(junction
-		(at 184.15 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b5caa50-1bbf-4677-bc8c-8ce0816b6261")
 	)
 	(junction
 		(at 40.64 99.06)
@@ -6841,34 +6731,16 @@
 		(uuid "adc3f1c6-01b0-45e6-8bca-6299ce4ebfc2")
 	)
 	(junction
-		(at 274.32 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "afe14992-9062-4e9b-a355-30a5e3515871")
-	)
-	(junction
 		(at 101.6 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aff8fdc7-8211-4679-85ac-5e5ba6d66171")
 	)
 	(junction
-		(at 248.92 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bc24e2b2-457e-4227-8ee2-f94a39b00f37")
-	)
-	(junction
 		(at 34.29 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "be2656c4-948f-4cc8-9df4-95ca6a1fd1ac")
-	)
-	(junction
-		(at 184.15 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c8bccece-4aa2-42dd-a2f6-a092ff6bbc8a")
 	)
 	(junction
 		(at 71.12 152.4)
@@ -6899,12 +6771,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e849ce57-d47c-4198-b7b1-8bdd9a3d2cb6")
-	)
-	(junction
-		(at 209.55 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ec6881ec-8238-468b-a3d0-1997c55e2f21")
 	)
 	(junction
 		(at 110.49 72.39)
@@ -7004,6 +6870,16 @@
 	)
 	(wire
 		(pts
+			(xy 274.32 124.46) (xy 274.32 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "058b99ea-d057-420d-99a4-82e65c5e714c")
+	)
+	(wire
+		(pts
 			(xy 57.15 86.36) (xy 69.85 86.36)
 		)
 		(stroke
@@ -7041,16 +6917,6 @@
 			(type default)
 		)
 		(uuid "0af0a083-acfe-4b16-b0c4-ace9c5fe97fe")
-	)
-	(wire
-		(pts
-			(xy 184.15 132.08) (xy 184.15 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b201f8f-fe60-416e-811b-7480de52b5eb")
 	)
 	(wire
 		(pts
@@ -7144,6 +7010,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 120.65) (xy 184.15 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20f6a310-f6d4-44a2-9d87-c65b0748ba10")
+	)
+	(wire
+		(pts
 			(xy 52.07 137.16) (xy 52.07 142.24)
 		)
 		(stroke
@@ -7174,6 +7050,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 124.46) (xy 248.92 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25acc8f5-19f1-4243-9184-d8def721293b")
+	)
+	(wire
+		(pts
 			(xy 57.15 60.96) (xy 50.8 60.96)
 		)
 		(stroke
@@ -7181,16 +7067,6 @@
 			(type default)
 		)
 		(uuid "293115c5-29b0-4a0b-9077-71ae2ece8d14")
-	)
-	(wire
-		(pts
-			(xy 184.15 106.68) (xy 184.15 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29644e2a-5ba0-45bc-8f81-2039389873f5")
 	)
 	(wire
 		(pts
@@ -7211,16 +7087,6 @@
 			(type default)
 		)
 		(uuid "2a3ed5f7-44f8-452b-83b9-a2dd2522538e")
-	)
-	(wire
-		(pts
-			(xy 274.32 123.19) (xy 274.32 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ab2509a-1ee9-4a25-90e7-39c93f7b92f4")
 	)
 	(wire
 		(pts
@@ -7294,7 +7160,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 132.08) (xy 209.55 134.62)
+			(xy 201.93 133.35) (xy 201.93 134.62)
 		)
 		(stroke
 			(width 0)
@@ -7384,6 +7250,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 107.95) (xy 184.15 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a17ebfa-2c39-4b67-a7d1-f2b9c1919f1c")
+	)
+	(wire
+		(pts
 			(xy 88.9 152.4) (xy 101.6 152.4)
 		)
 		(stroke
@@ -7404,27 +7280,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 93.98) (xy 184.15 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a16ee25-6dad-4bd1-ae0c-51d15b23d138")
-	)
-	(wire
-		(pts
-			(xy 209.55 119.38) (xy 209.55 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b36d3ca-234e-4f66-a0b0-be8617b62ccf")
-	)
-	(wire
-		(pts
-			(xy 209.55 106.68) (xy 209.55 109.22)
+			(xy 201.93 107.95) (xy 201.93 109.22)
 		)
 		(stroke
 			(width 0)
@@ -7484,6 +7340,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 120.65) (xy 184.15 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "545908a7-0bca-4738-8001-36f34a292c65")
+	)
+	(wire
+		(pts
 			(xy 71.12 139.7) (xy 71.12 152.4)
 		)
 		(stroke
@@ -7531,6 +7397,16 @@
 			(type default)
 		)
 		(uuid "59c6c9b1-2df1-44d0-95e9-d67d381bb386")
+	)
+	(wire
+		(pts
+			(xy 266.7 111.76) (xy 274.32 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b6b1b4e-aed5-4f6b-a291-018692c33088")
 	)
 	(wire
 		(pts
@@ -7604,13 +7480,33 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 95.25) (xy 274.32 97.79)
+			(xy 256.54 96.52) (xy 248.92 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6ef22e5e-5e14-49a2-a3fe-1b12b4019e87")
+		(uuid "6ab5a0c6-ee9d-49f5-b386-4fade89b518a")
+	)
+	(wire
+		(pts
+			(xy 274.32 111.76) (xy 274.32 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "712f148f-bb4b-4296-82ca-cde903ac8ab6")
+	)
+	(wire
+		(pts
+			(xy 256.54 124.46) (xy 248.92 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "721fbe4a-4717-4566-913b-89bfb7d5464b")
 	)
 	(wire
 		(pts
@@ -7664,7 +7560,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 121.92) (xy 217.17 121.92)
+			(xy 201.93 121.92) (xy 217.17 121.92)
 		)
 		(stroke
 			(width 0)
@@ -7701,6 +7597,16 @@
 			(type default)
 		)
 		(uuid "7fbc7daa-e321-4d16-bc5f-7e21f55b93d4")
+	)
+	(wire
+		(pts
+			(xy 248.92 111.76) (xy 248.92 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82e54406-37e4-401f-bf04-7f92fb4438e9")
 	)
 	(wire
 		(pts
@@ -7744,6 +7650,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 133.35) (xy 184.15 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8aa05c8a-2c4d-4fe6-9362-7a67113ff045")
+	)
+	(wire
+		(pts
 			(xy 34.29 60.96) (xy 40.64 60.96)
 		)
 		(stroke
@@ -7784,16 +7700,6 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 110.49) (xy 274.32 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f988810-b4cb-428b-8ae4-8c272e7667fa")
-	)
-	(wire
-		(pts
 			(xy 66.04 60.96) (xy 57.15 60.96)
 		)
 		(stroke
@@ -7824,16 +7730,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 95.25) (xy 248.92 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96a69bf0-f533-4a38-889a-179269bee0a2")
-	)
-	(wire
-		(pts
 			(xy 140.97 77.47) (xy 140.97 99.06)
 		)
 		(stroke
@@ -7861,6 +7757,26 @@
 			(type default)
 		)
 		(uuid "999f7c94-3f77-4592-aee4-f7f0d15cbd59")
+	)
+	(wire
+		(pts
+			(xy 266.7 96.52) (xy 274.32 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b551665-ffa5-4049-b20c-9bcaa0451af7")
+	)
+	(wire
+		(pts
+			(xy 191.77 107.95) (xy 184.15 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c4e6726-7286-494d-ba5b-3aa693490c9f")
 	)
 	(wire
 		(pts
@@ -7944,13 +7860,13 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 93.98) (xy 209.55 96.52)
+			(xy 191.77 95.25) (xy 184.15 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a8358387-c3e4-453a-b277-47c477f5d349")
+		(uuid "a7e9e764-cc3b-4a8c-b0f2-b9165c9f1af8")
 	)
 	(wire
 		(pts
@@ -8014,7 +7930,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 119.38) (xy 184.15 121.92)
+			(xy 191.77 120.65) (xy 191.77 121.92)
 		)
 		(stroke
 			(width 0)
@@ -8064,7 +7980,17 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 134.62) (xy 217.17 134.62)
+			(xy 266.7 124.46) (xy 274.32 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf59939a-bf19-4c2e-bebc-24cff55eb970")
+	)
+	(wire
+		(pts
+			(xy 201.93 134.62) (xy 217.17 134.62)
 		)
 		(stroke
 			(width 0)
@@ -8074,23 +8000,33 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 110.49) (xy 248.92 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3395b03-1da9-4842-b79d-e4d93a782f43")
-	)
-	(wire
-		(pts
-			(xy 209.55 109.22) (xy 217.17 109.22)
+			(xy 201.93 109.22) (xy 217.17 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c4ec5821-fc4f-42d4-a9fb-f87bd337aa06")
+	)
+	(wire
+		(pts
+			(xy 201.93 95.25) (xy 209.55 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6779d28-7304-4495-bd5c-0a46c87b7f69")
+	)
+	(wire
+		(pts
+			(xy 209.55 95.25) (xy 209.55 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c700138d-3842-4676-b5c6-0bcce7851855")
 	)
 	(wire
 		(pts
@@ -8134,13 +8070,13 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 123.19) (xy 248.92 125.73)
+			(xy 184.15 95.25) (xy 184.15 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cd37ad1a-0029-4f1d-81df-b658f232b2f9")
+		(uuid "cdab9d32-1de9-44c1-8f20-61b6ae043e3d")
 	)
 	(wire
 		(pts
@@ -8174,6 +8110,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 133.35) (xy 184.15 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d98654b4-c338-462b-8d0f-934db011b6f7")
+	)
+	(wire
+		(pts
 			(xy 149.86 99.06) (xy 140.97 99.06)
 		)
 		(stroke
@@ -8201,6 +8147,16 @@
 			(type default)
 		)
 		(uuid "df046313-400d-411e-94a1-9a4eef833ba5")
+	)
+	(wire
+		(pts
+			(xy 248.92 96.52) (xy 248.92 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0cb4244-1eda-46dd-87c5-b8e6ce8fd0ab")
 	)
 	(wire
 		(pts
@@ -8294,6 +8250,16 @@
 	)
 	(wire
 		(pts
+			(xy 274.32 96.52) (xy 274.32 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef0038ff-c4ee-4c35-acf1-3e5023246776")
+	)
+	(wire
+		(pts
 			(xy 132.08 60.96) (xy 132.08 69.85)
 		)
 		(stroke
@@ -8321,6 +8287,16 @@
 			(type default)
 		)
 		(uuid "f24cc141-085c-4af0-980c-6fb24f4b1222")
+	)
+	(wire
+		(pts
+			(xy 256.54 111.76) (xy 248.92 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6df9f83-e094-4fc0-8ad9-2643f364eac4")
 	)
 	(wire
 		(pts
@@ -8972,6 +8948,107 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCImport:XF-507P")
+		(at 261.62 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0af60b27-7344-459e-be3c-269a6b30351d")
+		(property "Reference" "F7"
+			(at 261.62 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XF-507P"
+			(at 261.62 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCImport:XF-507P"
+			(at 261.62 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210825/7557D7920E5607B38A356D661AFA8BB4.pdf"
+			(at 261.62 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 261.62 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C668119"
+			(at 261.62 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XFCN(兴飞)"
+			(at 261.62 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "XF-507P"
+			(at 261.62 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "30f7e666-4388-4b19-b124-e22fa0790280")
+		)
+		(pin "2"
+			(uuid "5cb92b7d-08f3-47e4-ac97-897158a22126")
+		)
+		(pin "3"
+			(uuid "931f718f-1946-440b-88e0-3c99514df252")
+		)
+		(pin "4"
+			(uuid "ff1958f9-c9c8-459e-ac89-e6e186d173c9")
+		)
+		(instances
+			(project "pixel_blit"
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
+					(reference "F7")
 					(unit 1)
 				)
 			)
@@ -10296,6 +10373,107 @@
 		)
 	)
 	(symbol
+		(lib_id "JLCImport:XF-507P")
+		(at 196.85 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3281e82b-d7fa-4c0e-b0b2-5286e5bb84c1")
+		(property "Reference" "F1"
+			(at 196.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XF-507P"
+			(at 196.85 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCImport:XF-507P"
+			(at 196.85 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210825/7557D7920E5607B38A356D661AFA8BB4.pdf"
+			(at 196.85 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C668119"
+			(at 196.85 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XFCN(兴飞)"
+			(at 196.85 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "XF-507P"
+			(at 196.85 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "25808670-930c-415a-ad5d-cd31362a68a5")
+		)
+		(pin "2"
+			(uuid "23bd517a-c810-4c99-9a42-5986532ba60a")
+		)
+		(pin "3"
+			(uuid "833bdd4f-75a7-4083-b166-aa32aa2fd8e3")
+		)
+		(pin "4"
+			(uuid "4b3dca42-b231-4294-a4c4-c8abb95bae37")
+		)
+		(instances
+			(project ""
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "EasyEDA:BZT52C15V")
 		(at 29.21 60.96 180)
 		(unit 1)
@@ -10367,6 +10545,107 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCImport:XF-507P")
+		(at 261.62 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37dc463d-6e28-474e-bd33-8b873eb8251b")
+		(property "Reference" "F5"
+			(at 261.62 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XF-507P"
+			(at 261.62 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCImport:XF-507P"
+			(at 261.62 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210825/7557D7920E5607B38A356D661AFA8BB4.pdf"
+			(at 261.62 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 261.62 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C668119"
+			(at 261.62 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XFCN(兴飞)"
+			(at 261.62 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "XF-507P"
+			(at 261.62 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e21f595-9e44-4a0f-8524-d8fea1f773ef")
+		)
+		(pin "2"
+			(uuid "1d7b7b3a-90c2-4627-b552-7c83604cab3a")
+		)
+		(pin "3"
+			(uuid "68341cee-4beb-4d07-86a3-bb96eb02db32")
+		)
+		(pin "4"
+			(uuid "21b314ec-d615-4546-a48d-f0f11b0c3173")
+		)
+		(instances
+			(project "pixel_blit"
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
+					(reference "F5")
 					(unit 1)
 				)
 			)
@@ -11358,89 +11637,6 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:3557-2")
-		(at 196.85 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4cd6a771-d84b-4b46-adc2-3d3cf49afc0b")
-		(property "Reference" "F4"
-			(at 196.85 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3557-2"
-			(at 196.85 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:FUSE-TH_4P-L19.8-W6.7_3557-2"
-			(at 196.85 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 196.85 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 196.85 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C352820"
-			(at 196.85 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b7febdff-97b0-4851-b739-8902d070fd27")
-		)
-		(pin "2"
-			(uuid "05081e6d-00c6-43d9-b4ed-b6372dde0903")
-		)
-		(pin "3"
-			(uuid "22ac1feb-c5b2-4b3b-ba35-1c6ee6b3cc35")
-		)
-		(pin "4"
-			(uuid "c7e8ee14-fe1a-41f4-94a6-4e9ed11325a3")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "F4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PixelBlit:0402,100kΩ")
 		(at 55.88 142.24 90)
 		(unit 1)
@@ -12160,6 +12356,107 @@
 		)
 	)
 	(symbol
+		(lib_id "JLCImport:XF-507P")
+		(at 196.85 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f61ffeb-258e-4305-9296-55ec56297721")
+		(property "Reference" "F2"
+			(at 196.85 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XF-507P"
+			(at 196.85 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCImport:XF-507P"
+			(at 196.85 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210825/7557D7920E5607B38A356D661AFA8BB4.pdf"
+			(at 196.85 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C668119"
+			(at 196.85 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XFCN(兴飞)"
+			(at 196.85 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "XF-507P"
+			(at 196.85 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a30dde06-1bcd-43db-831b-bbb04b4d87ef")
+		)
+		(pin "2"
+			(uuid "6cbbc617-e164-4fd9-acec-572535dc7132")
+		)
+		(pin "3"
+			(uuid "9f6ec2ae-9cc7-4b37-966a-9310e6e97be6")
+		)
+		(pin "4"
+			(uuid "70861de5-4727-45de-ac14-b7322b239e8f")
+		)
+		(instances
+			(project "pixel_blit"
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PixelBlit:0603,10uF")
 		(at 101.6 146.05 0)
 		(unit 1)
@@ -12638,6 +12935,107 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "#PWR0129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCImport:XF-507P")
+		(at 196.85 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "782ddd4a-d08f-4148-ac37-7bb6feb5cce1")
+		(property "Reference" "F4"
+			(at 196.85 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XF-507P"
+			(at 196.85 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCImport:XF-507P"
+			(at 196.85 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210825/7557D7920E5607B38A356D661AFA8BB4.pdf"
+			(at 196.85 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C668119"
+			(at 196.85 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XFCN(兴飞)"
+			(at 196.85 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "XF-507P"
+			(at 196.85 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "51e6dcef-fec3-42eb-8428-d4d2105b076d")
+		)
+		(pin "2"
+			(uuid "f27ab114-42df-4dbe-933f-0dbc81e8704a")
+		)
+		(pin "3"
+			(uuid "b7ac4b5a-182c-430c-9971-e9834359d066")
+		)
+		(pin "4"
+			(uuid "efce1cc7-33bb-4e45-904d-58001f6e2e82")
+		)
+		(instances
+			(project "pixel_blit"
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
+					(reference "F4")
 					(unit 1)
 				)
 			)
@@ -13210,89 +13608,6 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:3557-2")
-		(at 196.85 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "91056ea3-3318-4917-aa5a-06eb9cb62ac6")
-		(property "Reference" "F2"
-			(at 196.85 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3557-2"
-			(at 196.85 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:FUSE-TH_4P-L19.8-W6.7_3557-2"
-			(at 196.85 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 196.85 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 196.85 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C352820"
-			(at 196.85 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ed1b584f-793e-42ea-84a9-95f658a41dca")
-		)
-		(pin "2"
-			(uuid "72cd5763-409c-4932-ad10-e1a27ecb7ab7")
-		)
-		(pin "3"
-			(uuid "5cee2b7f-92c6-422a-bd5b-4384224d3f03")
-		)
-		(pin "4"
-			(uuid "9e4dd210-d703-498d-a020-50bdd26a645f")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "F2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PixelBlit:LED,0603,Red")
 		(at 128.27 137.16 90)
 		(unit 1)
@@ -13511,89 +13826,6 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA:3557-2")
-		(at 196.85 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96a130a5-afb7-4590-a678-9b3bf6667e10")
-		(property "Reference" "F3"
-			(at 196.85 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3557-2"
-			(at 196.85 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:FUSE-TH_4P-L19.8-W6.7_3557-2"
-			(at 196.85 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 196.85 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 196.85 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C352820"
-			(at 196.85 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "15e84ed8-b680-4177-ae2f-eb96ec358420")
-		)
-		(pin "2"
-			(uuid "4fccb6f8-aa48-424b-8229-853a3cc8f60d")
-		)
-		(pin "3"
-			(uuid "efc106d5-dfe2-450e-b2e2-9485d0f17596")
-		)
-		(pin "4"
-			(uuid "b6828d98-fbca-42c8-beb0-a29d41f2ea12")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "F3")
 					(unit 1)
 				)
 			)
@@ -14012,33 +14244,33 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:3557-2")
-		(at 196.85 95.25 0)
+		(lib_id "JLCImport:XF-507P")
+		(at 196.85 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ab30f4b6-9afb-4a7b-a6f3-30b29cac2f0b")
-		(property "Reference" "F1"
-			(at 196.85 88.9 0)
+		(uuid "a85fe39a-04f9-4913-a2bc-f599957d099f")
+		(property "Reference" "F3"
+			(at 196.85 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "3557-2"
-			(at 196.85 91.44 0)
+		(property "Value" "XF-507P"
+			(at 196.85 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:FUSE-TH_4P-L19.8-W6.7_3557-2"
-			(at 196.85 104.14 0)
+		(property "Footprint" "JLCImport:XF-507P"
+			(at 196.85 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14046,8 +14278,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 196.85 95.25 0)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210825/7557D7920E5607B38A356D661AFA8BB4.pdf"
+			(at 196.85 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14056,7 +14288,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 196.85 95.25 0)
+			(at 196.85 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14064,8 +14296,26 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C352820"
-			(at 196.85 106.68 0)
+		(property "LCSC" "C668119"
+			(at 196.85 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XFCN(兴飞)"
+			(at 196.85 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "XF-507P"
+			(at 196.85 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14074,21 +14324,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "1d37c7dd-3a57-4fcf-a59e-973dc1d9b2e3")
+			(uuid "e3ce08b8-059d-41e6-a089-53dc0f8d8b88")
 		)
 		(pin "2"
-			(uuid "0a77d88b-fb8c-4d3f-9df1-c7667443a7ab")
+			(uuid "1150e536-e4ad-4613-9d14-0319b3d46b86")
 		)
 		(pin "3"
-			(uuid "71a750f0-d0ed-481b-9657-2d186931acad")
+			(uuid "69ad532f-0ad4-437e-a037-2edfe1b4b7c7")
 		)
 		(pin "4"
-			(uuid "e58ed371-88cf-4216-8de2-0db9c23b0c79")
+			(uuid "9ff4abb3-c2ca-4d99-9a84-50f6124590ff")
 		)
 		(instances
-			(project ""
+			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "F1")
+					(reference "F3")
 					(unit 1)
 				)
 			)
@@ -14155,89 +14405,6 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "#PWR0116")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA:3557-2")
-		(at 261.62 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b185dce9-8481-4e28-ad8b-4925e06ebbb8")
-		(property "Reference" "F7"
-			(at 261.62 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3557-2"
-			(at 261.62 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:FUSE-TH_4P-L19.8-W6.7_3557-2"
-			(at 261.62 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 261.62 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 261.62 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C352820"
-			(at 261.62 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d5e83a4c-8d9f-475e-a496-07652f824b86")
-		)
-		(pin "2"
-			(uuid "5911dc88-994f-49cc-9c8a-06ba927aef39")
-		)
-		(pin "3"
-			(uuid "de1262cc-57a1-4566-8056-83d2eb0efd56")
-		)
-		(pin "4"
-			(uuid "20a44dfc-d1a0-4763-a0bb-db49de424c8b")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "F7")
 					(unit 1)
 				)
 			)
@@ -15594,89 +15761,6 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:3557-2")
-		(at 261.62 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d702f63a-082c-49aa-b6e7-07ef829b5f8f")
-		(property "Reference" "F6"
-			(at 261.62 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3557-2"
-			(at 261.62 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:FUSE-TH_4P-L19.8-W6.7_3557-2"
-			(at 261.62 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 261.62 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 261.62 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C352820"
-			(at 261.62 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "80414601-dcef-4205-b1bf-b60e864eac44")
-		)
-		(pin "2"
-			(uuid "2e3e34cf-f1a2-4ba8-a27a-50102b082d6e")
-		)
-		(pin "3"
-			(uuid "c763faaf-e136-4ff1-8dd2-1c1e9aab7a09")
-		)
-		(pin "4"
-			(uuid "312a62c0-94ba-4271-945d-08b30b09a026")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "F6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PixelBlit:+12V")
 		(at 184.15 106.68 0)
 		(unit 1)
@@ -16486,33 +16570,33 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:3557-2")
-		(at 261.62 96.52 0)
+		(lib_id "JLCImport:XF-507P")
+		(at 261.62 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e65eb4be-9dfc-4ee4-ac2e-3e1685cf3974")
-		(property "Reference" "F5"
-			(at 261.62 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3557-2"
-			(at 261.62 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:FUSE-TH_4P-L19.8-W6.7_3557-2"
+		(uuid "eb4c9a52-3915-47b0-a2be-ed280aaec799")
+		(property "Reference" "F6"
 			(at 261.62 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XF-507P"
+			(at 261.62 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCImport:XF-507P"
+			(at 261.62 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16520,8 +16604,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 261.62 96.52 0)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210825/7557D7920E5607B38A356D661AFA8BB4.pdf"
+			(at 261.62 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16530,7 +16614,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 261.62 96.52 0)
+			(at 261.62 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16538,8 +16622,26 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C352820"
-			(at 261.62 107.95 0)
+		(property "LCSC" "C668119"
+			(at 261.62 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "XFCN(兴飞)"
+			(at 261.62 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part" "XF-507P"
+			(at 261.62 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16548,21 +16650,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "8aab5f09-2b68-4152-b869-8461390ec2ee")
+			(uuid "8454fbd7-399a-4feb-9489-dad3fa821f06")
 		)
 		(pin "2"
-			(uuid "2313eb29-2e77-4ec6-b0cb-a92fba8fadca")
+			(uuid "80682f36-5bee-4e12-817b-11e780292365")
 		)
 		(pin "3"
-			(uuid "788c28a8-ebd8-4ee2-8dde-745e902ce4ff")
+			(uuid "d759cac3-8cdd-4481-9114-b89c6748d142")
 		)
 		(pin "4"
-			(uuid "532631ba-5ac8-4c77-b008-3fad883f4af3")
+			(uuid "f7dc39ae-8b12-4ef1-80c3-a2388ac3f2fb")
 		)
 		(instances
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "F5")
+					(reference "F6")
 					(unit 1)
 				)
 			)
