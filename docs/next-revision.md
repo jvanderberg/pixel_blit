@@ -62,11 +62,27 @@ especially two claiming ID 0.
 - Plastic enclosure only. A metal box kills Wi-Fi.
 - Bulk capacitance at the module's supply pin for transmit current spikes, per
   the RM2 datasheet.
-- Pins: the radio's SPI link needs 4 GPIOs (power enable, data, chip select,
-  clock). Use **GPIO 32 to 35**, freed by the LVDS removal. The Pico 2 W uses
-  GPIO 23, 24, 25 and 29, which are LED string outputs on this board, so the
-  pins must be set in the board header. Confirm in the Pico SDK version in use
-  that the CYW43 pins are configurable for a custom board before layout.
+- Pins: the radio's SPI link needs 4 GPIOs: power enable (WL_REG_ON), one
+  shared data line (data out, data in and host wake, as on the Pico 2 W), chip
+  select and clock. Use **GPIO 32 to 35**, freed by the LVDS removal. The
+  Pico 2 W uses GPIO 23, 24, 25 and 29, which are LED string outputs here.
+- Checked in Pico SDK 2.2.0 (`pico_cyw43_driver/cyw43_bus_pio_spi.c` and
+  `boards/pico2_w.h`): the pins are set per board with
+  `CYW43_DEFAULT_PIN_WL_REG_ON`, `_DATA_OUT`, `_DATA_IN`, `_HOST_WAKE`,
+  `_CLOCK` and `_CS` in our board header. The one rule (a `static_assert`) is
+  that clock and data sit in one PIO GPIO window: all below 32, or all 16 or
+  above. GPIO 32 to 35 meets it. Power enable and chip select are plain GPIOs
+  with no restriction.
+- The driver claims its own PIO with `pio_claim_free_sm_and_add_program_for_gpio_range`,
+  which searches PIO2 first and can set a free PIO's GPIO base to 16. So the
+  radio takes PIO2 at base 16, and the LED output keeps its PIO at base 0
+  (GPIO 0 to 31). The LED driver uses the same claim function, which skips a
+  PIO whose base doesn't cover its pins. Bring Wi-Fi up after the LED driver
+  or before, either works, but nothing else may hold PIO2.
+- Follow the RM2 datasheet's reference circuit for the shared data line.
+- Before ordering boards, bench-test the pin choice: an RM2 module wired to
+  GPIO 32 to 35 on an RP2350B board (for example `~/git/pcb_try`), running the
+  Pico SDK Wi-Fi scan example with our board header.
 
 ### Remove: zone link fuses
 
@@ -187,7 +203,6 @@ Related firmware work that does not depend on this board:
 ## Open questions
 
 - Does the RM2 bring out a CYW43439 GPIO for a status LED?
-- Are the CYW43 pins configurable in the Pico SDK version in use?
 - 12V sense alone, or also a UVLO divider on the TPS63070 EN pin?
 - Inner copper weight: the stackup says 1 oz, but JLC's 4-layer default is
   0.5 oz on inner layers. Confirm what is ordered.
