@@ -68,6 +68,20 @@ especially two claiming ID 0.
   pins must be set in the board header. Confirm in the Pico SDK version in use
   that the CYW43 pins are configurable for a custom board before layout.
 
+### Remove: zone link fuses
+
+- F5, F6 and F7 (XF-507P holders linking Z1 to Z2, Z2 to Z3 and Z3 to Z4).
+  They let one supply feed every zone, but they are easy to misuse: fitted
+  with two supplies connected, they tie the supplies in parallel, and in
+  single-supply mode the whole board's current passes through F1 and the
+  chain, so it is capped at one fuse's rating.
+- Each input keeps its own fuse (F1 to F4) and zone. To run several zones from
+  one supply, the user wires the supply to each input they use. The README
+  should recommend a separate wire from the supply to each input (a star), not
+  a jumper from terminal to terminal, so no single terminal carries every
+  zone's current.
+- The diodes D4 to D7 stay: the logic runs from whichever zone has power.
+
 ### Change: 3.3V regulator
 
 - The ME6217C33 is rated 300 mA. The RP2350, SD card and display already use a
@@ -98,7 +112,7 @@ especially two claiming ID 0.
 ### Keep
 
 - 32 outputs: SN74LVC8T245 level shifters, 47 ohm series resistors, PTC per
-  port, four 12V zones.
+  port, four 12V zones, each with its own input and blade fuse.
 - microSD on GPIO 36 to 39. Consider raising the SPI clock from 12.5 MHz (a
   firmware change) before anything else, for faster reads and uploads.
 - IR receiver on GPIO 42, with SW2 and CN1.
