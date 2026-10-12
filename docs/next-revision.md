@@ -98,6 +98,17 @@ especially two claiming ID 0.
   zone's current.
 - The diodes D4 to D7 stay: the logic runs from whichever zone has power.
 
+### Add: blown-fuse LEDs
+
+- One LED with a series resistor across each input fuse (F1 to F4), anode on
+  the input side. With the fuse intact both ends sit at the same voltage and
+  the LED is dark. When the fuse blows, the input side stays at 12V and the
+  zone side is pulled toward ground through its strings, so the LED lights.
+  With no supply on that input it stays dark, as it should.
+- About 4.7k for roughly 2 mA at 12V. In the blown state that 2 mA flows into
+  the zone's strings, which is harmless. No GPIO needed.
+- Place each LED next to its fuse, so a blown zone is visible at a glance.
+
 ### Change: 3.3V regulator
 
 - The ME6217C33 is rated 300 mA. The RP2350, SD card and PSRAM already use a
