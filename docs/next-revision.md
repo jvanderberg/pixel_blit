@@ -39,7 +39,7 @@ written October 2026. Nothing here is in the KiCad files yet.
   uploads. ESPixelStick implements all three on a small chip with an SD card.
   Copy its packet formats and endpoints from source rather than from memory.
 
-Board ID is set in software (web UI or the panel menu). The DIP switch idea is
+Board ID is set in software (web UI). The DIP switch idea is
 dropped. The web UI should warn when two boards claim the same ID, and
 especially two claiming ID 0.
 
@@ -100,7 +100,7 @@ especially two claiming ID 0.
 
 ### Change: 3.3V regulator
 
-- The ME6217C33 is rated 300 mA. The RP2350, SD card and display already use a
+- The ME6217C33 is rated 300 mA. The RP2350, SD card and PSRAM already use a
   good share of that, and Wi-Fi transmit adds spikes of a few hundred mA. Expect
   brownouts and resets while transmitting if it stays.
 - Use a 3.3V buck converter from the 5V rail, around 1 A. If it must stay
@@ -108,22 +108,32 @@ especially two claiming ID 0.
   about 0.85 W, too much for SOT-23-5. The Pico 2 W uses a switching regulator
   rated around 800 mA for this reason.
 
-### Add: 12V rail sense
+### Power-up: wait, don't sense
 
 - The TPS63070 buck-boost regulates 5V from about 2V of input, so the RP2350
   boots while the pixel 12V rail is still rising. Strings that get data during
   that ramp come up dark or half lit until the data restarts (October 2026,
-  Halloween matrix). The firmware currently holds output for 2 s after boot as a
-  stopgap; it has no way to see the rail.
-- Divider from +12V_SYS to **GPIO 44 (ADC4)**, freed by removing DATA_IN_EN.
-  Example: 100k over 22k gives 2.16V at 12V and 2.7V at the 15V zener clamp,
-  with 100 nF at the ADC pin. Disable the pad pulls on that pin.
-- Firmware waits for the rail to pass a threshold (around 11V) before the first
-  frame, and can report brownouts.
-- Alternative or addition: a divider on the TPS63070 EN pin so 5V only starts
-  once the input passes about 9V. No firmware needed, but the board would then
-  ignore USB-only power for its logic, which matters for bench testing. Check
-  the EN threshold in the datasheet before choosing values.
+  Halloween matrix).
+- No 12V sense or power-good hardware. The firmware holds the LED outputs idle
+  for a fixed time after boot (2 s today, `PIXEL_POWER_SETTLE_MS` in
+  `src/core1_task.c`), which is long enough for the supply to settle.
+
+### Remove: front-panel header
+
+- J39 (display I2C, encoder and back button). The web UI, the IR remote, the
+  on-board button and status LED, and USB serial cover what it did. Wi-Fi setup
+  uses the access-point page on a phone. This frees GPIO 40, 41, 43, 45, 46
+  and 47.
+
+### Add: PSRAM
+
+- 8 MB QSPI PSRAM (for example APS6404L) on the flash's QSPI lines, with its
+  chip select on **GPIO 47**, one of the few pins that can carry the RP2350's
+  second QSPI chip select (XIP_CS1). Check the pin options in the RP2350
+  datasheet before layout. The Pimoroni Pico Plus 2 uses the same arrangement.
+- Uses: buffering an upload while a show plays, decompressing xLights'
+  zstd-compressed FSEQs (whose blocks don't fit in internal RAM), and caching
+  short shows.
 
 ### Keep
 
@@ -132,22 +142,18 @@ especially two claiming ID 0.
 - microSD on GPIO 36 to 39. Consider raising the SPI clock from 12.5 MHz (a
   firmware change) before anything else, for faster reads and uploads.
 - IR receiver on GPIO 42, with SW2 and CN1.
-- J39 front-panel header: display (I2C on GPIO 46 and 47) plus encoder and back
-  button (GPIO 40, 41, 43, 45). The panel becomes optional: useful for showing
-  the IP address, Wi-Fi status, board ID, the current show and frame, and SD or
-  config errors, and for local control. Wi-Fi setup is easier from a phone.
 - USB-C, BOOTSEL (SW1) and reset, for flashing and recovery.
 
 ### Add: on-board button and status LED
 
-No GPIO is left once the radio and 12V sense are in, so:
-
-- **Button:** wire it in parallel with the panel's push button (PSH, GPIO 41).
-  Press: play or next show. Hold at power-up: clear Wi-Fi settings and start the
-  setup access point.
-- **Status LED:** the Pico 2 W drives its LED from a CYW43439 GPIO (WL_GPIO0).
-  If the RM2 brings that pin out, use it for a status LED. Otherwise, choose
-  between giving up a panel line and doing without. Check the RM2 pinout.
+- **Status LED:** a plain common-anode or common-cathode RGB LED on **GPIO 40,
+  41 and 43** with a resistor each, driven by PWM. No level shifting, unlike an
+  addressable LED. Setup mode: blinking blue. Connected: green. Playing: slow
+  pulse. SD card or config error: red.
+- **Button:** on **GPIO 44**. Press: play or next show. Hold at power-up: clear
+  Wi-Fi settings and start the setup access point.
+- **Spare:** GPIO 45 and 46. Bring them to test pads or a small header for
+  later use. GPIO 45 is ADC-capable (ADC5).
 
 ## GPIO map
 
@@ -156,10 +162,11 @@ No GPIO is left once the radio and 12V sense are in, so:
 | 0 to 31 | LED strings | LED strings |
 | 32 to 35 | LVDS HS_DATA0 to 3 | RM2 Wi-Fi |
 | 36 to 39 | microSD | microSD |
-| 40, 41, 43, 45 | Panel: back, push, encoder B, encoder A | Same (on-board button in parallel with 41) |
+| 40, 41, 43 | Panel: back, push, encoder B | Status LED (R, G, B) |
 | 42 | IR in | IR in |
-| 44 (ADC4) | LVDS DATA_IN_EN | 12V sense |
-| 46, 47 | Display I2C | Display I2C |
+| 44 | LVDS DATA_IN_EN | Button |
+| 45, 46 | Panel encoder A, display I2C data | Spare |
+| 47 | Display I2C clock | PSRAM chip select (XIP_CS1) |
 
 ## Firmware plan
 
@@ -173,10 +180,10 @@ The C firmware's split stays: core 1 drives pixels, core 0 runs everything else
    temporary file and rename.
 3. **Network time and schedule** (board 0, or any standalone board).
 4. **MultiSync:** follow first, then lead (board 0).
-5. **12V sense:** gate the first frame on the rail; replace the fixed 2 s hold.
-6. **DDP input** for live preview.
-7. **FPP discovery and FPP Connect uploads.**
-8. **Over-the-air firmware updates**, with USB as the fallback.
+5. **DDP input** for live preview.
+6. **FPP discovery and FPP Connect uploads.**
+7. **Over-the-air firmware updates**, with USB as the fallback.
+8. **PSRAM:** upload buffering, then zstd FSEQ support if wanted.
 
 Related firmware work that does not depend on this board:
 
@@ -202,9 +209,8 @@ Related firmware work that does not depend on this board:
 
 ## Open questions
 
-- Does the RM2 bring out a CYW43439 GPIO for a status LED?
-- 12V sense alone, or also a UVLO divider on the TPS63070 EN pin?
+- Confirm XIP_CS1 is available on GPIO 47 of the RP2350B.
 - Inner copper weight: the stackup says 1 oz, but JLC's 4-layer default is
   0.5 oz on inner layers. Confirm what is ordered.
-- README.md still lists a DIP switch and LVDS. Update it when this revision
+- README.md still lists a DIP switch, LVDS and the display. Update it when this revision
   lands.
