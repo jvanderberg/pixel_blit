@@ -2,6 +2,15 @@
 
 A  32-channel addressable LED controller based on the Raspberry Pi RP2350B microcontroller.
 
+![Pixel Blit v4.0, 3D render](docs/images/pixel_blit_3d.png)
+
+<details>
+<summary>Top view</summary>
+
+![Pixel Blit v4.0, top view](docs/images/pixel_blit_top.png)
+
+</details>
+
 ## Overview
 
 The pixel_blit is designed for controlling large-scale addressable LED installations. It features LVDS networking for daisy-chaining multiple controllers across long cable runs, making it ideal for large lighting installations.

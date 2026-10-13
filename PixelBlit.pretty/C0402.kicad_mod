@@ -177,7 +177,7 @@
 		(uuid "296c181d-2ed6-454e-a57b-e8af43f7ce66")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/C0402_L1.0-W0.5-H0.5.wrl"
+	(model "${KIPRJMOD}/3dmodels/C0402_L1.0-W0.5-H0.5.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

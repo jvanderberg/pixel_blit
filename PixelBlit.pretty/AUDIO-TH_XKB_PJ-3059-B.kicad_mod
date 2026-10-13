@@ -188,7 +188,7 @@
 		(uuid "7f1d667b-e433-429d-bdae-4ef8167f70bb")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/AUDIO-TH_XKB_PJ-3059-B.wrl"
+	(model "${KIPRJMOD}/3dmodels/AUDIO-TH_XKB_PJ-3059-B.wrl"
 		(offset
 			(xyz 1.6 0 11.5)
 		)

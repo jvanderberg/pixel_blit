@@ -193,7 +193,7 @@
 		(uuid "656f4cbb-3efa-40f7-a307-e36d428a50ec")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/KEY-SMD_4P-L4.2-W3.2-H2.5-LS5.1-P2.2.wrl"
+	(model "${KIPRJMOD}/3dmodels/KEY-SMD_4P-L4.2-W3.2-H2.5-LS5.1-P2.2.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

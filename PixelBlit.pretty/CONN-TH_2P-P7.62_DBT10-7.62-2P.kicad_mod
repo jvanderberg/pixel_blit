@@ -205,7 +205,7 @@
 		(uuid "8ac75af5-d774-4b2c-b24f-80eccede82e8")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/CONN-TH_DB7.62-LI-2P.wrl"
+	(model "${KIPRJMOD}/3dmodels/CONN-TH_DB7.62-LI-2P.wrl"
 		(offset
 			(xyz 3.65 -3.2 0.5)
 		)

@@ -279,7 +279,7 @@
 		(uuid "915d81b2-3c15-48f6-bd28-f7b706ec8e0d")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/LCSC/EasyEDA.3dshapes/VQFN-HR-15_L3.0-W2.5-H0.9-P0.50-BL_TPS63070RNMR.wrl"
+	(model "${KIPRJMOD}/3dmodels/VQFN-HR-15_L3.0-W2.5-H0.9-P0.50-BL_TPS63070RNMR.wrl"
 		(offset
 			(xyz 0 0.15 0)
 		)

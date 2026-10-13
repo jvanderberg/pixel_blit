@@ -304,7 +304,7 @@
 		(uuid "a857e2c1-a5f1-4982-a200-ddcf8c0e27c8")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/RJ45-TH_L15.9-W15.1-H12.6.wrl"
+	(model "${KIPRJMOD}/3dmodels/RJ45-TH_L15.9-W15.1-H12.6.wrl"
 		(offset
 			(xyz 0 -1.08 6.5)
 		)

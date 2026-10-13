@@ -168,7 +168,7 @@
 		(uuid "1e536592-82f8-44c8-9218-8807476869e9")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/HDR-TH_4P-P2.54-V-M-1.wrl"
+	(model "${KIPRJMOD}/3dmodels/HDR-TH_4P-P2.54-V-M-1.wrl"
 		(offset
 			(xyz 4 -0 0)
 		)

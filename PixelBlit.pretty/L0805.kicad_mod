@@ -239,7 +239,7 @@
 		(uuid "58ee399e-77ae-4f5f-96d8-4c1447871a74")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/LCSC/EasyEDA.3dshapes/R0805_L2.0-W1.3-H0.6.wrl"
+	(model "${KIPRJMOD}/3dmodels/R0805_L2.0-W1.3-H0.6.wrl"
 		(offset
 			(xyz 0 0 0)
 		)

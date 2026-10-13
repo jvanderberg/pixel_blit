@@ -332,7 +332,7 @@
 		(uuid "8e8167ae-a098-48bd-b12d-780d273299c0")
 	)
 	(embedded_fonts no)
-	(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_CDFER_JLCPCB-Kicad-Library/JLCPCB.3dshapes/D_0603.step"
+	(model "${KIPRJMOD}/3dmodels/D_0603.step"
 		(offset
 			(xyz 0 0 0)
 		)

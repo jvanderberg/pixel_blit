@@ -206,7 +206,7 @@
 		(uuid "342e39f7-a70e-42c8-8dd4-ccf87fda5bd8")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/CRYSTAL-SMD_4P-L3.2-W2.5-BL.wrl"
+	(model "${KIPRJMOD}/3dmodels/CRYSTAL-SMD_4P-L3.2-W2.5-BL.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

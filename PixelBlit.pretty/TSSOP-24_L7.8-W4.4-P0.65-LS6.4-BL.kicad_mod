@@ -322,7 +322,7 @@
 		(uuid "bfa9bcf2-e796-4c38-99e2-27dc9e7753a3")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/TSSOP-24_L7.8-W4.4-H1.0-LS6.4-P0.65.wrl"
+	(model "${KIPRJMOD}/3dmodels/TSSOP-24_L7.8-W4.4-H1.0-LS6.4-P0.65.wrl"
 		(offset
 			(xyz 0 -0 -0)
 		)

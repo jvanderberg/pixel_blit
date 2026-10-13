@@ -274,7 +274,7 @@
 		(uuid "4cfb7f9d-8f58-4e7c-9556-bb12c9825739")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/CONN-TH_DB301V-3.5-3P-GN.wrl"
+	(model "${KIPRJMOD}/3dmodels/CONN-TH_DB301V-3.5-3P-GN.wrl"
 		(offset
 			(xyz -0 0.15 0)
 		)

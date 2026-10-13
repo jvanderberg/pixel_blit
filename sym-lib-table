@@ -2,5 +2,6 @@
   (version 7)
   (lib (name "PixelBlit")(type "KiCad")(uri "${KIPRJMOD}/PixelBlit.kicad_sym")(options "")(descr ""))
   (lib (name "JLCImport")(type "KiCad")(uri "${KIPRJMOD}/JLCImport.kicad_sym")(options "")(descr ""))
-  (lib (name "JLCImport2")(type "KiCad")(uri "${KIPRJMOD}/JLCImport2.kicad_sym")(options "")(descr ""))
+  (lib (name "JLCImport2asd")(type "KiCad")(uri "${KIPRJMOD}/JLCImport2.kicad_sym")(options "")(descr "")(hidden))
+  (lib (name "JLCGlobal2")(type "KiCad")(uri "${KIPRJMOD}/JLCGlobal2.kicad_sym")(options "")(descr ""))
 )

@@ -322,7 +322,7 @@
 		(uuid "a5fcfa87-d5b2-402c-94fe-83cc747f1fa4")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/TF-SMD_TF-PUSH.wrl"
+	(model "${KIPRJMOD}/3dmodels/TF-SMD_TF-PUSH.wrl"
 		(offset
 			(xyz 0 -2.09 0.6)
 		)
