@@ -145,6 +145,15 @@ especially two claiming ID 0.
 - Uses: buffering an upload while a show plays, decompressing xLights'
   zstd-compressed FSEQs (whose blocks don't fit in internal RAM), and caching
   short shows.
+- Read-ahead buffer for playback: the SD task fills PSRAM ahead of the player,
+  so a slow card read never stalls output. This is what makes high frame
+  rates (around 120 fps, 8 ms per frame) dependable: today a frame read takes
+  6 to 7 ms for the Halloween show, which barely fits. Sizes for 8 MB: the
+  Halloween show (4,248 bytes per frame) at 40 fps is about 49 s of frames,
+  so it can hold a whole short show; a full board (32,000 pixels, 96 KB per
+  frame) is about 85 frames, about 2 s at 40 fps, which is plenty as a buffer.
+  Note that wire speed still caps the frame rate: 120 fps allows about 270
+  pixels per port.
 
 ### Keep
 
