@@ -142,6 +142,9 @@ below), since fitted they would tie two supplies together.
 **What 24V gets you:** the same copper and 4 A PTCs carry twice the power
 (about 96 W per port, about 1.9 kW per board). Voltage drop matters about 4x
 less (half the current, twice the headroom), which suits long, dense strings.
+For the same light output, everything carrying current runs cooler: half the
+current means a quarter of the I²R heat in string wire, terminals, PTCs, fuses
+and board copper, so a bright show no longer means heavier wire.
 
 ### Add: blown-fuse LEDs
 
