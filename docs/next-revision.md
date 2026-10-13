@@ -112,9 +112,13 @@ rails. This revision raises it to 24V nominal.
   high (threshold about 3.5V). Check the dropout behaviour in the datasheet
   before choosing. A wide-range buck-boost also works, but most need external
   FETs and more area.
-- **Port PTCs:** 30V-rated parts. A 4 A hold at 30V usually means the 2920
-  size, so 32 footprints change, or accept about 3 A hold in 1812 (still about
-  70 W per port at 24V). Pick from the Littelfuse or Bourns tables.
+- **Port PTCs:** 30V-rated parts. They are there for shorts and wiring
+  accidents, not to enforce a per-port power budget (the brightness limiter
+  does that), so a lower hold current is fine. Prefer an 1812 part with about
+  3 A hold (about 70 W per port at 24V, more than today's 48 W at 12V) and keep
+  the footprints. The 2920 size is only needed to keep 4 A. Check the maximum
+  fault current (Imax) against what a large supply delivers into a dead short.
+  Pick from the Littelfuse or Bourns tables.
 - **Capacitors** on the zone rails and `+12V_SYS`: 35V or 50V.
 - **TVS diode** on each zone input, clamping just above 24V, for hot-plugging
   supplies on long leads.
