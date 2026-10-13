@@ -106,12 +106,21 @@ already work: about 4.6V after the OR diode, boosted to 5V. The 16V limit comes
 from the TPS63070, the 1812L400/16 PTCs and the 16V capacitors on the zone
 rails. This revision raises it to 24V nominal.
 
-- **5V regulator:** replace the TPS63070 with a wide-input buck rated 36V or
-  more (the LMR33630 class, 3.8 to 36V). At 5V input it drops out to about
-  4.4V. That is fine for the level shifters, and 5V pixels see it as a valid
-  high (threshold about 3.5V). Check the dropout behaviour in the datasheet
-  before choosing. A wide-range buck-boost also works, but most need external
-  FETs and more area.
+- **5V regulator:** replace the TPS63070 with a buck-boost rated 36V or more
+  input, so the data rail is a regulated 5V from every input between 5 and
+  24V. No buck in dropout: marginal data levels are exactly the kind of fault
+  that shows up as some strings working some of the time.
+  - Keep today's arrangement: the regulator is set to about 5.3V (TPS63070
+    with R12 560k / R13 100k, 0.8V reference), and the B5819W (D3) that ORs it
+    with USB drops that to about 4.9 to 5.0V on `+5V`. The new part needs the
+    same higher setpoint, or replace D3 with an ideal-diode controller and set
+    5.0V. Either way, stay under the SN74LVC8T245's 5.5V VCCB limit.
+  - Candidates: the LTC3115-1 (2.7 to 40V in, integrated switches, about 2 A
+    in buck mode) or a TI part in the TPS552xx family. Controller types such as
+    the LM5176 work too, but need external FETs and more area. Confirm
+    input range, output current at 5V input and package before choosing.
+  - Load is small: MCU, SD, PSRAM, level shifters and the 3.3V buck for Wi-Fi.
+    About 1 A at 5V is plenty.
 - **Port PTCs:** 30V-rated parts. They are there for shorts and wiring
   accidents, not to enforce a per-port power budget (the brightness limiter
   does that), so a lower hold current is fine. Prefer an 1812 part with about
