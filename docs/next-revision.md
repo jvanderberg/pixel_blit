@@ -116,8 +116,12 @@ rails. This revision raises it to 24V nominal.
   accidents, not to enforce a per-port power budget (the brightness limiter
   does that), so a lower hold current is fine. Prefer an 1812 part with about
   3 A hold (about 70 W per port at 24V, more than today's 48 W at 12V) and keep
-  the footprints. The 2920 size is only needed to keep 4 A. Check the maximum
-  fault current (Imax) against what a large supply delivers into a dead short.
+  the footprints. The 2920 size is only needed to keep 4 A. Rule: the
+  maximum fault current (Imax) at rated voltage must be at least 2x the zone
+  fuse rating (so at least 50 A behind a 25 A fuse). In a dead short the
+  supply's own current limit (typically 105 to 150% of its rating) and its
+  output capacitors set the current, and the PTC trips well before the blade
+  fuse blows.
   Pick from the Littelfuse or Bourns tables.
 - **Capacitors** on the zone rails and `+12V_SYS`: 35V or 50V.
 - **TVS diode** on each zone input, clamping just above 24V, for hot-plugging
