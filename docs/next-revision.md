@@ -98,6 +98,51 @@ especially two claiming ID 0.
   zone's current.
 - The diodes D4 to D7 stay: the logic runs from whichever zone has power.
 
+### Change: 5 to 24V inputs, mixed per zone
+
+Today's real input range is 5 to 14V, not the "6-12VDC" on the silkscreen
+(that dates from an LDO plan). The TPS63070 takes 2 to 16V, so 5V inputs
+already work: about 4.6V after the OR diode, boosted to 5V. The 16V limit comes
+from the TPS63070, the 1812L400/16 PTCs and the 16V capacitors on the zone
+rails. This revision raises it to 24V nominal.
+
+- **5V regulator:** replace the TPS63070 with a wide-input buck rated 36V or
+  more (the LMR33630 class, 3.8 to 36V). At 5V input it drops out to about
+  4.4V. That is fine for the level shifters, and 5V pixels see it as a valid
+  high (threshold about 3.5V). Check the dropout behaviour in the datasheet
+  before choosing. A wide-range buck-boost also works, but most need external
+  FETs and more area.
+- **Port PTCs:** 30V-rated parts. A 4 A hold at 30V usually means the 2920
+  size, so 32 footprints change, or accept about 3 A hold in 1812 (still about
+  70 W per port at 24V). Pick from the Littelfuse or Bourns tables.
+- **Capacitors** on the zone rails and `+12V_SYS`: 35V or 50V.
+- **TVS diode** on each zone input, clamping just above 24V, for hot-plugging
+  supplies on long leads.
+- **Unchanged:** SS34 OR diodes (40V), blade fuses (32V), terminals, copper,
+  level shifters and data path. 24V pixels still take 5V logic data.
+- **Blown-fuse LED resistor:** brightness follows the zone voltage. 10k gives
+  about 2 mA at 24V, 1 mA at 12V and 0.3 mA at 5V. Use a high-efficiency LED
+  so it is still visible on a 5V zone.
+
+**Mixed voltages:** each zone feeds only its own 8 ports, and the OR diodes
+power the logic from whichever zone is highest. So one board can run, for
+example, 5V on zone 1, 12V on zones 2 and 3, and 24V on zone 4. The lower
+zones' diodes are reverse-biased: 19V at most, within the SS34's 40V rating.
+All zones share ground. The zone link fuses must be gone for this (see
+below), since fitted they would tie two supplies together.
+
+**Labelling**, because a 5V or 12V string on a 24V zone is destroyed at once:
+
+- Silkscreen "5-24VDC" at the inputs.
+- A write-in box for each zone's voltage.
+- The zone grouping marked along the outputs (ports 0 to 7, 8 to 15, and so
+  on).
+- Optionally, a different terminal colour per zone.
+
+**What 24V gets you:** the same copper and 4 A PTCs carry twice the power
+(about 96 W per port, about 1.9 kW per board). Voltage drop matters about 4x
+less (half the current, twice the headroom), which suits long, dense strings.
+
 ### Add: blown-fuse LEDs
 
 - One LED with a series resistor across each input fuse (F1 to F4), anode on
@@ -105,7 +150,8 @@ especially two claiming ID 0.
   the LED is dark. When the fuse blows, the input side stays at 12V and the
   zone side is pulled toward ground through its strings, so the LED lights.
   With no supply on that input it stays dark, as it should.
-- About 4.7k for roughly 2 mA at 12V. In the blown state that 2 mA flows into
+- About 4.7k for roughly 2 mA at 12V (10k if 24V inputs are supported, see
+  above). In the blown state that 2 mA flows into
   the zone's strings, which is harmless. No GPIO needed.
 - Place each LED next to its fuse, so a blown zone is visible at a glance.
 
@@ -158,7 +204,7 @@ especially two claiming ID 0.
 ### Keep
 
 - 32 outputs: SN74LVC8T245 level shifters, 47 ohm series resistors, PTC per
-  port, four 12V zones, each with its own input and blade fuse.
+  port, four zones (5 to 24V, see above), each with its own input and blade fuse.
 - microSD on GPIO 36 to 39. Consider raising the SPI clock from 12.5 MHz (a
   firmware change) before anything else, for faster reads and uploads.
 - IR receiver on GPIO 42, with SW2 and CN1.
