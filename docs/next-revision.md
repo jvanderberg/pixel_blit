@@ -152,9 +152,83 @@ below), since fitted they would tie two supplies together.
 
 - Silkscreen "5-24VDC" at the inputs.
 - A write-in box for each zone's voltage.
-- The zone grouping marked along the outputs (ports 0 to 7, 8 to 15, and so
-  on).
 - Optionally, a different terminal colour per zone.
+
+**Zone silkscreen.** On the current board the zones are not runs of
+consecutive ports. Each zone is one row of the staggered terminal rows, so
+neighbouring terminals alternate between zones (checked in
+`pixel_blit.kicad_pcb`):
+
+| Zone | Input (fuse) | Row | Strings today (pin order) | Strings, next revision |
+|---|---|---|---|---|
+| Z1 | J1 (F1), bottom right | Bottom edge, outer row (J6 to J20, even) | 1, 3, 5 ... 15 | 0 to 7 |
+| Z2 | J2 (F2) | Bottom edge, inner row (J5 to J19, odd) | 0, 2, 4 ... 14 | 8 to 15 |
+| Z3 | J3 (F3) | Top edge, inner row (J22 to J36, even) | 17, 19, 21 ... 31 | 16 to 23 |
+| Z4 | J4 (F4), top right | Top edge, outer row (J21 to J35, odd) | 16, 18, 20 ... 30 | 24 to 31 |
+
+Wiring left to right along an edge therefore alternates between two zones,
+which may be at different voltages. The silkscreen has to make the zone of
+every terminal obvious without a manual:
+
+- **Row bars:** a bold silkscreen line running the length of each terminal
+  row, on the side away from the other row, labelled at both ends ("ZONE 1").
+  The inner and outer rows use visibly different styles, for example a solid
+  bar on one and a hatched or dashed bar on the other, so the two rows on an
+  edge can't be confused.
+- **Zone on every terminal:** each string label gets its zone, for example
+  "S1 · Z1" in place of "STRING3" (new numbering, see below). It is the label
+  the user is looking at while they wire.
+- **Input to row:** each input terminal is labelled "ZONE n IN 5-24VDC" with
+  the write-in voltage box next to it, and its bar style matches its row
+  (bar style is the code that ties an input to its outputs). Where space
+  allows, run the bar from the input along the board edge to its row.
+- **Zone key:** a small table in silkscreen near the inputs: zone, bar style,
+  strings, input. Also printed in the README.
+- **Blown-fuse LEDs** sit next to their input fuse, labelled with the zone
+  number.
+- Keep text at least 1 mm high and lines 0.15 mm or more for JLC silkscreen,
+  and keep it clear of terminal pads so it survives assembly.
+
+**Renumber the strings by zone, in firmware.** The terminals and their
+traces stay exactly where they are. Only the silkscreen labels and a
+firmware table change, so each zone is a contiguous block of 8 strings, as
+in the last column above. Zones are then contiguous in config.csv and
+xLights too, which makes it harder to put a string on the wrong voltage when
+setting up a model.
+
+No board of the current revision is in anyone else's hands, so there is no
+backward compatibility to keep: the zone numbering simply becomes the
+numbering, in firmware, config.csv and the docs.
+
+- Within a row, the new numbers run in the same direction as today's labels:
+  left to right on the bottom edge, right to left on the top edge.
+- The mapping from string number `n` to the output bit (the pin order, today's
+  string number) is: zone `z = n / 8`, position `i = n % 8`,
+  bit `= 16 * (z / 2) + 2 * i + (z % 2 == 0 ? 1 : 0)`. In full:
+  `{1,3,5,7,9,11,13,15, 0,2,4,6,8,10,12,14, 17,19,...,31, 16,18,...,30}`.
+- In the firmware (`pixel_blit_firmware`), the string number becomes an
+  output bit in exactly two places: `mask = 1u << string` in `pb_set_pixel`
+  and `pb_get_pixel` (`lib/pb_led_driver/pb_led_driver.c`). Both become
+  `1u << string_to_bit[string]`, a fixed 32-byte table. No cost per frame
+  beyond one table lookup per pixel write.
+- The PIO pin range must cover physical bits, not string numbers.
+  `fseq_player.c` sets `num_strings` to the highest configured string + 1,
+  and `pb_led_driver_hw.c` claims and drives only `gpio_base` to
+  `gpio_base + num_strings - 1`. With the table, strings 0 to 3 are bits 1,
+  3, 5 and 7, so a 4-string config would leave them dark. The hardware side
+  always drives all 32 pins.
+- Everything above the driver (config.csv rows, FSEQ channel order, rasters,
+  the per-port brightness limiter, the web UI) uses string numbers and needs
+  no change. Code that reads bit-planes back sees pin order, so the
+  brightness limiter should work from frame data before encoding.
+- Bench tools that drive GPIOs directly (`string_test.c`, `toggle_test.c`)
+  go through the same table, so every tool speaks one numbering.
+- The driver unit tests assume string = bit. Update them for the table and
+  add a test of the mapping itself.
+- Rename the schematic nets `S0_OUT` to `S31_OUT` (and the old "STRINGn"
+  texts) to the new numbers, then update the PCB from the schematic. That
+  changes net names only, not copper, and keeps the schematic, silkscreen and
+  firmware in agreement for anyone probing with a scope.
 
 **What 24V gets you:** the same copper and 4 A PTCs carry twice the power
 (about 96 W per port, about 1.9 kW per board). Voltage drop matters about 4x
@@ -270,6 +344,10 @@ The C firmware's split stays: core 1 drives pixels, core 0 runs everything else
 6. **FPP discovery and FPP Connect uploads.**
 7. **Over-the-air firmware updates**, with USB as the fallback.
 8. **PSRAM:** upload buffering, then zstd FSEQ support if wanted.
+9. **String renumbering by zone:** the `string_to_bit` table in the LED
+   driver (see "Zone silkscreen" above). Small, and needed before the first
+   board of this revision lights up, since the silkscreen will use the new
+   numbers.
 
 Related firmware work that does not depend on this board:
 
