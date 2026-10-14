@@ -7786,16 +7786,6 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 124.46) (xy 274.32 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "058b99ea-d057-420d-99a4-82e65c5e714c")
-	)
-	(wire
-		(pts
 			(xy 57.15 86.36) (xy 69.85 86.36)
 		)
 		(stroke
@@ -7963,16 +7953,6 @@
 			(type default)
 		)
 		(uuid "253abdb5-2dc5-4ead-8163-fb68ee16f4a4")
-	)
-	(wire
-		(pts
-			(xy 248.92 124.46) (xy 248.92 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25acc8f5-19f1-4243-9184-d8def721293b")
 	)
 	(wire
 		(pts
@@ -8316,16 +8296,6 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 111.76) (xy 274.32 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b6b1b4e-aed5-4f6b-a291-018692c33088")
-	)
-	(wire
-		(pts
 			(xy 101.6 152.4) (xy 113.03 152.4)
 		)
 		(stroke
@@ -8393,36 +8363,6 @@
 			(type default)
 		)
 		(uuid "6777eeb2-06f6-4eb3-9735-b6a7815c4daf")
-	)
-	(wire
-		(pts
-			(xy 256.54 96.52) (xy 248.92 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ab5a0c6-ee9d-49f5-b386-4fade89b518a")
-	)
-	(wire
-		(pts
-			(xy 274.32 111.76) (xy 274.32 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "712f148f-bb4b-4296-82ca-cde903ac8ab6")
-	)
-	(wire
-		(pts
-			(xy 256.54 124.46) (xy 248.92 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "721fbe4a-4717-4566-913b-89bfb7d5464b")
 	)
 	(wire
 		(pts
@@ -8513,16 +8453,6 @@
 			(type default)
 		)
 		(uuid "7fbc7daa-e321-4d16-bc5f-7e21f55b93d4")
-	)
-	(wire
-		(pts
-			(xy 248.92 111.76) (xy 248.92 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82e54406-37e4-401f-bf04-7f92fb4438e9")
 	)
 	(wire
 		(pts
@@ -8673,16 +8603,6 @@
 			(type default)
 		)
 		(uuid "999f7c94-3f77-4592-aee4-f7f0d15cbd59")
-	)
-	(wire
-		(pts
-			(xy 266.7 96.52) (xy 274.32 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b551665-ffa5-4049-b20c-9bcaa0451af7")
 	)
 	(wire
 		(pts
@@ -8896,16 +8816,6 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 124.46) (xy 274.32 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf59939a-bf19-4c2e-bebc-24cff55eb970")
-	)
-	(wire
-		(pts
 			(xy 201.93 134.62) (xy 217.17 134.62)
 		)
 		(stroke
@@ -9066,16 +8976,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 96.52) (xy 248.92 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0cb4244-1eda-46dd-87c5-b8e6ce8fd0ab")
-	)
-	(wire
-		(pts
 			(xy 214.63 124.46) (xy 214.63 137.16)
 		)
 		(stroke
@@ -9166,16 +9066,6 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 96.52) (xy 274.32 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef0038ff-c4ee-4c35-acf1-3e5023246776")
-	)
-	(wire
-		(pts
 			(xy 132.08 60.96) (xy 132.08 69.85)
 		)
 		(stroke
@@ -9203,16 +9093,6 @@
 			(type default)
 		)
 		(uuid "f24cc141-085c-4af0-980c-6fb24f4b1222")
-	)
-	(wire
-		(pts
-			(xy 256.54 111.76) (xy 248.92 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6df9f83-e094-4fc0-8ad9-2643f364eac4")
 	)
 	(wire
 		(pts
@@ -9955,125 +9835,6 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "JLCImport:XF-507P")
-		(at 261.62 124.46 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0af60b27-7344-459e-be3c-269a6b30351d")
-		(property "Reference" "F7"
-			(at 261.62 118.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XF-507P"
-			(at 261.62 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "JLCImport:XF-507P"
-			(at 261.62 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210825/7557D7920E5607B38A356D661AFA8BB4.pdf"
-			(at 261.62 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 261.62 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C668119"
-			(at 261.62 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "XFCN(兴飞)"
-			(at 261.62 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part" "XF-507P"
-			(at 261.62 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "30f7e666-4388-4b19-b124-e22fa0790280")
-		)
-		(pin "2"
-			(uuid "5cb92b7d-08f3-47e4-ac97-897158a22126")
-		)
-		(pin "3"
-			(uuid "931f718f-1946-440b-88e0-3c99514df252")
-		)
-		(pin "4"
-			(uuid "ff1958f9-c9c8-459e-ac89-e6e186d173c9")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "F7")
 					(unit 1)
 				)
 			)
@@ -11873,125 +11634,6 @@
 		)
 	)
 	(symbol
-		(lib_id "JLCImport:XF-507P")
-		(at 261.62 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "37dc463d-6e28-474e-bd33-8b873eb8251b")
-		(property "Reference" "F5"
-			(at 261.62 90.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XF-507P"
-			(at 261.62 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "JLCImport:XF-507P"
-			(at 261.62 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210825/7557D7920E5607B38A356D661AFA8BB4.pdf"
-			(at 261.62 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 261.62 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C668119"
-			(at 261.62 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "XFCN(兴飞)"
-			(at 261.62 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part" "XF-507P"
-			(at 261.62 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4e21f595-9e44-4a0f-8524-d8fea1f773ef")
-		)
-		(pin "2"
-			(uuid "1d7b7b3a-90c2-4627-b552-7c83604cab3a")
-		)
-		(pin "3"
-			(uuid "68341cee-4beb-4d07-86a3-bb96eb02db32")
-		)
-		(pin "4"
-			(uuid "21b314ec-d615-4546-a48d-f0f11b0c3173")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "F5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PixelBlit:+12V")
 		(at 273.05 149.86 0)
 		(unit 1)
@@ -12300,84 +11942,6 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "C20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PixelBlit:+12V")
-		(at 248.92 95.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3a08d21f-8d51-4733-a70f-6c88cd41af67")
-		(property "Reference" "#PWR0122"
-			(at 248.92 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+12V_Z1"
-			(at 246.38 90.932 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 248.92 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 248.92 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9b8e4911-d145-449f-98e6-0a3c9fda81f6")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -14649,84 +14213,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PixelBlit:+12V")
-		(at 248.92 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "76aa88b7-d6d2-4d1f-b7ed-aab2779caf30")
-		(property "Reference" "#PWR0129"
-			(at 248.92 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+12V_Z3"
-			(at 246.38 118.872 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 248.92 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 248.92 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b1320d27-015f-466a-9401-38ed80c690e2")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "#PWR0129")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "JLCImport:XF-507P")
 		(at 196.85 133.35 0)
 		(unit 1)
@@ -15436,84 +14922,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PixelBlit:+12V")
-		(at 274.32 95.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "88f7f456-b39b-45f6-bd86-9c8386920438")
-		(property "Reference" "#PWR0126"
-			(at 274.32 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+12V_Z2"
-			(at 271.78 90.932 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 274.32 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 274.32 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 274.32 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "80891b4d-3452-421a-b66b-cbcaa0ed9245")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "#PWR0126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PixelBlit:LED,0603,Red")
 		(at 128.27 137.16 90)
 		(unit 1)
@@ -15776,162 +15184,6 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PixelBlit:+12V")
-		(at 274.32 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9a67161d-28e4-4988-83b1-a1cc1feb3918")
-		(property "Reference" "#PWR0128"
-			(at 274.32 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+12V_Z3"
-			(at 271.78 106.172 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 274.32 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 274.32 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 274.32 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8c56f841-306a-41bd-9ef3-a5f33bfce7bd")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "#PWR0128")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PixelBlit:+12V")
-		(at 248.92 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9de290a4-a9bf-4f16-b136-cc8e61572d15")
-		(property "Reference" "#PWR0127"
-			(at 248.92 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+12V_Z2"
-			(at 246.38 106.172 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 248.92 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 248.92 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6f13740f-0b31-4c94-aa98-ddc3de87fd2c")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "#PWR0127")
 					(unit 1)
 				)
 			)
@@ -17919,84 +17171,6 @@
 	)
 	(symbol
 		(lib_id "PixelBlit:+12V")
-		(at 274.32 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cc56593b-a2a3-4f34-af4b-26b76a0892e1")
-		(property "Reference" "#PWR0130"
-			(at 274.32 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+12V_Z4"
-			(at 271.78 118.872 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 274.32 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 274.32 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 274.32 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cc273a12-9ffd-47e6-bbb8-e7277645db39")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "#PWR0130")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PixelBlit:+12V")
 		(at 184.15 119.38 0)
 		(unit 1)
 		(body_style 1)
@@ -19033,125 +18207,6 @@
 			(project ""
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
 					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "JLCImport:XF-507P")
-		(at 261.62 111.76 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eb4c9a52-3915-47b0-a2be-ed280aaec799")
-		(property "Reference" "F6"
-			(at 261.62 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XF-507P"
-			(at 261.62 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "JLCImport:XF-507P"
-			(at 261.62 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210825/7557D7920E5607B38A356D661AFA8BB4.pdf"
-			(at 261.62 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 261.62 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C668119"
-			(at 261.62 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "XFCN(兴飞)"
-			(at 261.62 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part" "XF-507P"
-			(at 261.62 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8454fbd7-399a-4feb-9489-dad3fa821f06")
-		)
-		(pin "2"
-			(uuid "80682f36-5bee-4e12-817b-11e780292365")
-		)
-		(pin "3"
-			(uuid "d759cac3-8cdd-4481-9114-b89c6748d142")
-		)
-		(pin "4"
-			(uuid "f7dc39ae-8b12-4ef1-80c3-a2388ac3f2fb")
-		)
-		(instances
-			(project "pixel_blit"
-				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/8d04fbd7-9fbd-46b0-a0f5-382a1948c380"
-					(reference "F6")
 					(unit 1)
 				)
 			)

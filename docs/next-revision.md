@@ -108,6 +108,8 @@ especially two claiming ID 0.
 
 ### Remove: zone link fuses
 
+- **Done**: F5, F6 and F7 are off the Power sheet and the board. They had no
+  traces, only the B.Cu zone pours, so the zones simply refill.
 - F5, F6 and F7 (XF-507P holders linking Z1 to Z2, Z2 to Z3 and Z3 to Z4).
   They let one supply feed every zone, but they are easy to misuse: fitted
   with two supplies connected, they tie the supplies in parallel, and in
