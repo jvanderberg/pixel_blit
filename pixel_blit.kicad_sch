@@ -233,6 +233,289 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "JLCImport:APS6404L-3SQR-SN_C5333729"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 8.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "APS6404L-3SQR-SN_C5333729"
+				(at 0 -8.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "JLCImport:APS6404L-3SQR-SN_C5333729"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C5333729.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "APS6404L-3SQR-SN; SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL; Apmemory"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C5333729"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Apmemory"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "APS6404L-3SQR-SN"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "APS6404L-3SQR-SN Apmemory C5333729 SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "APS6404L-3SQR-SN_C5333729_0_1"
+				(circle
+					(center -16.51 5.08)
+					(radius 0.381)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 17.272 -6.35) (xy 17.3711 -6.3402) (xy 17.4664 -6.3113) (xy 17.5542 -6.2644) (xy 17.6312 -6.2012)
+						(xy 17.6944 -6.1242) (xy 17.7413 -6.0364) (xy 17.7702 -5.9411) (xy 17.78 -5.842) (xy 17.7702 5.9411)
+						(xy 17.7413 6.0364) (xy 17.6944 6.1242) (xy 17.6312 6.2012) (xy 17.5542 6.2644) (xy 17.4664 6.3113)
+						(xy 17.3711 6.3402) (xy 17.272 6.35) (xy -17.3711 6.3402) (xy -17.4664 6.3113) (xy -17.5542 6.2644)
+						(xy -17.6312 6.2012) (xy -17.6944 6.1242) (xy -17.7413 6.0364) (xy -17.7702 5.9411) (xy -17.78 5.842)
+						(xy -17.7702 -5.9411) (xy -17.7413 -6.0364) (xy -17.6944 -6.1242) (xy -17.6312 -6.2012) (xy -17.5542 -6.2644)
+						(xy -17.4664 -6.3113) (xy -17.3711 -6.3402) (xy -17.272 -6.35) (xy 17.272 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -20.32 3.81 0)
+					(length 2.54)
+					(name "CE#"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -20.32 1.27 0)
+					(length 2.54)
+					(name "SO/SIO[1]"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -20.32 -1.27 0)
+					(length 2.54)
+					(name "SIO[2]"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -20.32 -3.81 0)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 20.32 -3.81 180)
+					(length 2.54)
+					(name "SI/SIO[0]"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 20.32 -1.27 180)
+					(length 2.54)
+					(name "SCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 20.32 1.27 180)
+					(length 2.54)
+					(name "SIO[3]"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 20.32 3.81 180)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PixelBlit:+3V3"
 			(power global)
 			(pin_numbers
@@ -791,6 +1074,323 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 3.175)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PixelBlit:0402,10kΩ"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 1.778 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "10kΩ"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:R_0402"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C25744.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 10kΩ 0402 Chip Resistor - Surface Mount ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C25744"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Stock" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Price" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Process" "SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Minimum Qty" "20"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Attrition Qty" "10"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Class" "Basic Component"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Category" "Resistors,Chip Resistor - Surface Mount"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "0402WGF1002TCE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Resistance" "10kΩ"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Power(Watts)" "62.5mW"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Type" "Thick Film Resistors"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Overload Voltage (Max)" "50V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Operating Temperature Range" "-55°C~+155°C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±1%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Temperature Coefficient" "±100ppm/°C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "0402,10kΩ_0_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "0402,10kΩ_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -7046,6 +7646,17 @@
 		)
 		(uuid "57a3ac4e-766f-43fa-bdfc-9dd7288946a1")
 	)
+	(text "CS on GPIO 47 = XIP_CS1 (QMI chip select 1).\nR62 holds it high at reset, when GPIO pulls default low,\nso the PSRAM stays off the bus while the bootrom reads flash."
+		(exclude_from_sim no)
+		(at 218.44 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6449d0cd-e50c-4bca-bf92-b5ec9432040b")
+	)
 	(text "3V/5V/12V Power\n"
 		(exclude_from_sim no)
 		(at 281.178 130.302 0)
@@ -7069,6 +7680,17 @@
 			(justify right bottom)
 		)
 		(uuid "9bfcaf19-7fe7-4c8e-b908-125809522a9f")
+	)
+	(text "PSRAM (8 MB QSPI, shares the flash bus)"
+		(exclude_from_sim no)
+		(at 218.44 101.6 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "9c26bcbf-a229-4f8e-892c-f9dc4ed8c7db")
 	)
 	(text "1V1 Power\n"
 		(exclude_from_sim no)
@@ -7219,6 +7841,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "54261c89-7071-4c5d-8b94-5bb1325fc7ec")
+	)
+	(junction
+		(at 210.82 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56e8936f-68e9-47fc-ae0f-b31c792fbf7b")
 	)
 	(junction
 		(at 96.52 168.91)
@@ -7449,6 +8077,12 @@
 		(uuid "e3925f19-f76f-43ee-b6a0-dc4c06e4e55c")
 	)
 	(junction
+		(at 259.08 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3e5c1c8-bff4-4ab3-a19c-3c2463361f16")
+	)
+	(junction
 		(at 40.64 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7501,8 +8135,32 @@
 		(uuid "0520258b-11d3-4624-a762-85da498f1b07")
 	)
 	(no_connect
+		(at 156.21 116.84)
+		(uuid "0f82fc1f-0323-4c98-90db-0b8010b931e7")
+	)
+	(no_connect
+		(at 156.21 111.76)
+		(uuid "191eb47f-8417-4459-badc-cd782887e29f")
+	)
+	(no_connect
+		(at 156.21 114.3)
+		(uuid "1c1ee77c-7617-4aed-8ddd-e9bfa0ad178e")
+	)
+	(no_connect
+		(at 156.21 109.22)
+		(uuid "362d6251-7058-46c9-bc27-925d14dce7bd")
+	)
+	(no_connect
+		(at 156.21 104.14)
+		(uuid "390c78fe-9c3f-4e54-b382-e3bb360e306b")
+	)
+	(no_connect
 		(at 35.56 147.32)
 		(uuid "999b95a5-4d15-434b-804c-c9f91b439d3f")
+	)
+	(no_connect
+		(at 156.21 101.6)
+		(uuid "e03a7133-c2e1-4913-80fd-3472a07c49ae")
 	)
 	(wire
 		(pts
@@ -7523,6 +8181,16 @@
 			(type default)
 		)
 		(uuid "004149c4-4620-46fe-a206-1e193388d3b3")
+	)
+	(wire
+		(pts
+			(xy 256.54 83.82) (xy 259.08 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "006ff209-a55a-420f-b15a-98b8bd13b09e")
 	)
 	(wire
 		(pts
@@ -7676,6 +8344,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 83.82) (xy 205.74 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17112b32-6e91-4921-b7a1-ff103fa665b1")
+	)
+	(wire
+		(pts
 			(xy 157.48 151.13) (xy 157.48 160.02)
 		)
 		(stroke
@@ -7693,6 +8371,16 @@
 			(type default)
 		)
 		(uuid "180de0e5-1fdd-4a0d-ad0c-d233d9619822")
+	)
+	(wire
+		(pts
+			(xy 259.08 81.28) (xy 259.08 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "191934dd-9473-49a5-8d2c-91ef63f95526")
 	)
 	(wire
 		(pts
@@ -7816,6 +8504,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 88.9) (xy 213.36 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2699901e-c922-4950-b01b-0d4e3960ce68")
+	)
+	(wire
+		(pts
 			(xy 143.51 22.86) (xy 148.59 22.86)
 		)
 		(stroke
@@ -7843,6 +8541,16 @@
 			(type default)
 		)
 		(uuid "32601991-8543-4148-af5d-8d6b581507e0")
+	)
+	(wire
+		(pts
+			(xy 215.9 86.36) (xy 205.74 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35901be9-2997-4b46-8ca5-efd1765ab52a")
 	)
 	(wire
 		(pts
@@ -8053,6 +8761,16 @@
 			(type default)
 		)
 		(uuid "54862a4a-63eb-4d65-ba51-2462408da5de")
+	)
+	(wire
+		(pts
+			(xy 215.9 88.9) (xy 213.36 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "559d703d-375d-4faf-b1ef-00bb15e0bac6")
 	)
 	(wire
 		(pts
@@ -8346,6 +9064,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 81.28) (xy 210.82 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f3933ba-bd10-4222-97be-273b986f9d89")
+	)
+	(wire
+		(pts
 			(xy 180.34 146.05) (xy 191.77 146.05)
 		)
 		(stroke
@@ -8443,6 +9171,26 @@
 			(type default)
 		)
 		(uuid "8d6ce84b-e85a-44da-8c99-be8c2d3406a2")
+	)
+	(wire
+		(pts
+			(xy 259.08 73.66) (xy 276.86 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8da0e10d-7f2a-4212-b5c9-1a001b74eb2c")
+	)
+	(wire
+		(pts
+			(xy 256.54 86.36) (xy 259.08 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dcd9c5e-c042-4753-b951-263199683ae1")
 	)
 	(wire
 		(pts
@@ -8583,6 +9331,16 @@
 			(type default)
 		)
 		(uuid "a44dd82b-ddbd-4d1a-a93d-66580452f284")
+	)
+	(wire
+		(pts
+			(xy 259.08 71.12) (xy 259.08 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a65eaa37-1690-4bdc-a428-c056a115ae33")
 	)
 	(wire
 		(pts
@@ -8763,6 +9521,16 @@
 			(type default)
 		)
 		(uuid "b46297cf-c260-4ded-8d3a-4f464a98c96c")
+	)
+	(wire
+		(pts
+			(xy 256.54 88.9) (xy 259.08 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b502e1b2-609c-4b32-a27c-44211ff66af3")
 	)
 	(wire
 		(pts
@@ -8973,6 +9741,16 @@
 			(type default)
 		)
 		(uuid "d05ea060-fc5a-4eab-989c-ccfe5ebc3175")
+	)
+	(wire
+		(pts
+			(xy 256.54 81.28) (xy 259.08 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0f5959f-d80b-472f-bfec-6208b8f4c700")
 	)
 	(wire
 		(pts
@@ -9246,6 +10024,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 81.28) (xy 205.74 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6abeca5-d42d-4af6-9e03-4a2b727967b0")
+	)
+	(wire
+		(pts
 			(xy 111.76 168.91) (xy 111.76 162.56)
 		)
 		(stroke
@@ -9294,6 +10082,126 @@
 		)
 		(uuid "ff3fd524-77ac-46cd-a98c-b2cdc44425a8")
 	)
+	(label "PSRAM_CS"
+		(at 156.21 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "03beb24a-7485-445e-8868-9fa5ccdd0ff3")
+	)
+	(label "QSPI_SD2"
+		(at 166.37 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "098a7baa-5c9b-475b-bcbf-6076cddaa7f6")
+	)
+	(label "QSPI_SD3"
+		(at 259.08 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d4153eb-a722-4a8f-a17f-a5a94e3d5eee")
+	)
+	(label "QSPI_SD2"
+		(at 205.74 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0d6a690e-cf6e-4fdd-99ba-9197564b3872")
+	)
+	(label "QSPI_SCLK"
+		(at 166.37 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "160eb80e-88b8-498f-9824-a3d88b3db623")
+	)
+	(label "QSPI_SCLK"
+		(at 259.08 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "22edb911-fdb0-4eb0-a2f2-1446bdd99795")
+	)
+	(label "QSPI_SD1"
+		(at 166.37 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "32abe3be-4063-42e3-b453-7be89f8406d8")
+	)
+	(label "QSPI_SD0"
+		(at 259.08 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "82a93eff-f93f-470c-ab19-02a288766bf4")
+	)
+	(label "QSPI_SD1"
+		(at 205.74 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "96cf721f-ba90-4874-b5f9-141ad4eaad95")
+	)
+	(label "QSPI_SD3"
+		(at 166.37 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cc330ec1-e8dc-404a-abbf-75fb92fd600f")
+	)
+	(label "PSRAM_CS"
+		(at 205.74 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dc2497b2-ca48-4afa-bcc8-9eaa5a40c065")
+	)
+	(label "QSPI_SD0"
+		(at 166.37 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fbd80f71-2a68-4de5-9414-6ec1a9f89420")
+	)
 	(global_label "SWDIO"
 		(shape input)
 		(at 137.16 156.21 0)
@@ -9318,8 +10226,8 @@
 			)
 		)
 	)
-	(global_label "HS_DATA2"
-		(shape input)
+	(global_label "WL_CS"
+		(shape output)
 		(at 156.21 83.82 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9363,30 +10271,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "TRB"
-		(shape input)
-		(at 156.21 109.22 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0a6f85f2-5704-4f69-979e-b32effe29c45")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.7028 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -9654,30 +10538,6 @@
 			)
 		)
 	)
-	(global_label "DISP_SCL"
-		(shape input)
-		(at 156.21 119.38 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4f311cf9-2d1d-4d25-a2b9-3d5c5bf62de2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.0247 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "STRING30"
 		(shape input)
 		(at 95.25 123.19 180)
@@ -9774,8 +10634,8 @@
 			)
 		)
 	)
-	(global_label "HS_DATA1"
-		(shape input)
+	(global_label "WL_DATA"
+		(shape bidirectional)
 		(at 156.21 86.36 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9787,30 +10647,6 @@
 		(uuid "634eadc4-975b-44f1-ac97-6fcb38321bda")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 168.3271 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "TRA"
-		(shape input)
-		(at 156.21 114.3 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "69359cc0-bb85-4d80-b03d-b2e5fac90aa9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.5214 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9894,8 +10730,8 @@
 			)
 		)
 	)
-	(global_label "HS_DATA3"
-		(shape input)
+	(global_label "WL_ON"
+		(shape output)
 		(at 156.21 81.28 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9966,32 +10802,8 @@
 			)
 		)
 	)
-	(global_label "DISP_SDA"
-		(shape input)
-		(at 156.21 116.84 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "85a7bc1d-b9ec-4d5d-ada7-ba28ed01f100")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.0852 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "HS_DATA0"
-		(shape input)
+	(global_label "WL_CLK"
+		(shape output)
 		(at 156.21 88.9 0)
 		(fields_autoplaced yes)
 		(effects
@@ -10470,30 +11282,6 @@
 			)
 		)
 	)
-	(global_label "PSH"
-		(shape input)
-		(at 156.21 104.14 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ddb402e5-8fe4-4ed6-ab7b-29b3fd619602")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.0052 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "IR_IN"
 		(shape input)
 		(at 156.21 106.68 0)
@@ -10542,30 +11330,6 @@
 			)
 		)
 	)
-	(global_label "BAK"
-		(shape input)
-		(at 156.21 101.6 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e7f5606d-e21d-4f02-9fd5-d5f542cbe16a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.8238 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "STRING20"
 		(shape input)
 		(at 95.25 97.79 180)
@@ -10611,30 +11375,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "DATA_IN_EN"
-		(shape input)
-		(at 156.21 111.76 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f69fdeac-0d86-40f7-b593-a99537808d7a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 169.96 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -10948,6 +11688,593 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d"
 					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PixelBlit:0402,10kΩ")
+		(at 210.82 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0458233a-8dbf-4c28-8167-d01c5662bd2e")
+		(property "Reference" "R62"
+			(at 212.09 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 212.09 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PixelBlit:R_0402"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25744.pdf"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 10kΩ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" ""
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" ""
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0402WGF1002TCE"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "10kΩ"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 210.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab63c9ea-4860-4d37-8e61-bda04e921646")
+		)
+		(pin "2"
+			(uuid "72b2ed11-1cff-4ebe-a37e-592f46820a19")
+		)
+		(instances
+			(project "pixel_blit"
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d"
+					(reference "R62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PixelBlit:0402,100nF")
+		(at 276.86 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "076c2a08-858a-44d8-9943-5e0e073d359f")
+		(property "Reference" "C45"
+			(at 280.67 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 280.67 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PixelBlit:C_0402"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "16V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "16712941"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "CL05B104KO5NNNC"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rated" "16V"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Capacitance" "100nF"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "X7R"
+			(at 276.86 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7003cf7f-365b-495e-bb3f-8c096b0229ed")
+		)
+		(pin "2"
+			(uuid "2cd3275c-7f51-4cca-8d28-417d22602508")
+		)
+		(instances
+			(project "pixel_blit"
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d"
+					(reference "C45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PixelBlit:+3V3")
+		(at 210.82 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1662efe4-00d9-4f3d-924c-cd6e7f4223c6")
+		(property "Reference" "#PWR0139"
+			(at 210.82 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 210.82 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 210.82 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 210.82 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "49294a06-d350-4007-b0e9-82b9b517dcbc")
+		)
+		(instances
+			(project "pixel_blit"
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d"
+					(reference "#PWR0139")
 					(unit 1)
 				)
 			)
@@ -13382,6 +14709,147 @@
 		)
 	)
 	(symbol
+		(lib_id "JLCImport:APS6404L-3SQR-SN_C5333729")
+		(at 236.22 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "510bf14e-47cc-4939-9439-6e6eafd730c0")
+		(property "Reference" "U10"
+			(at 236.22 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "APS6404L-3SQR-SN"
+			(at 236.22 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCImport:APS6404L-3SQR-SN_C5333729"
+			(at 236.22 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C5333729.pdf"
+			(at 236.22 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "APS6404L-3SQR-SN; SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL; Apmemory"
+			(at 236.22 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "APS6404L-3SQR-SN Apmemory C5333729 SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL"
+			(at 236.22 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5333729"
+			(at 236.22 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Apmemory"
+			(at 236.22 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "APS6404L-3SQR-SN"
+			(at 236.22 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "41e4bb39-861c-4a3b-87fe-521477215abd")
+		)
+		(pin "2"
+			(uuid "0b72cdad-7e90-4dc5-b93f-ca661ccbbcad")
+		)
+		(pin "3"
+			(uuid "d0a7a65e-57c4-4e7f-9dac-f0c04d621c89")
+		)
+		(pin "4"
+			(uuid "e67878f5-5749-4199-b591-8b6e4891e966")
+		)
+		(pin "5"
+			(uuid "175d6d3e-b1bb-411a-aeb5-3b00915ffe75")
+		)
+		(pin "6"
+			(uuid "6ac41ef0-d99b-495c-8a11-f183509c3b01")
+		)
+		(pin "7"
+			(uuid "3f28da47-753d-4718-812f-dcf55346c7be")
+		)
+		(pin "8"
+			(uuid "376fb6db-8634-4386-ad68-199a3c3db01d")
+		)
+		(instances
+			(project "pixel_blit"
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PixelBlit:0603,4.7uF")
 		(at 212.09 148.59 0)
 		(mirror x)
@@ -14186,6 +15654,94 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PixelBlit:GND")
+		(at 276.86 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "64fb2b25-c27e-4bc9-846b-4f686fda08cc")
+		(property "Reference" "#PWR0142"
+			(at 276.86 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 276.86 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 276.86 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 276.86 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 276.86 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 276.86 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ee411f2b-41ff-416b-abc8-e0b106f32017")
+		)
+		(instances
+			(project "pixel_blit"
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d"
+					(reference "#PWR0142")
 					(unit 1)
 				)
 			)
@@ -17649,6 +19205,94 @@
 		)
 	)
 	(symbol
+		(lib_id "PixelBlit:GND")
+		(at 213.36 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cc1e46bc-69a8-42bd-bea1-935523df4762")
+		(property "Reference" "#PWR0140"
+			(at 213.36 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 213.36 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 213.36 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 213.36 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "09fd4c5c-b190-4928-85c5-ecc94ff8037c")
+		)
+		(instances
+			(project "pixel_blit"
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d"
+					(reference "#PWR0140")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PixelBlit:0402,100nF")
 		(at 102.87 26.67 0)
 		(unit 1)
@@ -18348,6 +19992,94 @@
 			(project "pixel_blit"
 				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d"
 					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PixelBlit:+3V3")
+		(at 259.08 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ebada266-8722-4aea-afcd-8a25ebbdbcde")
+		(property "Reference" "#PWR0141"
+			(at 259.08 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 259.08 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 259.08 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 259.08 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a19abea4-b3c1-4ec4-9838-81fef450630f")
+		)
+		(instances
+			(project "pixel_blit"
+				(path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d"
+					(reference "#PWR0141")
 					(unit 1)
 				)
 			)
@@ -19939,7 +21671,7 @@
 			(color 44 102 255 1)
 		)
 		(uuid "ba35bb49-3203-4382-af50-555a2d58b34d")
-		(property "Sheetname" "Communications"
+		(property "Sheetname" "Wireless"
 			(at 29.21 31.0384 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19950,7 +21682,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "communications.kicad_sch"
+		(property "Sheetfile" "wireless.kicad_sch"
 			(at 29.21 55.1946 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -49,7 +49,9 @@ especially two claiming ID 0.
 
 - LVDS: U41 (DS90LV048), U42 (DS90LV047), RJ1, RJ2, R20 to R23 (termination),
   D8 and D9 (SLVU2.8-4 protection), and their decoupling.
-  `communications.kicad_sch` goes away.
+  `communications.kicad_sch` goes away. **Done**: the sheet is now
+  `wireless.kicad_sch` (the RM2), and the parts, their copper and the
+  DATA IN/OUT silkscreen are off the board.
 - Note for the record: in the current netlist U41 pin 12 (GND) and both
   transceivers' EN* pins are unconnected. That is moot once LVDS is removed.
 
@@ -80,6 +82,26 @@ especially two claiming ID 0.
   PIO whose base doesn't cover its pins. Bring Wi-Fi up after the LED driver
   or before, either works, but nothing else may hold PIO2.
 - Follow the RM2 datasheet's reference circuit for the shared data line.
+- **Done in the KiCad files** (`wireless.kicad_sch`, U9 RMC20452T, LCSC
+  C49451547). The pin assignment follows the order of the four routed
+  LVDS traces, so the existing copper from the RP2350 is reused:
+
+  | GPIO | Was | Now | RM2 pad |
+  |---|---|---|---|
+  | 32 | HS_DATA3 | WL_ON (`_WL_REG_ON`) | 12 (Wi-Fi on), 13 (Bluetooth on) |
+  | 33 | HS_DATA2 | WL_CS (`_CS`) | 9 |
+  | 34 | HS_DATA1 | WL_DATA (`_DATA_OUT`, `_DATA_IN`, `_HOST_WAKE`) | 5 direct, 6 via R60 470R, 10 via R61 10k |
+  | 35 | HS_DATA0 | WL_CLK (`_CLOCK`) | 3 |
+
+  GPIO 44 (was DATA_IN_EN) is unconnected until the button lands on it.
+  VIN and VDDIO are on +3V3, with C42 (10 uF) and C43/C44 (100 nF).
+- Placement: antenna end flush with the left edge, module centred at y = 110
+  so the space under the flash (U2) stays free for the PSRAM. The footprint
+  carries the datasheet's 35.5 x 18.5 mm keep-out as a rule area on every
+  copper layer. The In2 +3V3 trunk that ran up the left edge (x = 54.15)
+  went through that area, so it now runs at x = 60.5, under the module body.
+  The KiCad library footprint from JLC had the side pads flush with the
+  module edge; they are moved out 0.5 mm to match datasheet Figure 6.
 - Before ordering boards, bench-test the pin choice: an RM2 module wired to
   GPIO 32 to 35 on an RP2350B board (for example `~/git/pcb_try`), running the
   Pico SDK Wi-Fi scan example with our board header.
@@ -275,6 +297,9 @@ and board copper, so a bright show no longer means heavier wire.
   on-board button and status LED, and USB serial cover what it did. Wi-Fi setup
   uses the access-point page on a phone. This frees GPIO 40, 41, 43, 45, 46
   and 47.
+- **Done**: J39, its six signal traces and its +3V3 feed from J38 are off the
+  board. GPIO 40, 41, 43, 45 and 46 are no-connects in the schematic until the
+  status LED, button and spares are placed.
 
 ### Add: PSRAM
 
@@ -282,6 +307,22 @@ and board copper, so a bright show no longer means heavier wire.
   chip select on **GPIO 47**, one of the few pins that can carry the RP2350's
   second QSPI chip select (XIP_CS1). Check the pin options in the RP2350
   datasheet before layout. The Pimoroni Pico Plus 2 uses the same arrangement.
+- **Done**: U10 APS6404L-3SQR-SN (LCSC C5333729, the 3.3 V part; the cheaper
+  -SQN- is 1.8 V), R62 10k pull-up on CE#, C45 100 nF. GPIO 47 is XIP_CS1
+  (funcsel 9, `XIP_SS_N_1` in the SDK's `io_bank0.h`; Pimoroni's Pico Plus 2
+  board files use the same pin). The pull-up matters: RP2350 GPIOs reset
+  with the pull-down on, which would select the PSRAM while the bootrom
+  reads the flash on the shared lines.
+- Layout: U10 sits directly under the flash (U2) in the same orientation,
+  so each column of pins carries one signal on both chips (top rows SD3,
+  SCLK, SD0; bottom rows SD1, SD2). SD3, SCLK and SD0 come down from U2's
+  top pins through the gaps in its bottom row; SD1 and SD2 go down from
+  U2's bottom pins through the gaps in U10's top row; between the chips
+  every trace makes the same half-pitch jog, so nothing crosses. SD1 and
+  SD2 from U1 continue down the right-hand corridor into U10's bottom pads.
+  The flash CS reaches U2 pin 1 on B.Cu, and PSRAM_CS runs on B.Cu from the
+  old DISP_SCL via down x = 72.3 to U10 pin 1. The schematic names the shared
+  nets /QSPI_SD0..3 and /QSPI_SCLK.
 - Uses: buffering an upload while a show plays, decompressing xLights'
   zstd-compressed FSEQs (whose blocks don't fit in internal RAM), and caching
   short shows.
@@ -373,7 +414,8 @@ Related firmware work that does not depend on this board:
 
 ## Open questions
 
-- Confirm XIP_CS1 is available on GPIO 47 of the RP2350B.
+- ~~Confirm XIP_CS1 is available on GPIO 47 of the RP2350B.~~ Confirmed in
+  Pico SDK `io_bank0.h`: GPIO47 function 9 is `XIP_SS_N_1`.
 - Inner copper weight: the stackup says 1 oz, but JLC's 4-layer default is
   0.5 oz on inner layers. Confirm what is ordered.
 - README.md still lists a DIP switch, LVDS and the display. Update it when this revision
