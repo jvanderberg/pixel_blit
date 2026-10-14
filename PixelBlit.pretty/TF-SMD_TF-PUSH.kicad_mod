@@ -1,7 +1,7 @@
 (footprint "TF-SMD_TF-PUSH"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -9.3 0)
@@ -63,6 +63,7 @@
 		)
 	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -7.26 -3.25)
 		(end -7.26 3.91)
@@ -233,14 +234,14 @@
 		(at -4.95 5.7)
 		(size 1.2 1.2)
 		(drill 1.2)
-		(layers "F&B.Cu" "*.Mask")
+		(layers "*.Cu" "*.Mask")
 		(uuid "d35a5ee6-31aa-4434-abaa-ebbe5304ae50")
 	)
 	(pad "" np_thru_hole circle
 		(at 3.05 5.7)
 		(size 1.2 1.2)
 		(drill 1.2)
-		(layers "F&B.Cu" "*.Mask")
+		(layers "*.Cu" "*.Mask")
 		(uuid "a6c36f4a-c5eb-4c69-b32f-65a7b47d3dda")
 	)
 	(pad "1" smd rect

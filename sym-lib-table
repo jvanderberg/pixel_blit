@@ -4,4 +4,7 @@
   (lib (name "JLCImport")(type "KiCad")(uri "${KIPRJMOD}/JLCImport.kicad_sym")(options "")(descr ""))
   (lib (name "JLCImport2asd")(type "KiCad")(uri "${KIPRJMOD}/JLCImport2.kicad_sym")(options "")(descr "")(hidden))
   (lib (name "JLCGlobal2")(type "KiCad")(uri "${KIPRJMOD}/JLCGlobal2.kicad_sym")(options "")(descr ""))
+  (lib (name "EasyEDA")(type "KiCad")(uri "${KIPRJMOD}/EasyEDA.kicad_sym")(options "")(descr "Parts used by this board, copied from the EasyEDA import library"))
+  (lib (name "PCM_JLCPCB-Diodes")(type "KiCad")(uri "${KIPRJMOD}/JLCPCB-Diodes.kicad_sym")(options "")(descr "Parts used by this board, copied from CDFER JLCPCB-Kicad-Library"))
+  (lib (name "PCM_JLCPCB-Resistors")(type "KiCad")(uri "${KIPRJMOD}/JLCPCB-Resistors.kicad_sym")(options "")(descr "Parts used by this board, copied from CDFER JLCPCB-Kicad-Library"))
 )

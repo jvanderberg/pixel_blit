@@ -1,7 +1,7 @@
 (footprint "pixelblitlogo"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 0 0)
@@ -52,6 +52,7 @@
 		)
 	)
 	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_poly
 		(pts
 			(xy 25.169788 1.573112) (xy 25.169788 2.340483) (xy 17.687915 2.340483) (xy 10.206042 2.340483) (xy 10.206042 1.573112)

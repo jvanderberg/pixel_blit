@@ -4,4 +4,6 @@
   (lib (name "JLCImport")(type "KiCad")(uri "${KIPRJMOD}/JLCImport.pretty")(options "")(descr ""))
   (lib (name "JLCImpor. hh")(type "KiCad")(uri "${KIPRJMOD}/JLCImport2.pretty")(options "")(descr "")(disabled))
   (lib (name "JLCGlobal2")(type "KiCad")(uri "${KIPRJMOD}/JLCGlobal2.pretty")(options "")(descr ""))
+  (lib (name "EasyEDA")(type "KiCad")(uri "${KIPRJMOD}/EasyEDA.pretty")(options "")(descr "Parts used by this board, copied from the EasyEDA import library"))
+  (lib (name "PCM_JLCPCB")(type "KiCad")(uri "${KIPRJMOD}/JLCPCB.pretty")(options "")(descr "Parts used by this board, copied from CDFER JLCPCB-Kicad-Library"))
 )
