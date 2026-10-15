@@ -156,6 +156,13 @@ rails. This revision raises it to 24V nominal.
   output capacitors set the current, and the PTC trips well before the blade
   fuse blows.
   Pick from the Littelfuse or Bourns tables.
+  **Done:** all 32 are now LUTE 1812L300/30GR (LCSC C48985875, imported
+  with jlcimport: JLCImport symbol and footprint, pins redrawn at ±5.08 to
+  match the old symbol; pads are identical to the old F1812): 3 A hold,
+  5 A trip, 30 V, same 1812 body (4.73 x 3.41 mm) and footprint. Its Imax is
+  40 A, and so is every 30 V polymer PTC checked at JLC, in 1812 and in 2920
+  (1812L260/30, BSMD1812-200-30V, 2920L300/30GR). So the 2x rule holds with
+  a **20 A zone fuse**, not 25 A; the silkscreen says "BLADE FUSES 20A".
 - **Capacitors** on the zone rails and `+12V_SYS`: 35V or 50V.
 - **TVS diode** on each zone input, clamping just above 24V, for hot-plugging
   supplies on long leads.
@@ -199,20 +206,24 @@ rails. This revision raises it to 24V nominal.
   inductor. Checked in the datasheet (SLVSHG1):
   - VIN and SW1 absolute maximum 42 V, above the TVS clamp.
   - **EN/UVLO absolute maximum is 20 V**, so it cannot be tied to VIN. Use a
-    divider of 61.9k over 27.4k: on at 4.01 V, with 5 µA × 61.9k = 0.31 V
-    of hysteresis, and only 8.6 V on the pin at 28 V.
-  - FB reference 1.2 V ±1%. R_up 100k (TI's recommendation) and R_down
-    29.4k give **5.28 V**, which D3 brings down to about 4.9 V on `+5V`, as
-    today.
-  - FSW: fSW = 10⁶ / (50·R_kΩ + 35) kHz, so 19.1k gives **1.01 MHz**. That
-    is a compromise between switching loss at 28 V in and inductor size.
+    divider of 51k over 22k (JLC basic parts): on at 4.08 V, with
+    5 µA × 51k = 0.26 V of hysteresis, and only 8.4 V on the pin at 28 V.
+  - FB reference 1.2 V ±1%. R_up 100k (TI's recommendation) over
+    20k + 10k in series gives **5.20 V**, which D3 brings down to about
+    4.85 V on `+5V`. All three are basic parts; the exact 29.4k would be
+    an extended part.
+  - FSW: fSW = 10⁶ / (50·R_kΩ + 35) kHz, so 20k (basic) gives **966 kHz**.
+    That is a compromise between switching loss at 28 V in and inductor
+    size.
   - **MODE to VCC: forced PWM**, the same reasoning as the 3.3 V buck.
-    EXTVCC to VCC (internal LDO); VCC cap 10 µF; BOOT1 and BOOT2 0.1 µF;
+    EXTVCC left open (internal LDO; the datasheet allows high or floating,
+    and it saves a crossing); VCC cap 10 µF; BOOT1 and BOOT2 0.1 µF;
     DITH/SYNC to GND (no dithering); PG and CC open, or to test pads; CDC
     open.
-  - **Output current limit:** R_SNS = 25 mΩ between VOUT and ISP/ISN, with
-    V_SNS = 50 mV, gives 2 A. A short on `+5V` or J38 then folds back
-    instead of running into the 4 A inductor limit.
+  - **No output current limit resistor:** ISP and ISN tie to VOUT. The part
+    still has its 4 A average current limit and hiccup short-circuit
+    protection, and it saves an extended part. A 25 mΩ sense resistor
+    (V_SNS = 50 mV, so 2 A) can be added later if J38's 5 V pin needs it.
 - **Inductor: 4.7 µH, I_sat 8 A** (Sunlord MWSA0605S-4R7MT, C408465, 7 x
   6.6 mm; the ABC GSSM05304R7M3AU, C2928302, is 5.2 x 5.7 mm). I_sat is
   above the 6.5 A peak current limit, so the inductor does not saturate in
@@ -225,14 +236,30 @@ rails. This revision raises it to 24V nominal.
 - **Compensation** (datasheet equations 24 to 26, worst case boost at
   4.5 V in and 1 A out, so D = 0.151): f_RHPZ = 129 kHz, crossover
   f_C = 20 kHz (below f_RHPZ/5 and fSW/10), G_EA = 190 µA/V, R_SENSE
-  0.055 Ω. That gives **R_C = 9.53k, C_C = 15 nF, C_P = 27 pF**. These are
-  calculated values; check them in TI's design tool or on the bench.
+  0.055 Ω. That gives R_C = 9.5k, C_C = 14 nF, C_P = 26 pF; fitted as
+  basic parts **R_C = 10k, C_C = 10 nF, C_P = 22 pF** (zero at 1.6 kHz,
+  well below the 20 kHz crossover). These are calculated values; check them
+  in TI's design tool or on the bench.
 - **Load:** 1 A continuous at 5 V. The 3.3 V buck draws about 0.55 A at
   its 750 mA peak, the level shifters' 5 V side and LEDs about 50 mA, and
   J38's 5 V pin is budgeted at 100 mA.
 - **Output OR:** keep D3 (B5819W) from `5V_REG` to `+5V`, and D1 from
   USB. An ideal-diode controller is an option later, if the extra 0.3 V
   is ever wanted back.
+- **Layout (done):** U3 at (192.6, 67.4) in the old TPS63070's spot,
+  following TI's layout example (SLVSHG1 figure 8-13) rotated -90°. The
+  SW1 and SW2 bars exit right to the inductor on two SW pours, with the
+  bootstrap caps at the corners. VIN, PGND and VOUT exit left into three
+  stacked pours, keeping the old arrangement (+12V_SYS upper left, 5V_REG
+  lower left next to D3). The input caps bridge VIN and PGND, the output
+  caps PGND and VOUT, and the PGND strip has its own vias plus three at the
+  PGND bar's right end. FSW drops to B.Cu next to the pin so the VIN neck
+  stays clear, and MODE reaches VCC on a short B.Cu link. The SW copies on
+  In1 under the old inductor are gone, so In1 is solid GND under the
+  converter. The 47 µF electrolytic (C24) sits on the +12V_SYS feed at
+  x = 179.85. The zone TVS (D10 to D13) sit beside each fuse with two vias
+  to the zone plane and two to GND. The display's silkscreen outline is
+  removed.
 
 **Mixed voltages:** each zone feeds only its own 8 ports, and the OR diodes
 power the logic from whichever zone is highest. So one board can run, for
@@ -240,6 +267,18 @@ example, 5V on zone 1, 12V on zones 2 and 3, and 24V on zone 4. The lower
 zones' diodes are reverse-biased: 19V at most, within the SS34's 40V rating.
 All zones share ground. The zone link fuses must be gone for this (see
 below), since fitted they would tie two supplies together.
+
+**Done (silkscreen):** "6-12VDC" is now "5-24VDC" and the "12V" labels
+(J38 and the buck-boost input) read "VIN". Every string label is
+"S‹n›·Z‹z›" in the new zone numbering, plain text at one offset per row.
+Each input terminal reads "+ Z‹n› −" (zone number between the existing
+polarity marks). A silkscreen border outlines each zone, following its B.Cu
+pour plus its input's F.Cu pour; neighbouring zones share one line, and the
+line breaks around pads, part silk and text. A zone key beside "5-24VDC"
+lists zone, strings and a write-in voltage box, plus the 20 A fuse note.
+The schematic nets are renamed to the new numbers (`STRINGn` = GPIO for
+string n, `Sn_OUT`), so schematic, board and silkscreen agree; the firmware
+`string_to_bit` table is still to do.
 
 **Labelling**, because a 5V or 12V string on a 24V zone is destroyed at once:
 
@@ -397,9 +436,9 @@ Checked in the datasheet (SLUSEG9E):
   basic C25768.
 - L = 1 µH, COUT = 22 µF (the datasheet's standard, recommended
   combination), CIN = 4.7 µF.
-- Rated for 10–47 µF of output capacitance. The new 22 µF replaces C28
-  (10 µF, next to U4), so the regulator itself sees about 22 µF, with C16,
-  C42 and the 100 nF parts further out on the rail.
+- Rated for 10–47 µF of output capacitance. C53 (22 µF) sits at the
+  regulator and C28 (10 µF) stays at the 3V3 node next to it: 32 µF, with
+  C16, C42 and the 100 nF parts further out on the rail.
 - PG unused: leave open (the datasheet allows open or GND). The RP2350's own
   brownout handles power-up.
 
@@ -412,11 +451,11 @@ example. Sunlord MWTC201610S1R0MT (C2840989, 4.6 A) is a cheaper fallback.
 always uses power-save mode at light load (no forced-PWM version), so it is
 second choice.
 
-**Placement:** in U4's spot (around x = 187.5, y = 96.5), reusing the
-ME6217's input and output caps and the In2 +3V3 trunk that leaves from
-there. The footprint is smaller than the LDO plus its caps: SOT-563, a
-2016 inductor, 0805 COUT, 0603 CIN and two 0402s. Keep the SW node short
-and the CIN-to-GND loop tight, per the datasheet layout section.
+**Placement (done):** U4 at (188.4, 95.6), laid out like TI's SOT563
+example rotated 90°: GND | SW | VIN along the bottom, the inductor below,
+a GND pour above with CIN (C52) and COUT (C53) bridging into it, and a
++3V3 output pour that reaches C28, C29, TP2 and JP1, so the In2 +3V3 trunk
+is fed as before. The feedback divider sits above the IC, away from SW.
 
 No JLC basic-library buck exists, so any choice pays the extended-part fee.
 

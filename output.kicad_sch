@@ -5,14 +5,21 @@
 	(uuid "97ad709a-802c-4b9c-bb78-a8c3350d8a7f")
 	(paper "A4")
 	(lib_symbols
-		(symbol "EasyEDA:1812L400_16GR"
+		(symbol "JLCImport:1812L300_30GR"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 5.08 0)
+			(property "Reference" "F"
+				(at 0 3.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -21,8 +28,8 @@
 					)
 				)
 			)
-			(property "Value" "1812L400/16GR"
-				(at 0 -5.08 0)
+			(property "Value" "1812L300/30GR"
+				(at 0 -3.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -31,18 +38,7 @@
 					)
 				)
 			)
-			(property "Footprint" "EasyEDA:F1812"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
+			(property "Footprint" "JLCImport:1812L300_30GR"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -53,7 +49,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -64,8 +60,8 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C22374900"
-				(at 0 -10.16 0)
+			(property "Description" "1812L300/30GR; F1812; LUTE"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -75,31 +71,76 @@
 					)
 				)
 			)
-			(symbol "1812L400_16GR_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
+			(property "LCSC" "C48985875"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 2.54 0)
+			)
+			(property "Manufacturer" "LUTE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
+				)
+			)
+			(property "Manufacturer Part" "1812L300/30GR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "1812L300/30GR C48985875 F1812 LUTE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "1812L300_30GR_0_1"
+				(arc
+					(start -2.54 0)
+					(mid -1.27 1.27)
+					(end 0 0)
 					(stroke
-						(width 0)
-						(type default)
+						(width 0.254)
+						(type solid)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(arc
+					(start 2.54 0)
+					(mid 1.27 -1.27)
+					(end 0 0)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
@@ -117,7 +158,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
@@ -4583,7 +4624,7 @@
 		)
 		(uuid "ffdc7224-b739-411c-b1ad-8d67f3c8703f")
 	)
-	(global_label "S15_OUT"
+	(global_label "S7_OUT"
 		(shape input)
 		(at 137.16 41.91 0)
 		(fields_autoplaced yes)
@@ -4607,7 +4648,7 @@
 			)
 		)
 	)
-	(global_label "S14_OUT"
+	(global_label "S15_OUT"
 		(shape input)
 		(at 105.41 147.32 180)
 		(fields_autoplaced yes)
@@ -4631,7 +4672,7 @@
 			)
 		)
 	)
-	(global_label "S18_OUT"
+	(global_label "S25_OUT"
 		(shape input)
 		(at 190.5 54.61 0)
 		(fields_autoplaced yes)
@@ -4655,7 +4696,7 @@
 			)
 		)
 	)
-	(global_label "S0_OUT"
+	(global_label "S8_OUT"
 		(shape input)
 		(at 43.18 78.74 180)
 		(fields_autoplaced yes)
@@ -4679,7 +4720,7 @@
 			)
 		)
 	)
-	(global_label "S24_OUT"
+	(global_label "S28_OUT"
 		(shape input)
 		(at 243.84 59.69 0)
 		(fields_autoplaced yes)
@@ -4703,7 +4744,7 @@
 			)
 		)
 	)
-	(global_label "S5_OUT"
+	(global_label "S2_OUT"
 		(shape input)
 		(at 43.18 135.89 180)
 		(fields_autoplaced yes)
@@ -4727,7 +4768,7 @@
 			)
 		)
 	)
-	(global_label "S10_OUT"
+	(global_label "S13_OUT"
 		(shape input)
 		(at 105.41 101.6 180)
 		(fields_autoplaced yes)
@@ -4751,7 +4792,7 @@
 			)
 		)
 	)
-	(global_label "STRING3"
+	(global_label "STRING1"
 		(shape input)
 		(at 54.61 52.07 180)
 		(fields_autoplaced yes)
@@ -4775,7 +4816,7 @@
 			)
 		)
 	)
-	(global_label "STRING7"
+	(global_label "STRING3"
 		(shape input)
 		(at 54.61 41.91 180)
 		(fields_autoplaced yes)
@@ -4799,7 +4840,7 @@
 			)
 		)
 	)
-	(global_label "S20_OUT"
+	(global_label "S26_OUT"
 		(shape input)
 		(at 168.91 123.19 180)
 		(fields_autoplaced yes)
@@ -4823,7 +4864,7 @@
 			)
 		)
 	)
-	(global_label "S0_OUT"
+	(global_label "S8_OUT"
 		(shape input)
 		(at 85.09 59.69 0)
 		(fields_autoplaced yes)
@@ -4847,7 +4888,7 @@
 			)
 		)
 	)
-	(global_label "S30_OUT"
+	(global_label "S31_OUT"
 		(shape input)
 		(at 243.84 44.45 0)
 		(fields_autoplaced yes)
@@ -4871,7 +4912,7 @@
 			)
 		)
 	)
-	(global_label "STRING15"
+	(global_label "STRING7"
 		(shape input)
 		(at 107.95 41.91 180)
 		(fields_autoplaced yes)
@@ -4895,7 +4936,7 @@
 			)
 		)
 	)
-	(global_label "S23_OUT"
+	(global_label "S19_OUT"
 		(shape input)
 		(at 168.91 157.48 180)
 		(fields_autoplaced yes)
@@ -4919,7 +4960,7 @@
 			)
 		)
 	)
-	(global_label "STRING14"
+	(global_label "STRING15"
 		(shape input)
 		(at 107.95 44.45 180)
 		(fields_autoplaced yes)
@@ -4943,7 +4984,7 @@
 			)
 		)
 	)
-	(global_label "S24_OUT"
+	(global_label "S28_OUT"
 		(shape input)
 		(at 229.87 78.74 180)
 		(fields_autoplaced yes)
@@ -4967,7 +5008,7 @@
 			)
 		)
 	)
-	(global_label "STRING18"
+	(global_label "STRING25"
 		(shape input)
 		(at 160.02 54.61 180)
 		(fields_autoplaced yes)
@@ -4991,7 +5032,7 @@
 			)
 		)
 	)
-	(global_label "S15_OUT"
+	(global_label "S7_OUT"
 		(shape input)
 		(at 105.41 158.75 180)
 		(fields_autoplaced yes)
@@ -5015,7 +5056,7 @@
 			)
 		)
 	)
-	(global_label "S22_OUT"
+	(global_label "S27_OUT"
 		(shape input)
 		(at 168.91 146.05 180)
 		(fields_autoplaced yes)
@@ -5039,7 +5080,7 @@
 			)
 		)
 	)
-	(global_label "S19_OUT"
+	(global_label "S17_OUT"
 		(shape input)
 		(at 190.5 52.07 0)
 		(fields_autoplaced yes)
@@ -5063,7 +5104,7 @@
 			)
 		)
 	)
-	(global_label "S21_OUT"
+	(global_label "S18_OUT"
 		(shape input)
 		(at 190.5 46.99 0)
 		(fields_autoplaced yes)
@@ -5087,7 +5128,7 @@
 			)
 		)
 	)
-	(global_label "S13_OUT"
+	(global_label "S6_OUT"
 		(shape input)
 		(at 105.41 135.89 180)
 		(fields_autoplaced yes)
@@ -5111,7 +5152,7 @@
 			)
 		)
 	)
-	(global_label "S21_OUT"
+	(global_label "S18_OUT"
 		(shape input)
 		(at 168.91 134.62 180)
 		(fields_autoplaced yes)
@@ -5135,7 +5176,7 @@
 			)
 		)
 	)
-	(global_label "S28_OUT"
+	(global_label "S30_OUT"
 		(shape input)
 		(at 243.84 49.53 0)
 		(fields_autoplaced yes)
@@ -5159,7 +5200,7 @@
 			)
 		)
 	)
-	(global_label "S31_OUT"
+	(global_label "S23_OUT"
 		(shape input)
 		(at 243.84 41.91 0)
 		(fields_autoplaced yes)
@@ -5183,7 +5224,7 @@
 			)
 		)
 	)
-	(global_label "S9_OUT"
+	(global_label "S4_OUT"
 		(shape input)
 		(at 137.16 57.15 0)
 		(fields_autoplaced yes)
@@ -5207,7 +5248,7 @@
 			)
 		)
 	)
-	(global_label "S14_OUT"
+	(global_label "S15_OUT"
 		(shape input)
 		(at 137.16 44.45 0)
 		(fields_autoplaced yes)
@@ -5231,7 +5272,7 @@
 			)
 		)
 	)
-	(global_label "S29_OUT"
+	(global_label "S22_OUT"
 		(shape input)
 		(at 243.84 46.99 0)
 		(fields_autoplaced yes)
@@ -5255,7 +5296,7 @@
 			)
 		)
 	)
-	(global_label "STRING17"
+	(global_label "STRING16"
 		(shape input)
 		(at 160.02 57.15 180)
 		(fields_autoplaced yes)
@@ -5279,7 +5320,7 @@
 			)
 		)
 	)
-	(global_label "S12_OUT"
+	(global_label "S14_OUT"
 		(shape input)
 		(at 137.16 49.53 0)
 		(fields_autoplaced yes)
@@ -5303,7 +5344,7 @@
 			)
 		)
 	)
-	(global_label "STRING26"
+	(global_label "STRING29"
 		(shape input)
 		(at 213.36 54.61 180)
 		(fields_autoplaced yes)
@@ -5327,7 +5368,7 @@
 			)
 		)
 	)
-	(global_label "STRING13"
+	(global_label "STRING6"
 		(shape input)
 		(at 107.95 46.99 180)
 		(fields_autoplaced yes)
@@ -5351,7 +5392,7 @@
 			)
 		)
 	)
-	(global_label "STRING25"
+	(global_label "STRING20"
 		(shape input)
 		(at 213.36 57.15 180)
 		(fields_autoplaced yes)
@@ -5375,7 +5416,7 @@
 			)
 		)
 	)
-	(global_label "S11_OUT"
+	(global_label "S5_OUT"
 		(shape input)
 		(at 105.41 113.03 180)
 		(fields_autoplaced yes)
@@ -5399,7 +5440,7 @@
 			)
 		)
 	)
-	(global_label "STRING23"
+	(global_label "STRING19"
 		(shape input)
 		(at 160.02 41.91 180)
 		(fields_autoplaced yes)
@@ -5423,7 +5464,7 @@
 			)
 		)
 	)
-	(global_label "STRING22"
+	(global_label "STRING27"
 		(shape input)
 		(at 160.02 44.45 180)
 		(fields_autoplaced yes)
@@ -5447,7 +5488,7 @@
 			)
 		)
 	)
-	(global_label "S18_OUT"
+	(global_label "S25_OUT"
 		(shape input)
 		(at 168.91 100.33 180)
 		(fields_autoplaced yes)
@@ -5471,7 +5512,7 @@
 			)
 		)
 	)
-	(global_label "S26_OUT"
+	(global_label "S29_OUT"
 		(shape input)
 		(at 243.84 54.61 0)
 		(fields_autoplaced yes)
@@ -5495,7 +5536,7 @@
 			)
 		)
 	)
-	(global_label "S7_OUT"
+	(global_label "S3_OUT"
 		(shape input)
 		(at 43.18 158.75 180)
 		(fields_autoplaced yes)
@@ -5519,7 +5560,7 @@
 			)
 		)
 	)
-	(global_label "STRING11"
+	(global_label "STRING5"
 		(shape input)
 		(at 107.95 52.07 180)
 		(fields_autoplaced yes)
@@ -5543,7 +5584,7 @@
 			)
 		)
 	)
-	(global_label "S5_OUT"
+	(global_label "S2_OUT"
 		(shape input)
 		(at 85.09 46.99 0)
 		(fields_autoplaced yes)
@@ -5567,7 +5608,7 @@
 			)
 		)
 	)
-	(global_label "S4_OUT"
+	(global_label "S10_OUT"
 		(shape input)
 		(at 43.18 124.46 180)
 		(fields_autoplaced yes)
@@ -5591,7 +5632,7 @@
 			)
 		)
 	)
-	(global_label "S16_OUT"
+	(global_label "S24_OUT"
 		(shape input)
 		(at 190.5 59.69 0)
 		(fields_autoplaced yes)
@@ -5615,7 +5656,7 @@
 			)
 		)
 	)
-	(global_label "S6_OUT"
+	(global_label "S11_OUT"
 		(shape input)
 		(at 43.18 147.32 180)
 		(fields_autoplaced yes)
@@ -5639,7 +5680,7 @@
 			)
 		)
 	)
-	(global_label "STRING21"
+	(global_label "STRING18"
 		(shape input)
 		(at 160.02 46.99 180)
 		(fields_autoplaced yes)
@@ -5663,7 +5704,7 @@
 			)
 		)
 	)
-	(global_label "STRING10"
+	(global_label "STRING13"
 		(shape input)
 		(at 107.95 54.61 180)
 		(fields_autoplaced yes)
@@ -5687,7 +5728,7 @@
 			)
 		)
 	)
-	(global_label "S2_OUT"
+	(global_label "S9_OUT"
 		(shape input)
 		(at 85.09 54.61 0)
 		(fields_autoplaced yes)
@@ -5711,7 +5752,7 @@
 			)
 		)
 	)
-	(global_label "S1_OUT"
+	(global_label "S0_OUT"
 		(shape input)
 		(at 85.09 57.15 0)
 		(fields_autoplaced yes)
@@ -5735,7 +5776,7 @@
 			)
 		)
 	)
-	(global_label "S30_OUT"
+	(global_label "S31_OUT"
 		(shape input)
 		(at 229.87 147.32 180)
 		(fields_autoplaced yes)
@@ -5759,7 +5800,7 @@
 			)
 		)
 	)
-	(global_label "S26_OUT"
+	(global_label "S29_OUT"
 		(shape input)
 		(at 229.87 101.6 180)
 		(fields_autoplaced yes)
@@ -5783,7 +5824,7 @@
 			)
 		)
 	)
-	(global_label "STRING8"
+	(global_label "STRING12"
 		(shape input)
 		(at 106.68 59.69 180)
 		(fields_autoplaced yes)
@@ -5807,7 +5848,7 @@
 			)
 		)
 	)
-	(global_label "S1_OUT"
+	(global_label "S0_OUT"
 		(shape input)
 		(at 43.18 90.17 180)
 		(fields_autoplaced yes)
@@ -5831,7 +5872,7 @@
 			)
 		)
 	)
-	(global_label "S25_OUT"
+	(global_label "S20_OUT"
 		(shape input)
 		(at 243.84 57.15 0)
 		(fields_autoplaced yes)
@@ -5855,7 +5896,7 @@
 			)
 		)
 	)
-	(global_label "S13_OUT"
+	(global_label "S6_OUT"
 		(shape input)
 		(at 137.16 46.99 0)
 		(fields_autoplaced yes)
@@ -5879,7 +5920,7 @@
 			)
 		)
 	)
-	(global_label "STRING27"
+	(global_label "STRING21"
 		(shape input)
 		(at 213.36 52.07 180)
 		(fields_autoplaced yes)
@@ -5903,7 +5944,7 @@
 			)
 		)
 	)
-	(global_label "STRING1"
+	(global_label "STRING0"
 		(shape input)
 		(at 54.61 57.15 180)
 		(fields_autoplaced yes)
@@ -5927,7 +5968,7 @@
 			)
 		)
 	)
-	(global_label "STRING6"
+	(global_label "STRING11"
 		(shape input)
 		(at 54.61 44.45 180)
 		(fields_autoplaced yes)
@@ -5951,7 +5992,7 @@
 			)
 		)
 	)
-	(global_label "STRING24"
+	(global_label "STRING28"
 		(shape input)
 		(at 213.36 59.69 180)
 		(fields_autoplaced yes)
@@ -5975,7 +6016,7 @@
 			)
 		)
 	)
-	(global_label "S10_OUT"
+	(global_label "S13_OUT"
 		(shape input)
 		(at 137.16 54.61 0)
 		(fields_autoplaced yes)
@@ -5999,7 +6040,7 @@
 			)
 		)
 	)
-	(global_label "S6_OUT"
+	(global_label "S11_OUT"
 		(shape input)
 		(at 85.09 44.45 0)
 		(fields_autoplaced yes)
@@ -6023,7 +6064,7 @@
 			)
 		)
 	)
-	(global_label "S23_OUT"
+	(global_label "S19_OUT"
 		(shape input)
 		(at 190.5 41.91 0)
 		(fields_autoplaced yes)
@@ -6047,7 +6088,7 @@
 			)
 		)
 	)
-	(global_label "STRING5"
+	(global_label "STRING2"
 		(shape input)
 		(at 54.61 46.99 180)
 		(fields_autoplaced yes)
@@ -6071,7 +6112,7 @@
 			)
 		)
 	)
-	(global_label "S3_OUT"
+	(global_label "S1_OUT"
 		(shape input)
 		(at 85.09 52.07 0)
 		(fields_autoplaced yes)
@@ -6095,7 +6136,7 @@
 			)
 		)
 	)
-	(global_label "S9_OUT"
+	(global_label "S4_OUT"
 		(shape input)
 		(at 105.41 90.17 180)
 		(fields_autoplaced yes)
@@ -6119,7 +6160,7 @@
 			)
 		)
 	)
-	(global_label "S8_OUT"
+	(global_label "S12_OUT"
 		(shape input)
 		(at 137.16 59.69 0)
 		(fields_autoplaced yes)
@@ -6143,7 +6184,7 @@
 			)
 		)
 	)
-	(global_label "S28_OUT"
+	(global_label "S30_OUT"
 		(shape input)
 		(at 229.87 124.46 180)
 		(fields_autoplaced yes)
@@ -6167,7 +6208,7 @@
 			)
 		)
 	)
-	(global_label "S12_OUT"
+	(global_label "S14_OUT"
 		(shape input)
 		(at 105.41 124.46 180)
 		(fields_autoplaced yes)
@@ -6191,7 +6232,7 @@
 			)
 		)
 	)
-	(global_label "S22_OUT"
+	(global_label "S27_OUT"
 		(shape input)
 		(at 190.5 44.45 0)
 		(fields_autoplaced yes)
@@ -6215,7 +6256,7 @@
 			)
 		)
 	)
-	(global_label "S16_OUT"
+	(global_label "S24_OUT"
 		(shape input)
 		(at 168.91 77.47 180)
 		(fields_autoplaced yes)
@@ -6239,7 +6280,7 @@
 			)
 		)
 	)
-	(global_label "S3_OUT"
+	(global_label "S1_OUT"
 		(shape input)
 		(at 43.18 113.03 180)
 		(fields_autoplaced yes)
@@ -6263,7 +6304,7 @@
 			)
 		)
 	)
-	(global_label "STRING30"
+	(global_label "STRING31"
 		(shape input)
 		(at 213.36 44.45 180)
 		(fields_autoplaced yes)
@@ -6287,7 +6328,7 @@
 			)
 		)
 	)
-	(global_label "S31_OUT"
+	(global_label "S23_OUT"
 		(shape input)
 		(at 229.87 158.75 180)
 		(fields_autoplaced yes)
@@ -6311,7 +6352,7 @@
 			)
 		)
 	)
-	(global_label "STRING28"
+	(global_label "STRING30"
 		(shape input)
 		(at 213.36 49.53 180)
 		(fields_autoplaced yes)
@@ -6335,7 +6376,7 @@
 			)
 		)
 	)
-	(global_label "STRING4"
+	(global_label "STRING10"
 		(shape input)
 		(at 54.61 49.53 180)
 		(fields_autoplaced yes)
@@ -6359,7 +6400,7 @@
 			)
 		)
 	)
-	(global_label "S17_OUT"
+	(global_label "S16_OUT"
 		(shape input)
 		(at 190.5 57.15 0)
 		(fields_autoplaced yes)
@@ -6383,7 +6424,7 @@
 			)
 		)
 	)
-	(global_label "S27_OUT"
+	(global_label "S21_OUT"
 		(shape input)
 		(at 229.87 113.03 180)
 		(fields_autoplaced yes)
@@ -6407,7 +6448,7 @@
 			)
 		)
 	)
-	(global_label "STRING20"
+	(global_label "STRING26"
 		(shape input)
 		(at 160.02 49.53 180)
 		(fields_autoplaced yes)
@@ -6431,7 +6472,7 @@
 			)
 		)
 	)
-	(global_label "S7_OUT"
+	(global_label "S3_OUT"
 		(shape input)
 		(at 85.09 41.91 0)
 		(fields_autoplaced yes)
@@ -6455,7 +6496,7 @@
 			)
 		)
 	)
-	(global_label "STRING19"
+	(global_label "STRING17"
 		(shape input)
 		(at 160.02 52.07 180)
 		(fields_autoplaced yes)
@@ -6479,7 +6520,7 @@
 			)
 		)
 	)
-	(global_label "S27_OUT"
+	(global_label "S21_OUT"
 		(shape input)
 		(at 243.84 52.07 0)
 		(fields_autoplaced yes)
@@ -6503,7 +6544,7 @@
 			)
 		)
 	)
-	(global_label "S17_OUT"
+	(global_label "S16_OUT"
 		(shape input)
 		(at 168.91 88.9 180)
 		(fields_autoplaced yes)
@@ -6527,7 +6568,7 @@
 			)
 		)
 	)
-	(global_label "STRING31"
+	(global_label "STRING23"
 		(shape input)
 		(at 213.36 41.91 180)
 		(fields_autoplaced yes)
@@ -6551,7 +6592,7 @@
 			)
 		)
 	)
-	(global_label "S25_OUT"
+	(global_label "S20_OUT"
 		(shape input)
 		(at 229.87 90.17 180)
 		(fields_autoplaced yes)
@@ -6575,7 +6616,7 @@
 			)
 		)
 	)
-	(global_label "S2_OUT"
+	(global_label "S9_OUT"
 		(shape input)
 		(at 43.18 101.6 180)
 		(fields_autoplaced yes)
@@ -6599,7 +6640,7 @@
 			)
 		)
 	)
-	(global_label "S20_OUT"
+	(global_label "S26_OUT"
 		(shape input)
 		(at 190.5 49.53 0)
 		(fields_autoplaced yes)
@@ -6623,7 +6664,7 @@
 			)
 		)
 	)
-	(global_label "S19_OUT"
+	(global_label "S17_OUT"
 		(shape input)
 		(at 168.91 111.76 180)
 		(fields_autoplaced yes)
@@ -6647,7 +6688,7 @@
 			)
 		)
 	)
-	(global_label "S29_OUT"
+	(global_label "S22_OUT"
 		(shape input)
 		(at 229.87 135.89 180)
 		(fields_autoplaced yes)
@@ -6671,7 +6712,7 @@
 			)
 		)
 	)
-	(global_label "S11_OUT"
+	(global_label "S5_OUT"
 		(shape input)
 		(at 137.16 52.07 0)
 		(fields_autoplaced yes)
@@ -6695,7 +6736,7 @@
 			)
 		)
 	)
-	(global_label "STRING9"
+	(global_label "STRING4"
 		(shape input)
 		(at 106.68 57.15 180)
 		(fields_autoplaced yes)
@@ -6719,7 +6760,7 @@
 			)
 		)
 	)
-	(global_label "STRING29"
+	(global_label "STRING22"
 		(shape input)
 		(at 213.36 46.99 180)
 		(fields_autoplaced yes)
@@ -6743,7 +6784,7 @@
 			)
 		)
 	)
-	(global_label "STRING12"
+	(global_label "STRING14"
 		(shape input)
 		(at 107.95 49.53 180)
 		(fields_autoplaced yes)
@@ -6767,7 +6808,7 @@
 			)
 		)
 	)
-	(global_label "STRING0"
+	(global_label "STRING8"
 		(shape input)
 		(at 54.61 59.69 180)
 		(fields_autoplaced yes)
@@ -6791,7 +6832,7 @@
 			)
 		)
 	)
-	(global_label "STRING2"
+	(global_label "STRING9"
 		(shape input)
 		(at 54.61 54.61 180)
 		(fields_autoplaced yes)
@@ -6815,7 +6856,7 @@
 			)
 		)
 	)
-	(global_label "STRING16"
+	(global_label "STRING24"
 		(shape input)
 		(at 160.02 59.69 180)
 		(fields_autoplaced yes)
@@ -6839,7 +6880,7 @@
 			)
 		)
 	)
-	(global_label "S4_OUT"
+	(global_label "S10_OUT"
 		(shape input)
 		(at 85.09 49.53 0)
 		(fields_autoplaced yes)
@@ -6863,7 +6904,7 @@
 			)
 		)
 	)
-	(global_label "S8_OUT"
+	(global_label "S12_OUT"
 		(shape input)
 		(at 105.41 78.74 180)
 		(fields_autoplaced yes)
@@ -8306,7 +8347,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 124.46 156.21 0)
 		(unit 1)
 		(body_style 1)
@@ -8326,7 +8367,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 124.46 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -8337,7 +8378,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 124.46 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -8348,7 +8389,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 124.46 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -8359,7 +8400,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 124.46 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -8370,7 +8411,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 124.46 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 124.46 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 124.46 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -8918,7 +8981,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 186.69 143.51 0)
 		(unit 1)
 		(body_style 1)
@@ -8938,7 +9001,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 186.69 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -8949,7 +9012,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 186.69 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -8960,7 +9023,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 186.69 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8971,7 +9034,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 186.69 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8982,7 +9045,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 186.69 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 186.69 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 186.69 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -10208,7 +10293,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 186.69 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -10228,7 +10313,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 186.69 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -10239,7 +10324,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 186.69 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -10250,7 +10335,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 186.69 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -10261,7 +10346,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 186.69 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -10272,7 +10357,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 186.69 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 186.69 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 186.69 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -11061,7 +11168,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 245.11 110.49 0)
 		(unit 1)
 		(body_style 1)
@@ -11081,7 +11188,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 245.11 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -11092,7 +11199,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 245.11 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -11103,7 +11210,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 245.11 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -11114,7 +11221,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 245.11 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -11125,7 +11232,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 245.11 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 245.11 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 245.11 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -11308,7 +11437,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 124.46 133.35 0)
 		(unit 1)
 		(body_style 1)
@@ -11328,7 +11457,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 124.46 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -11339,7 +11468,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 124.46 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -11350,7 +11479,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 124.46 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -11361,7 +11490,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 124.46 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -11372,7 +11501,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 124.46 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 124.46 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 124.46 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -11399,7 +11550,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 60.96 144.78 0)
 		(unit 1)
 		(body_style 1)
@@ -11419,7 +11570,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 60.96 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -11430,7 +11581,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 60.96 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -11441,7 +11592,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 60.96 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -11452,7 +11603,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 60.96 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -11463,7 +11614,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 60.96 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 60.96 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 60.96 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -11840,7 +12013,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 60.96 99.06 0)
 		(unit 1)
 		(body_style 1)
@@ -11860,7 +12033,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 60.96 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -11871,7 +12044,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 60.96 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -11882,7 +12055,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 60.96 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -11893,7 +12066,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 60.96 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -11904,7 +12077,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 60.96 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 60.96 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 60.96 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -12198,7 +12393,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 124.46 110.49 0)
 		(unit 1)
 		(body_style 1)
@@ -12218,7 +12413,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 124.46 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -12229,7 +12424,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 124.46 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -12240,7 +12435,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 124.46 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -12251,7 +12446,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 124.46 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -12262,7 +12457,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 124.46 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 124.46 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 124.46 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -13655,7 +13872,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 245.11 133.35 0)
 		(unit 1)
 		(body_style 1)
@@ -13675,7 +13892,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 245.11 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -13686,7 +13903,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 245.11 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -13697,7 +13914,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 245.11 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -13708,7 +13925,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 245.11 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -13719,7 +13936,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 245.11 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 245.11 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 245.11 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -13997,7 +14236,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 186.69 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -14017,7 +14256,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 186.69 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -14028,7 +14267,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 186.69 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -14039,7 +14278,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 186.69 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -14050,7 +14289,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 186.69 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -14061,7 +14300,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 186.69 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 186.69 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 186.69 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -14088,7 +14349,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 245.11 99.06 0)
 		(unit 1)
 		(body_style 1)
@@ -14108,7 +14369,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 245.11 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -14119,7 +14380,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 245.11 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -14130,7 +14391,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 245.11 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -14141,7 +14402,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 245.11 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -14152,7 +14413,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 245.11 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 245.11 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 245.11 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -14886,7 +15169,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 124.46 99.06 0)
 		(unit 1)
 		(body_style 1)
@@ -14906,7 +15189,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 124.46 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -14917,7 +15200,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 124.46 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -14928,7 +15211,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 124.46 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -14939,7 +15222,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 124.46 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -14950,7 +15233,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 124.46 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 124.46 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 124.46 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -15290,7 +15595,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 124.46 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -15310,7 +15615,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 124.46 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -15321,7 +15626,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 124.46 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -15332,7 +15637,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 124.46 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -15343,7 +15648,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 124.46 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -15354,7 +15659,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 124.46 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 124.46 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 124.46 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -20626,7 +20953,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 186.69 74.93 0)
 		(unit 1)
 		(body_style 1)
@@ -20646,7 +20973,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 186.69 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -20657,7 +20984,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 186.69 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -20668,7 +20995,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 186.69 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -20679,7 +21006,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 186.69 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -20690,7 +21017,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 186.69 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 186.69 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 186.69 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -20717,7 +21066,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 124.46 87.63 0)
 		(unit 1)
 		(body_style 1)
@@ -20737,7 +21086,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 124.46 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -20748,7 +21097,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 124.46 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -20759,7 +21108,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 124.46 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -20770,7 +21119,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 124.46 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -20781,7 +21130,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 124.46 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 124.46 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 124.46 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -20885,7 +21256,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 60.96 121.92 0)
 		(unit 1)
 		(body_style 1)
@@ -20905,7 +21276,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 60.96 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -20916,7 +21287,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 60.96 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -20927,7 +21298,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 60.96 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -20938,7 +21309,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 60.96 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -20949,7 +21320,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 60.96 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 60.96 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 60.96 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -21213,7 +21606,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 60.96 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -21233,7 +21626,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 60.96 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -21244,7 +21637,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 60.96 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -21255,7 +21648,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 60.96 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -21266,7 +21659,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 60.96 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -21277,7 +21670,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 60.96 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 60.96 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 60.96 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -21304,7 +21719,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 60.96 133.35 0)
 		(unit 1)
 		(body_style 1)
@@ -21324,7 +21739,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 60.96 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -21335,7 +21750,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 60.96 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -21346,7 +21761,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 60.96 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -21357,7 +21772,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 60.96 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -21368,7 +21783,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 60.96 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 60.96 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 60.96 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -21472,7 +21909,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 245.11 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -21492,7 +21929,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 245.11 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -21503,7 +21940,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 245.11 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -21514,7 +21951,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 245.11 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -21525,7 +21962,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 245.11 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -21536,7 +21973,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 245.11 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 245.11 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 245.11 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -22096,7 +22555,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 245.11 121.92 0)
 		(unit 1)
 		(body_style 1)
@@ -22116,7 +22575,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 245.11 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -22127,7 +22586,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 245.11 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -22138,7 +22597,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 245.11 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -22149,7 +22608,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 245.11 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -22160,7 +22619,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 245.11 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 245.11 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 245.11 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -23964,7 +24445,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 186.69 154.94 0)
 		(unit 1)
 		(body_style 1)
@@ -23984,7 +24465,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 186.69 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -23995,7 +24476,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 186.69 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -24006,7 +24487,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 186.69 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -24017,7 +24498,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 186.69 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -24028,7 +24509,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 186.69 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 186.69 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 186.69 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -24133,7 +24636,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 186.69 132.08 0)
 		(unit 1)
 		(body_style 1)
@@ -24153,7 +24656,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 186.69 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -24164,7 +24667,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 186.69 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -24175,7 +24678,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 186.69 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -24186,7 +24689,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 186.69 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -24197,7 +24700,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 186.69 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 186.69 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 186.69 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -24764,7 +25289,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 245.11 87.63 0)
 		(unit 1)
 		(body_style 1)
@@ -24784,7 +25309,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 245.11 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -24795,7 +25320,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 245.11 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -24806,7 +25331,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 245.11 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -24817,7 +25342,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 245.11 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -24828,7 +25353,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 245.11 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 245.11 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 245.11 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -25547,7 +26094,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 124.46 121.92 0)
 		(unit 1)
 		(body_style 1)
@@ -25567,7 +26114,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 124.46 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -25578,7 +26125,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 124.46 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -25589,7 +26136,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 124.46 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -25600,7 +26147,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 124.46 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -25611,7 +26158,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 124.46 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 124.46 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 124.46 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -25905,7 +26474,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 60.96 87.63 0)
 		(unit 1)
 		(body_style 1)
@@ -25925,7 +26494,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 60.96 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -25936,7 +26505,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 60.96 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -25947,7 +26516,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 60.96 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -25958,7 +26527,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 60.96 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -25969,7 +26538,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 60.96 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 60.96 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 60.96 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -26875,7 +27466,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 60.96 156.21 0)
 		(unit 1)
 		(body_style 1)
@@ -26895,7 +27486,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 60.96 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -26906,7 +27497,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 60.96 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -26917,7 +27508,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 60.96 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -26928,7 +27519,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 60.96 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -26939,7 +27530,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 60.96 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 60.96 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 60.96 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -27625,7 +28238,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 186.69 120.65 0)
 		(unit 1)
 		(body_style 1)
@@ -27645,7 +28258,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 186.69 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -27656,7 +28269,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 186.69 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -27667,7 +28280,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 186.69 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -27678,7 +28291,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 186.69 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -27689,7 +28302,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 186.69 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 186.69 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 186.69 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -27716,7 +28351,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 60.96 110.49 0)
 		(unit 1)
 		(body_style 1)
@@ -27736,7 +28371,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 60.96 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -27747,7 +28382,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 60.96 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -27758,7 +28393,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 60.96 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -27769,7 +28404,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 60.96 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -27780,7 +28415,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 60.96 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 60.96 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 60.96 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -27807,7 +28464,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 245.11 156.21 0)
 		(unit 1)
 		(body_style 1)
@@ -27827,7 +28484,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 245.11 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -27838,7 +28495,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 245.11 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -27849,7 +28506,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 245.11 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -27860,7 +28517,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 245.11 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -27871,7 +28528,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 245.11 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 245.11 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 245.11 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -28072,7 +28751,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 245.11 144.78 0)
 		(unit 1)
 		(body_style 1)
@@ -28092,7 +28771,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 245.11 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -28103,7 +28782,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 245.11 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -28114,7 +28793,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 245.11 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -28125,7 +28804,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 245.11 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -28136,7 +28815,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 245.11 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 245.11 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 245.11 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -28919,7 +29620,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 124.46 144.78 0)
 		(unit 1)
 		(body_style 1)
@@ -28939,7 +29640,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 124.46 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -28950,7 +29651,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 124.46 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -28961,7 +29662,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 124.46 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -28972,7 +29673,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 124.46 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -28983,7 +29684,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 124.46 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 124.46 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 124.46 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -29241,7 +29964,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:1812L400_16GR")
+		(lib_id "JLCImport:1812L300_30GR")
 		(at 186.69 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -29261,7 +29984,7 @@
 				)
 			)
 		)
-		(property "Value" "1812L400/16GR"
+		(property "Value" "1812L300/30GR"
 			(at 186.69 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -29272,7 +29995,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:F1812"
+		(property "Footprint" "JLCImport:1812L300_30GR"
 			(at 186.69 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -29283,7 +30006,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C48985875.pdf"
 			(at 186.69 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -29294,7 +30017,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1812L300/30GR; F1812; LUTE"
 			(at 186.69 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -29305,7 +30028,29 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C22374900"
+		(property "LCSC" "C48985875"
+			(at 186.69 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LUTE"
+			(at 186.69 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1812L300/30GR"
 			(at 186.69 96.52 0)
 			(hide yes)
 			(show_name no)
