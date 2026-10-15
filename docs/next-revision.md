@@ -165,6 +165,75 @@ rails. This revision raises it to 24V nominal.
   about 2 mA at 24V, 1 mA at 12V and 0.3 mA at 5V. Use a high-efficiency LED
   so it is still visible on a 5V zone.
 
+**Intake stage design (October 2026).** From each zone input to `5V_REG`.
+
+- **Per zone, unchanged:** terminal J1 to J4, blade fuse F1 to F4, then the
+  zone rail `+12V_Zn`, which should be renamed `VZn` since it is no longer
+  12V. The ports hang off that rail.
+- **Per zone, new:** an SMBJ26A TVS from the zone rail to GND, after the fuse
+  (LCSC C726831; Littelfuse C315992). Standoff 26 V covers a 24 V supply
+  turned up to 26.4 V; it breaks down at 28.9 V minimum. Behind the fuse, a
+  supply that is simply too high (a 36 V brick) makes the TVS fail short and
+  blow the fuse, so the ports are protected.
+- **OR diodes:** keep D4 to D7 (SS34, 3 A, 40 V). Each carries at most the
+  converter's input current, about 1.3 A at a 4.5 V input. The worst reverse
+  voltage is 19 V (24 V on one zone, 5 V on another).
+- **`+12V_SYS`**, to be renamed `VIN_SYS`, spans 4.5 to 28 V:
+  - Remove D10 (BZT52C15V). It was a 15 V clamp protecting the TPS63070,
+    and it would burn up at 24 V.
+  - C22 and C23 (22 µF 25 V X5R 0805) and C24 (10 µF 25 V 0603) would run
+    at their rating with little capacitance left. Replace them with
+    2 x 10 µF 50 V X7R 1206 (C89632) at the converter and a 47 µF 50 V
+    electrolytic (C72523, 6.3 x 7.7 mm). The electrolytic's ESR damps
+    hot-plug ringing on long leads, which an all-ceramic input would make
+    worse.
+  - PWR_LED3 with R3 = 8.2k draws 2.7 mA at 24 V, and R3 dissipates 59 mW
+    in an 0603 rated 100 mW. That is fine, and the LED is dim on 5 V.
+  - J38 pin 3 brings this rail out. Its silkscreen says 12V; change it to
+    VIN.
+- **Converter: TPS552872** (TI, 36 V, 4 A fully integrated four-switch
+  buck-boost, VQFN-HR-21 3 x 5 mm). LCSC stocks it as the automotive grade
+  TPS552872QWRYQRQ1 (C22397842, 1.5k); the commercial TPS552872RYQR
+  (C22427496) has 188. The TPS552892 (8 A, C19272254, 30k in stock) has
+  the same pinout and drops in, but its 13 A peak limit would need a bigger
+  inductor. Checked in the datasheet (SLVSHG1):
+  - VIN and SW1 absolute maximum 42 V, above the TVS clamp.
+  - **EN/UVLO absolute maximum is 20 V**, so it cannot be tied to VIN. Use a
+    divider of 61.9k over 27.4k: on at 4.01 V, with 5 µA × 61.9k = 0.31 V
+    of hysteresis, and only 8.6 V on the pin at 28 V.
+  - FB reference 1.2 V ±1%. R_up 100k (TI's recommendation) and R_down
+    29.4k give **5.28 V**, which D3 brings down to about 4.9 V on `+5V`, as
+    today.
+  - FSW: fSW = 10⁶ / (50·R_kΩ + 35) kHz, so 19.1k gives **1.01 MHz**. That
+    is a compromise between switching loss at 28 V in and inductor size.
+  - **MODE to VCC: forced PWM**, the same reasoning as the 3.3 V buck.
+    EXTVCC to VCC (internal LDO); VCC cap 10 µF; BOOT1 and BOOT2 0.1 µF;
+    DITH/SYNC to GND (no dithering); PG and CC open, or to test pads; CDC
+    open.
+  - **Output current limit:** R_SNS = 25 mΩ between VOUT and ISP/ISN, with
+    V_SNS = 50 mV, gives 2 A. A short on `+5V` or J38 then folds back
+    instead of running into the 4 A inductor limit.
+- **Inductor: 4.7 µH, I_sat 8 A** (Sunlord MWSA0605S-4R7MT, C408465, 7 x
+  6.6 mm; the ABC GSSM05304R7M3AU, C2928302, is 5.2 x 5.7 mm). I_sat is
+  above the 6.5 A peak current limit, so the inductor does not saturate in
+  a fault. Ripple is 0.88 to 0.91 A p-p at 24 to 28 V in, so the peak is
+  1.46 A at a 1 A load. Boost mode at 4.5 V in: I_L(DC) is 1.31 A with
+  little ripple. 4.7 µH is above the inner loop's 1.2/fSW = 1.2 µH minimum.
+- **Output caps:** 4 x 22 µF 16 V X5R 0805 (C98190), about 50 µF effective
+  at 5.3 V. C21 (47 µF 6.3 V) runs too close to its rating at 5.3 V and
+  goes.
+- **Compensation** (datasheet equations 24 to 26, worst case boost at
+  4.5 V in and 1 A out, so D = 0.151): f_RHPZ = 129 kHz, crossover
+  f_C = 20 kHz (below f_RHPZ/5 and fSW/10), G_EA = 190 µA/V, R_SENSE
+  0.055 Ω. That gives **R_C = 9.53k, C_C = 15 nF, C_P = 27 pF**. These are
+  calculated values; check them in TI's design tool or on the bench.
+- **Load:** 1 A continuous at 5 V. The 3.3 V buck draws about 0.55 A at
+  its 750 mA peak, the level shifters' 5 V side and LEDs about 50 mA, and
+  J38's 5 V pin is budgeted at 100 mA.
+- **Output OR:** keep D3 (B5819W) from `5V_REG` to `+5V`, and D1 from
+  USB. An ideal-diode controller is an option later, if the extra 0.3 V
+  is ever wanted back.
+
 **Mixed voltages:** each zone feeds only its own 8 ports, and the OR diodes
 power the logic from whichever zone is highest. So one board can run, for
 example, 5V on zone 1, 12V on zones 2 and 3, and 24V on zone 4. The lower
