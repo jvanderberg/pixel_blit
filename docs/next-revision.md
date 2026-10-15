@@ -283,6 +283,74 @@ and board copper, so a bright show no longer means heavier wire.
   about 0.85 W, too much for SOT-23-5. The Pico 2 W uses a switching regulator
   rated around 800 mA for this reason.
 
+**Spec (October 2026).**
+
+- **Input:** `+5V`, which is the 5V regulator or USB through a B5819W. It
+  stays on `+5V` rather than the zone rails so the board still runs from
+  USB alone. Worst case is USB at 4.75 V minus the diode, about 4.3 V.
+- **Output:** 3.3 V ±3%. The tightest load is the RM2: VDDIO 3.3 V ±5%,
+  and VIN below 3.2 V reduces RF performance.
+- **Load budget (3.3 V).** Only the RM2 figure is from its datasheet; the
+  rest are estimates to check on the bench.
+
+  | Load | Peak | Typical |
+  |---|---|---|
+  | RM2, transmit (datasheet: 271 mA at MCS7, 16 dBm) | 300 mA | 50–100 mA |
+  | SD card, write | 200 mA | 50 mA |
+  | RP2350 (core regulator, IO, USB PHY) | 100 mA | 50 mA |
+  | PSRAM + flash | 65 mA | 20 mA |
+  | Level shifters (A side), IR, LEDs, pull-ups | 30 mA | 15 mA |
+  | J38 3.3 V pin (external) | 50 mA | 0 |
+  | **Total** | **≈ 750 mA** | **≈ 250 mA** |
+
+  So: at least 1 A continuous. A 2 A part gives headroom and runs cool.
+- **Noise:** forced PWM at a fixed frequency, not power-save mode at light
+  load. Power-save mode lets the switching frequency and ripple wander with
+  the load, which is unwelcome next to the radio and the ADC. The Pico 2 W
+  forces PWM on its regulator for the same reason.
+- **Transients:** the RM2 transmits in bursts, so the converter needs a fast
+  current-mode loop and the 22 µF output capacitor at the module (C42
+  10 µF + C43/C44 are already there).
+- **Enable:** keep the existing `3V3_EN` (R15 100 kΩ to +5V).
+
+**Recommended: TPS62A02ADRLR** (TI, LCSC C5820994, 14.5k in stock).
+Checked in the datasheet (SLUSEG9E):
+
+- 2.5 to 5.5 V in, 2 A, SOT-563 (pins: 1 GND, 2 SW, 3 VIN, 4 EN, 5 FB,
+  6 PG).
+- The `A` suffix means **forced PWM** at **2.4 MHz**. The plain TPS62A02 uses
+  power-save mode.
+- High-side current limit 2.7 A min / 3.4 A typical. 100% duty-cycle mode
+  gives low dropout: VIN(min) ≈ 3.3 V + 0.75 A × (100 mΩ + DCR) ≈ 3.45 V,
+  well under the 4.3 V worst case.
+- FB 600 mV ±1%. R2 must be 100 kΩ or less: **R1 = 100 kΩ, R2 = 22 kΩ**
+  gives 3.327 V (+0.8%). 100 kΩ is already in the library; 22 kΩ is JLC
+  basic C25768.
+- L = 1 µH, COUT = 22 µF (the datasheet's standard, recommended
+  combination), CIN = 4.7 µF.
+- Rated for 10–47 µF of output capacitance. The new 22 µF replaces C28
+  (10 µF, next to U4), so the regulator itself sees about 22 µF, with C16,
+  C42 and the 100 nF parts further out on the rail.
+- PG unused: leave open (the datasheet allows open or GND). The RP2350's own
+  brownout handles power-up.
+
+**Inductor:** Murata DFE201612E-1R0M=P2 (LCSC C337892, 1 µH, 4 A,
+2.0 x 1.6 mm, 21k in stock). Same family as the DFE252012F in TI's
+example. Sunlord MWTC201610S1R0MT (C2840989, 4.6 A) is a cheaper fallback.
+
+**Fallback IC:** TLV62569DBVR (C141836, 416k in stock, SOT-23-5,
+1.5 MHz, 2.2 µH / 10 µF). It is cheaper and more widely stocked, but it
+always uses power-save mode at light load (no forced-PWM version), so it is
+second choice.
+
+**Placement:** in U4's spot (around x = 187.5, y = 96.5), reusing the
+ME6217's input and output caps and the In2 +3V3 trunk that leaves from
+there. The footprint is smaller than the LDO plus its caps: SOT-563, a
+2016 inductor, 0805 COUT, 0603 CIN and two 0402s. Keep the SW node short
+and the CIN-to-GND loop tight, per the datasheet layout section.
+
+No JLC basic-library buck exists, so any choice pays the extended-part fee.
+
 ### Power-up: wait, don't sense
 
 - The TPS63070 buck-boost regulates 5V from about 2V of input, so the RP2350
