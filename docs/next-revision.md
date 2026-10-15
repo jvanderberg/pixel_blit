@@ -521,7 +521,11 @@ No JLC basic-library buck exists, so any choice pays the extended-part fee.
 - microSD on GPIO 36 to 39. Consider raising the SPI clock from 12.5 MHz (a
   firmware change) before anything else, for faster reads and uploads.
 - IR receiver on GPIO 42, with SW2 and CN1.
-- USB-C, BOOTSEL (SW1) and reset, for flashing and recovery.
+- USB-C, BOOTSEL (SW1) and reset, for flashing and recovery. **Moved** into
+  the old display area beside the MCU (SW1 at 121,65; Reset1 at 121,77).
+  QSPI_SS now drops a short B.Cu stub to R1 from its y=56 run, and RUN
+  ends at R18, so the long QSPI_SS leg that split the back ground plane at
+  x=145.6, its stitching vias and the RUN loop out to x=178 are gone.
 
 ### Add: on-board button and status LED
 
