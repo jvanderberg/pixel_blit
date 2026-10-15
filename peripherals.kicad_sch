@@ -2185,6 +2185,771 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "PixelBlit:0402,1kΩ"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 1.778 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 0 0 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0402"
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 1kΩ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "8973314"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "0402WGF1001TCE"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" "1kΩ"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "0402,1kΩ_0_1"
+			(rectangle
+				(start -1.016 2.54)
+				(end 1.016 -2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "0402,1kΩ_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "PixelBlit:Schottky,B5819W"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "D"
+			(at 2.032 0.834 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "B5819W"
+			(at 2.032 -1.2122 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:D_SOD-123"
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407291648_MDD-Microdiode-Semiconductor-B5819W_C64885.pdf"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "40V Independent Type 900mV@3A 1A SOD-123 Schottky Diodes ROHS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C64885"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "396308"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.019USD"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "15"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Diodes,Schottky Barrier Diodes (SBD)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "MDD（Microdiode Electronics）"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "B5819W"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rectified Current" "1A"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Forward Voltage (Vf@If)" "900mV@3A"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Voltage (Vr)" "40V"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Diode Configuration" "Independent Type"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Leakage Current (Ir)" "1mA@40V"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "D_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Schottky,B5819W_0_1"
+			(polyline
+				(pts
+					(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.635 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27) (xy -1.27 -1.27) (xy -1.27 -0.635) (xy -0.635 -0.635)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Schottky,B5819W_1_1"
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 3.81 270)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "PixelBlit:+3V3"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 0 3.556 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "+3V3_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+3V3_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	)
 	(text "IR Control"
 		(exclude_from_sim no)
@@ -2691,30 +3456,7 @@
 		)
 		(uuid "e8fe4e30-1f57-4bd6-a550-78a746e62de0")
 	)
-	(global_label "IR_IN"
-		(shape input)
-		(at 87.63 105.41 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1ebb78a0-7446-4e8a-9959-89aae4d6ea9d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.8671 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
+	
 	(global_label "SD_MOSI"
 		(shape input)
 		(at 172.72 49.53 180)
@@ -2763,30 +3505,7 @@
 			)
 		)
 	)
-	(global_label "IR_IN"
-		(shape input)
-		(at 102.87 110.49 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e18b0f81-6bac-42ad-8586-37ee6ebca46a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.6329 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
+	
 	(global_label "SD_SCK"
 		(shape input)
 		(at 172.72 54.61 180)
@@ -4628,4 +5347,15 @@
 			)
 		)
 	)
+	(label "IR_RAW" (at 87.63 105.41 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "912bebe9-647d-4c05-86b8-bc4eb4fa9a7e"))
+	(label "IR_RAW" (at 102.87 110.49 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4278685f-8d5e-43f8-847e-d928a397c1e4"))
+	(label "IR_RAW" (at 127 120.65 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "970b5099-2c4a-4452-a851-57a516414a37"))
+	(wire (pts (xy 127 120.65) (xy 130.81 120.65)) (stroke (width 0) (type default)) (uuid "912b8727-ba82-4d4d-b3eb-4d358ebcb934"))
+	(symbol (lib_id "PixelBlit:0402,1kΩ") (at 134.62 120.65 90) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "b03ce863-c6a6-4441-8868-ca5e2003c552") (property "Reference" "R76" (at 134.62 117.475 90) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "1kΩ" (at 134.62 123.825 90) (effects (font (size 0.8 0.8)) (justify left))) (property "Footprint" "PixelBlit:R_0402" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 1kΩ 0402 Chip Resistor - Surface Mount ROHS" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "LCSC" "C11702" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Stock" "8973314" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Price" "0.004USD" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Process" "SMT" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Minimum Qty" "20" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Attrition Qty" "10" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Class" "Basic Component" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Category" "Resistors,Chip Resistor - Surface Mount" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Part" "0402WGF1001TCE" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Resistance" "1kΩ" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Power(Watts)" "62.5mW" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Type" "Thick Film Resistors" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Overload Voltage (Max)" "50V" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Operating Temperature Range" "-55°C~+155°C" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Tolerance" "±1%" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Temperature Coefficient" "±100ppm/°C" (at 134.62 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)) (pin "1" (uuid "34e1c588-d7c2-47ba-a9ce-a0663a9c1eb1")) (pin "2" (uuid "059f978b-559c-417d-9425-b446967234a7")) (instances (project "pixel_blit" (path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/40a520f0-6bc0-4995-b27d-f1f64b0d9bb8" (reference "R76") (unit 1)))))
+	(wire (pts (xy 138.43 120.65) (xy 148.59 120.65)) (stroke (width 0) (type default)) (uuid "2b9e3898-45ab-40ea-8b49-32d298348ed1"))
+	(junction (at 143.51 120.65) (diameter 0) (color 0 0 0 0) (uuid "4c27edc2-874b-4663-8497-87b0623aa2ca"))
+	(symbol (lib_id "PixelBlit:Schottky,B5819W") (at 143.51 116.84 180) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "eede422e-5d26-4839-89a9-aa5ea70c5705") (property "Reference" "D51" (at 141.605 116.205 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "B5819W" (at 141.605 117.983 0) (effects (font (size 0.8 0.8)) (justify left))) (property "Footprint" "PixelBlit:D_SOD-123" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2407291648_MDD-Microdiode-Semiconductor-B5819W_C64885.pdf" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Description" "40V Independent Type 900mV@3A 1A SOD-123 Schottky Diodes ROHS" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "LCSC" "C64885" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Stock" "396308" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Price" "0.019USD" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Process" "SMT" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Minimum Qty" "15" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Attrition Qty" "10" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Class" "Preferred Component" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Category" "Diodes,Schottky Barrier Diodes (SBD)" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Manufacturer" "MDD（Microdiode Electronics）" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Part" "B5819W" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Rectified Current" "1A" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Forward Voltage (Vf@If)" "900mV@3A" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Reverse Voltage (Vr)" "40V" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Diode Configuration" "Independent Type" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Reverse Leakage Current (Ir)" "1mA@40V" (at 143.51 116.84 0) (effects (font (size 1.27 1.27))) (hide yes)) (pin "1" (uuid "313cf38c-e75b-44de-a109-111258f39855")) (pin "2" (uuid "7d29e104-cf5b-49cd-b1a9-0953000dfe0c")) (instances (project "pixel_blit" (path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/40a520f0-6bc0-4995-b27d-f1f64b0d9bb8" (reference "D51") (unit 1)))))
+	(symbol (lib_id "PixelBlit:+3V3") (at 143.51 113.03 0) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "7abe69a8-c775-4ff3-b552-fdf183e5835e") (property "Reference" "#PWR0900" (at 146.05 111.76 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Value" "+3V3" (at 143.51 109.22 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 143.51 113.03 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Datasheet" "" (at 143.51 113.03 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "Description" "Power symbol creates a global label with name \"+3V3\"" (at 143.51 113.03 0) (effects (font (size 1.27 1.27))) (hide yes)) (property "ki_keywords" "global power" (at 143.51 113.03 0) (effects (font (size 1.27 1.27))) (hide yes)) (pin "1" (uuid "3d1759fa-4e27-42ea-8de1-5497b764dd82")) (instances (project "pixel_blit" (path "/046bafbc-5afd-4d51-a157-fe6ddaf6697d/40a520f0-6bc0-4995-b27d-f1f64b0d9bb8" (reference "#PWR0900") (unit 1)))))
+	(global_label "IR_IN" (shape input) (at 148.59 120.65 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left)) (uuid "cdd27689-7273-49cd-a8dd-5b7613d82735") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 148.59 120.65 0) (effects (font (size 1.27 1.27))) (hide yes)))
+	(text "IR_IN goes to GPIO42, an ADC pin that isn't 5 V tolerant.\nR76 and D51 hold it near 3.5 V when the receiver (on 5 V) idles high\nor the jack shorts 5 V onto the signal while plugging in." (exclude_from_sim no) (at 120.65 132.08 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b3467f95-904b-408e-bcca-dec951888e1d"))
 )

@@ -47,7 +47,16 @@ WL_DATA, at a 0.4 mm pitch with a 0.25 mm gap.
   - Reroute directly, about 60 mm.
   - Add a 22–33 Ω series resistor on WL_CLK at U1, and space CLK from DATA by at least 3× the trace width.
 
-### 3. The IR input isn't safe for 5 V
+### 3. ~~The IR input isn't safe for 5 V~~ (done)
+**Done:** SW2's IR pins are now the net IR_RAW. R76 (1 kΩ, 0402, C11702) sits in
+series on the line beside SW2, and D51 (B5819W, already on the BOM) clamps
+IR_IN to +3V3 right after it. +3V3 comes from the J38 branch through a via at
+(179, 95) and a 1.8 mm In2 stub. A 10k/20k divider was rejected: the receiver's
+internal pull-up (about 30 kΩ to 5 V) would pull the high level down to about
+1.7 V. With the clamp, the idle level is about 3.45 V at about 45 µA, and a 5 V
+short while plugging in pushes about 1.4 mA into +3V3. The 100 pF at U1 was
+not added.
+
 - **Where:** CN1 → SW2 → IR_IN → U1 pin 53 (GPIO42), 172 mm on F.Cu.
 - **Evidence:**
   - GPIO 40–47 are ADC pins and are not 5 V tolerant (check the RP2350 datasheet's pin table).

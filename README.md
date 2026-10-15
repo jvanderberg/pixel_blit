@@ -117,11 +117,11 @@ zone 3 S16-S23, zone 4 S24-S31.
 
 | Type | Count | Notes |
 |------|-------|-------|
-| Resistors | 66 | 47 Ω series resistors, regulator feedback, LED resistors |
+| Resistors | 67 | 47 Ω series resistors, regulator feedback, LED resistors |
 | Capacitors | 49 | Decoupling, regulator input and output |
 | Fuses | 36 | 32 port PTCs, 4 blade fuse holders |
 | ICs and modules | 10 | MCU, flash, PSRAM, RM2, 4 level shifters, 2 regulators |
-| Diodes and LEDs | 19 | OR diodes, TVS, USB protection, status and fuse LEDs |
+| Diodes and LEDs | 52 | 32 data-line TVS, zone TVS, OR diodes, IR clamp, USB protection, status and fuse LEDs |
 | Terminal blocks | 36 | 32 LED outputs, 4 zone inputs |
 | Buttons and switches | 4 | Play, Boot, Reset, IR polarity |
 
