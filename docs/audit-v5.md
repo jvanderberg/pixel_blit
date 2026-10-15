@@ -28,7 +28,15 @@ about 8 mm from pin 2. The data nets are now named `Net-(Dn-C)`. A few
   - A 5 V unidirectional TVS from pin 2 to pin 3 (GND) at each terminal: SMF5.0A in SOD-123FL (LCSC C320547, C2759874 or C193402). There is room just above each terminal body, about 2 mm from the GND pad.
   - Optionally a 100 Ω resistor in 0603: it softens the edges and fuses on a miswire.
 
-### 2. Wi-Fi SPI routes are 150–175 mm long
+### 2. ~~Wi-Fi SPI routes are 150–175 mm long~~ (done)
+**Done:** rerouted by hand, mostly on In2 around the east side of the
+3.3 V island: WL_CLK 83 mm (including R75), WL_DATA 85, WL_CS 70, WL_ON 83.
+The lanes cross the SD bus only at short angles. The lower ends were moved
+0.55 mm east so WL_CLK no longer sits over SD_MOSI (B.Cu, x 88.4). R75 (33 Ω,
+0402, C25105) is in series on WL_CLK about 4 mm north of U1 pin 44, before
+the In2 via. Still open: CLK runs about 35 mm within 0.45 mm (3× width) of
+WL_DATA, at a 0.4 mm pitch with a 0.25 mm gap.
+
 - **Where:** WL_CLK (173 mm), WL_DATA (165), WL_CS (148), WL_ON (147), all on F.Cu, from U1 to U9.
 - **Evidence:**
   - These are the old LVDS routes: north to y 52.8, east to x 101.9, past U6, then south along x 73.1. The module is about 50 mm from the MCU.

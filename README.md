@@ -117,7 +117,7 @@ zone 3 S16-S23, zone 4 S24-S31.
 
 | Type | Count | Notes |
 |------|-------|-------|
-| Resistors | 65 | 47 Ω series resistors, regulator feedback, LED resistors |
+| Resistors | 66 | 47 Ω series resistors, regulator feedback, LED resistors |
 | Capacitors | 49 | Decoupling, regulator input and output |
 | Fuses | 36 | 32 port PTCs, 4 blade fuse holders |
 | ICs and modules | 10 | MCU, flash, PSRAM, RM2, 4 level shifters, 2 regulators |
