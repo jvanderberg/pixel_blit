@@ -175,8 +175,8 @@ rails. This revision raises it to 24V nominal.
 **Intake stage design (October 2026).** From each zone input to `5V_REG`.
 
 - **Per zone, unchanged:** terminal J1 to J4, blade fuse F1 to F4, then the
-  zone rail `+12V_Zn`, which should be renamed `VZn` since it is no longer
-  12V. The ports hang off that rail.
+  zone rail, now named `VZn` (was `+12V_Zn`) since it is no longer 12V.
+  The ports hang off that rail.
 - **Per zone, new:** an SMBJ26A TVS from the zone rail to GND, after the fuse
   (LCSC C726831; Littelfuse C315992). Standoff 26 V covers a 24 V supply
   turned up to 26.4 V; it breaks down at 28.9 V minimum. Behind the fuse, a
@@ -185,7 +185,7 @@ rails. This revision raises it to 24V nominal.
 - **OR diodes:** keep D4 to D7 (SS34, 3 A, 40 V). Each carries at most the
   converter's input current, about 1.3 A at a 4.5 V input. The worst reverse
   voltage is 19 V (24 V on one zone, 5 V on another).
-- **`+12V_SYS`**, to be renamed `VIN_SYS`, spans 4.5 to 28 V:
+- **`VIN_SYS`** (renamed from `+12V_SYS`) spans 4.5 to 28 V:
   - Remove D10 (BZT52C15V). It was a 15 V clamp protecting the TPS63070,
     and it would burn up at 24 V.
   - C22 and C23 (22 µF 25 V X5R 0805) and C24 (10 µF 25 V 0603) would run

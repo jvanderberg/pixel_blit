@@ -16862,7 +16862,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z2"
+		(property "Value" "VZ2"
 			(at 256.54 122.555 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17069,7 +17069,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z3"
+		(property "Value" "VZ3"
 			(at 180.34 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17541,7 +17541,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z4"
+		(property "Value" "VZ4"
 			(at 269.494 145.542 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17708,7 +17708,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z4"
+		(property "Value" "VZ4"
 			(at 184.15 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19310,7 +19310,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z2"
+		(property "Value" "VZ2"
 			(at 167.64 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20042,7 +20042,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_SYS"
+		(property "Value" "VIN_SYS"
 			(at 234.95 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20579,7 +20579,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z1"
+		(property "Value" "VZ1"
 			(at 181.61 89.662 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23605,7 +23605,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_SYS"
+		(property "Value" "VIN_SYS"
 			(at 27.94 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24050,7 +24050,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_SYS"
+		(property "Value" "VIN_SYS"
 			(at 22.86 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24138,7 +24138,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_SYS"
+		(property "Value" "VIN_SYS"
 			(at 60.96 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24908,7 +24908,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z1"
+		(property "Value" "VZ1"
 			(at 240.792 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27064,7 +27064,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_SYS"
+		(property "Value" "VIN_SYS"
 			(at 234.95 150.876 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27482,7 +27482,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z4"
+		(property "Value" "VZ4"
 			(at 276.86 122.555 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27571,7 +27571,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z3"
+		(property "Value" "VZ3"
 			(at 184.15 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27916,7 +27916,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z1"
+		(property "Value" "VZ1"
 			(at 154.94 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28093,7 +28093,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z2"
+		(property "Value" "VZ2"
 			(at 184.15 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28800,7 +28800,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z2"
+		(property "Value" "VZ2"
 			(at 251.206 145.796 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29234,7 +29234,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z1"
+		(property "Value" "VZ1"
 			(at 246.38 122.555 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29569,7 +29569,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z3"
+		(property "Value" "VZ3"
 			(at 260.35 145.796 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29973,7 +29973,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z3"
+		(property "Value" "VZ3"
 			(at 266.7 122.555 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30149,7 +30149,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_Z4"
+		(property "Value" "VZ4"
 			(at 193.04 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
