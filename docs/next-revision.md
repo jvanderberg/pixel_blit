@@ -535,14 +535,15 @@ No JLC basic-library buck exists, so any choice pays the extended-part fee.
 ### Add: on-board button and status LED
 
 **Done.** D14, a TOGIALED TJ-S1615CY6TGLCCSRGB-A5 (C601684, common cathode)
-with R72 1k (R), R73 1k (G), R74 470R (B), driven from GPIO 41/44/45; SW3
-"Play" on GPIO 43 to GND (use the internal pull-up). The GPIOs moved from
-the plan below because only four of the spare pads can escape the QFN:
-GPIO 40's pad is boxed in by the +3V3 trace to C12. The four lines leave U1
-on short F.Cu stubs to vias, run on In2 (the second ground plane, so In1
-stays solid under the F.Cu signals) to the old display area, and come up
-beside the LED and the button. Common cathode was chosen so the LED needs
-only a GND via, no 3V3 run.
+with R72 1k (red), R73 1k (green), R74 470R (blue); SW3 "Play" to GND (use
+the internal pull-up). They reuse the old display-panel routes, so the
+colour/GPIO assignment follows those lines: red GPIO 43 (was TRB), green
+GPIO 45 (TRA), blue GPIO 41 (PSH), button GPIO 40 (BAK, the panel's back
+button). TRB and TRA are F.Cu end to end; PSH's old 30 mm B.Cu tail now runs
+on F.Cu beside TRB, with a 2 mm B.Cu hop under IR_IN. BAK is restored as it
+was (about 63 mm, mostly on B.Cu along y = 66.8). The LED sits where the
+routes come out of their diagonal, Play at the old header row, and Boot
+moved right to (141, 66) to clear TRA.
 
 - **Status LED:** a plain common-anode or common-cathode RGB LED on **GPIO 40,
   41 and 43** with a resistor each, driven by PWM. No level shifting, unlike an
@@ -550,9 +551,8 @@ only a GND via, no 3V3 run.
   pulse. SD card or config error: red.
 - **Button:** on **GPIO 44**. Press: play or next show. Hold at power-up: clear
   Wi-Fi settings and start the setup access point.
-- **Spare:** GPIO 40 and 46 (as built). GPIO 40 cannot leave the QFN
-  without moving the +3V3 trace to C12; GPIO 46 (pad 57) may just fit a via
-  beside PSRAM_CS if a test pad is wanted.
+- **Spare:** GPIO 44 and 46 (as built). GPIO 46 had the display's I2C data
+  route; GPIO 44 (pad 55) would need an escape via in the pocket under IR_IN.
 
 ## GPIO map
 
@@ -561,9 +561,9 @@ only a GND via, no 3V3 run.
 | 0 to 31 | LED strings | LED strings |
 | 32 to 35 | LVDS HS_DATA0 to 3 | RM2 Wi-Fi |
 | 36 to 39 | microSD | microSD |
-| 40 | Panel: back | Spare (unrouted: boxed in at the QFN) |
-| 41, 44, 45 | Panel: push, LVDS DATA_IN_EN, encoder A | Status LED R, G, B |
-| 43 | Panel: encoder B | Button |
+| 40 | Panel: back | Button |
+| 41, 43, 45 | Panel: push, encoder B, encoder A | Status LED blue, red, green |
+| 44 | LVDS DATA_IN_EN | Spare |
 | 42 | IR in | IR in |
 | 46 | Display I2C data | Spare |
 | 47 | Display I2C clock | PSRAM chip select (XIP_CS1) |
