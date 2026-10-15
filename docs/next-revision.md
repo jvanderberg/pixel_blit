@@ -371,6 +371,11 @@ and board copper, so a bright show no longer means heavier wire.
 
 ### Add: blown-fuse LEDs
 
+**Done.** D15-D18 (KT-0603R red) with R68-R71 (10k 0603, 100 mW: 58 mW at
+24 V) from Jn_IN to the zone rail, in the strip between each fuse holder and
+its input terminal, inside the input pour; the resistor drops a via to the
+zone's B.Cu pour.
+
 - One LED with a series resistor across each input fuse (F1 to F4), anode on
   the input side. With the fuse intact both ends sit at the same voltage and
   the LED is dark. When the fuse blows, the input side stays at 12V and the
@@ -529,14 +534,25 @@ No JLC basic-library buck exists, so any choice pays the extended-part fee.
 
 ### Add: on-board button and status LED
 
+**Done.** D14, a TOGIALED TJ-S1615CY6TGLCCSRGB-A5 (C601684, common cathode)
+with R72 1k (R), R73 1k (G), R74 470R (B), driven from GPIO 41/44/45; SW3
+"Play" on GPIO 43 to GND (use the internal pull-up). The GPIOs moved from
+the plan below because only four of the spare pads can escape the QFN:
+GPIO 40's pad is boxed in by the +3V3 trace to C12. The four lines leave U1
+on short F.Cu stubs to vias, run on In2 (the second ground plane, so In1
+stays solid under the F.Cu signals) to the old display area, and come up
+beside the LED and the button. Common cathode was chosen so the LED needs
+only a GND via, no 3V3 run.
+
 - **Status LED:** a plain common-anode or common-cathode RGB LED on **GPIO 40,
   41 and 43** with a resistor each, driven by PWM. No level shifting, unlike an
   addressable LED. Setup mode: blinking blue. Connected: green. Playing: slow
   pulse. SD card or config error: red.
 - **Button:** on **GPIO 44**. Press: play or next show. Hold at power-up: clear
   Wi-Fi settings and start the setup access point.
-- **Spare:** GPIO 45 and 46. Bring them to test pads or a small header for
-  later use. GPIO 45 is ADC-capable (ADC5).
+- **Spare:** GPIO 40 and 46 (as built). GPIO 40 cannot leave the QFN
+  without moving the +3V3 trace to C12; GPIO 46 (pad 57) may just fit a via
+  beside PSRAM_CS if a test pad is wanted.
 
 ## GPIO map
 
@@ -545,10 +561,11 @@ No JLC basic-library buck exists, so any choice pays the extended-part fee.
 | 0 to 31 | LED strings | LED strings |
 | 32 to 35 | LVDS HS_DATA0 to 3 | RM2 Wi-Fi |
 | 36 to 39 | microSD | microSD |
-| 40, 41, 43 | Panel: back, push, encoder B | Status LED (R, G, B) |
+| 40 | Panel: back | Spare (unrouted: boxed in at the QFN) |
+| 41, 44, 45 | Panel: push, LVDS DATA_IN_EN, encoder A | Status LED R, G, B |
+| 43 | Panel: encoder B | Button |
 | 42 | IR in | IR in |
-| 44 | LVDS DATA_IN_EN | Button |
-| 45, 46 | Panel encoder A, display I2C data | Spare |
+| 46 | Display I2C data | Spare |
 | 47 | Display I2C clock | PSRAM chip select (XIP_CS1) |
 
 ## Firmware plan
