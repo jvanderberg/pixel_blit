@@ -58,7 +58,14 @@ WL_DATA, at a 0.4 mm pitch with a 0.25 mm gap.
   - At CN1: a series resistor and a clamp to +3V3, as a divider (10k/20k) or a BAT54S.
   - Optionally 100 pF at U1.
 
-### 4. The 3.3 V feed to the RM2 and MCU is one long 1 mm In2 track
+### 4. ~~The 3.3 V feed to the RM2 and MCU is one long 1 mm In2 track~~ (done)
+**Done:** the In2 trunk is now 4 mm wide (2.5 mm for the last 8 mm beside
+USB1). The GND stitching vias along it were moved out to keep 0.25 mm
+clearance, and three on the north side with no room were removed. The RM2
+feed from the trunk is three vias and a 1 mm F.Cu track. At 0.5 oz inner
+copper: about 58 mΩ from L3 to U1 and about 55 mΩ to U9 pin 14, so the RM2
+sees about 3.26 V at a 750 mA peak. 1 oz inner copper is no longer needed.
+
 - **Where:** from U4/L3 at (188, 98), through JP1 and 3 vias at (187–190, 105.7), then In2 to the via at (60.5, 99.4) and U9 pin 14.
 - **Evidence:**
   - About 190 mm of 1 mm track with no parallel path.
