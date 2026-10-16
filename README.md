@@ -41,7 +41,7 @@ remote.
 
 - **Power Zones**: 4 zones of 8 outputs each
   - One input per zone, **5-24 V DC**
-  - 20 A blade fuse and 26 V TVS on each input
+  - 20 A blade fuse, reverse-polarity ideal diode (LM74700 + 60 V FET) and 26 V TVS on each input
   - A blown-fuse LED beside each fuse
   - Silkscreen key with a write-in voltage box per zone
 
@@ -62,7 +62,8 @@ remote.
 
 ```
 Zone inputs 1-4 (5-24 V each)
-  → 20 A blade fuse → SMBJ26A TVS → zone rail VZ1-VZ4 → 8 ports, each through a 3 A PTC
+  → 20 A blade fuse → LM74700 ideal diode (blocks a reversed supply) → zone rail VZ1-VZ4
+       (SMBJ26A TVS on the rail) → 8 ports, each through a 3 A PTC
   → SS34 diodes (OR of all four zones) → VIN_SYS
        → TPS552872 buck-boost (4.5-28 V in) → 5.2 V → B5819W → +5 V (level shifters)
        → TPS62A02A buck → 3.3 V (MCU, flash, PSRAM, Wi-Fi, SD)
@@ -118,9 +119,10 @@ zone 3 S16-S23, zone 4 S24-S31.
 | Type | Count | Notes |
 |------|-------|-------|
 | Resistors | 67 | 47 Ω series resistors, regulator feedback, LED resistors |
-| Capacitors | 49 | Decoupling, regulator input and output |
+| Capacitors | 61 | Decoupling, regulator input and output, ideal-diode charge pumps |
 | Fuses | 36 | 32 port PTCs, 4 blade fuse holders |
-| ICs and modules | 10 | MCU, flash, PSRAM, RM2, 4 level shifters, 2 regulators |
+| ICs and modules | 14 | MCU, flash, PSRAM, RM2, 4 level shifters, 2 regulators, 4 ideal-diode controllers |
+| MOSFETs | 4 | BSC014N06NS, one per zone input (ideal diode) |
 | Diodes and LEDs | 52 | 32 data-line TVS, zone TVS, OR diodes, IR clamp, USB protection, status and fuse LEDs |
 | Terminal blocks | 36 | 32 LED outputs, 4 zone inputs |
 | Buttons and switches | 4 | Play, Boot, Reset, IR polarity |
@@ -131,7 +133,7 @@ zone 3 S16-S23, zone 4 S24-S31.
 pixel_blit/
 ├── pixel_blit.kicad_pcb      # PCB layout
 ├── pixel_blit.kicad_sch      # Top-level schematic: MCU, flash, PSRAM, USB, status LED, buttons
-├── Power.kicad_sch           # Zone inputs, buck-boost, 3.3 V buck, fuse LEDs
+├── Power.kicad_sch           # Zone inputs and ideal diodes, buck-boost, 3.3 V buck, fuse LEDs
 ├── output.kicad_sch          # Level shifters, series resistors, PTCs, terminals
 ├── wireless.kicad_sch        # RM2 Wi-Fi module
 ├── peripherals.kicad_sch     # microSD, IR receiver

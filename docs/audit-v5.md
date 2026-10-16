@@ -103,7 +103,29 @@ run beside VZ3 along y 56.17, is gone.
   - ESD from the button reaching the line before R1.
 - **Fix:** put R1 next to U2 or U1, so that only the button side of R1 runs to SW1. Better, move SW1 near the flash. Keep the line away from VZ3.
 
-### 6. The zone TVSs can't act as a crowbar
+### 6. ~~The zone TVSs can't act as a crowbar~~ (done)
+**Done:** each zone input now has an ideal diode after its fuse: an LM74700QDBVTQ1
+(U11-U14) driving an Infineon BSC014N06NS (Q1-Q4, C113391; 60 V, 1.45 mOhm, about 0.6 W at 20 A),
+with 100 nF for VCAP, input and output. A reversed supply is blocked instead of
+relying on the TVS to blow the fuse. The fused node is the new net Zn_F;
+the SMBJ26A TVS (D10-D13) and the SS34 OR diode stay on VZn, after the FET,
+and the blown-fuse LEDs now read across the fuse only (Jn_IN to Zn_F).
+
+Layout:
+- Each FET sits just west of its fuse's output pins, source toward the fuse.
+- A Zn_F pour on F.Cu and B.Cu links the fuse to the FET, and the Jn_IN pour
+  was cut back from the output pins.
+- An F.Cu VZn pour on the drain is stitched to the B.Cu VZn band by 7-12 vias.
+  Zone 4 uses seven 0.8 mm vias, because the VZ4/VZ3 band boundary is close.
+- Each enable pin reaches its anode through a short In2 jumper.
+- D4's VIN_SYS track, which ran through the zone-1 FET site, now crosses on In2
+  along x 225. Zone 4's VIN_SYS run moved from y 42.7 to y 39.85.
+- Zone 4's FET sits 2 mm south of the fuse-pin midpoint, so its controller
+  clears the J21 terminal body.
+- The zone-border silk was regenerated.
+
+Not covered: an over-voltage supply (above about 29 V) still reaches the TVS.
+
 - **Where:** D10–D13 (SMBJ26A) and fuses F1–F4. Each TVS side has two 0.6 mm stubs and two 0.3 mm vias.
 - **Evidence:**
   - With reverse polarity or a supply that's too high, the plan relies on the TVS shorting and blowing the 20 A fuse.
